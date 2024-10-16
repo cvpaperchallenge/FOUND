@@ -1,0 +1,353 @@
+% WS proposal template for ICCV 2023
+% M. Cho, B. Ham
+
+% Adopted from ECCV 2020 and ECCV 2022 templates by A. Bartoli, A. Fusiello, A. Vedaldi, L. Karlinsky, T. Michaeli, K. Nishino
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{comment}
+\usepackage{color}
+\newgeometry{vmargin={30mm, 30mm}, hmargin={30mm,30mm}}
+\usepackage[breaklinks=true,bookmarks=false]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+
+\newcommand{\cYoshi}[1]{{\color{cyan}{#1}}} % Comment by Yoshi
+
+\title{Workshop Proposal, CVPR 2025, Nashville}
+\author{FOUND Organizing Team}
+\date{October, 10th, 2024}
+
+% instructions
+\def\c#1{\textcolor{gray}{#1}}
+% Work in progress
+\def\wip#1{\textcolor{red}{#1}}
+%\def\wip#1{\textcolor{black}{#1}}
+% indicates parts to complete
+\def\x{\textcolor{red}{xxx}}
+
+%The use of this document is mandatory to submit a workshop proposal for ICCV 2023. The workshops will be held on October 2 and 3. The proposal must not exceed {\bf 6 pages} (excluding references). The instructions are in \c{grey} and parts to complete are indicated by \x. Note on file naming: your proposal should be submitted as a single pdf file named \texttt{workshop\_proposal\_ACRONYM.pdf}, where \texttt{ACRONYM} is the acronym of your proposed workshop.
+
+\begin{document}
+\maketitle
+
+% NOTE: Following contents are migrated from following google docs:
+% https://docs.google.com/document/u/0/d/1SFDU0yJ3U0qQj3XREmNSNyyNUXphCvLpMwuHPymd0Gc/mobilebasic
+
+% 0. Abstract
+Building a foundation model is an active and critical topic in artificial intelligence and related fields. However, most architectures rely on Transformer models, emphasizing 'data' rather than the 'model' itself. This leads to the concept of foundation data, which is essential for further advancing so-called AI foundation models. From another perspective, we must not forget that AI models only reach their full potential when applied in real-world industries and contribute to human life. To address the issue, we plan to form an organizing team focused on diverse tasks and industrial applications in the organizing workshop at CVPR 2025.
+
+\begin{comment}
+\section{Summary}
+\begin{tabular}{ll}
+  \hline
+  Acronym & LIMIT \\
+  Workshop title & Representation learning with very limited images: The connection to  \\
+  Edition (1st, 2nd, ...) & 2nd \\
+  Organizers & 
+  {\bf Hirokatsu Kataoka}, Chief Senior Researcher/Adjunct Researcher,\\
+& AIST/LINE Corporation, Japan.\\
+&  {\bf Yuki M. Asano}, Assistant Professor,\\
+& University of Amsterdam, Netherland.\\
+&  {\bf Christian Rupprecht}, Associate Professor,\\
+& University of Oxford, United Kingdam.\\
+&  {\bf Rio Yokota}, Professor,\\
+& Tokyo Institute of Technology, Japan.\\
+&  {\bf Nakamasa Inoue}, Associate Professor,\\
+& Tokyo Institute of Technology, Japan.\\
+& {\bf Dan Hendrycs}, Director,\\
+& Center for AI Safety, U.S.\\
+& {\bf Xavier Boix}, Senior Research Scientist,\\
+& Fujitsu Research, United States\\
+& {\bf Connor Anderson}, Ph.D. Student,\\
+& Brigham Young University, U.S.\\
+& {\bf Ryo Nakamura}, Research Assistant,\\
+& Fukuoka University/AIST, Japan.\\
+& {\bf Ryosuke Yamada}, Research Assistant,\\
+& University of Tsukuba/AIST, Japan.\\
+& {\bf Risa Shinoda}, Research Assistant,\\
+& Kyoto University/AIST, Japan.\\
+& {\bf Ryu Tadokoro}, Research Internship,\\
+& Tohoku University/AIST, Japan.\\
+  Primary organizer name and email address & Hirokatsu Kataoka: hirokatsu.kataoka@aist.go.jp \\
+  Half or full day & Half day \\
+  Expected number of participants & 150 \\
+  Requested number of poster boards & 20 \\
+  %Special requests & -- \\
+  \hline
+\end{tabular}
+\end{comment}
+
+\section{Topic}
+
+\subsection{Workshop title}
+Foundation Data: How to find a solution bridging the gap between industry and academia
+% Foundation Data for Industry
+
+\subsection{Workshop acronym}
+FOUND
+
+\subsection{Topics that will be covered in the workshop}
+\begin{itemize}
+    \item Data collection from real-world/non-Internet domain
+    \item Data curation from rough data in the wild into sophisticated and labeled datasets
+    \item Data security, privacy, ethics, and accountability toward real-world applications
+    \item Data adaptation techniques from large-/middle-scale AI models
+    \item Data crawling, annotation, and cleansing for training of AI models
+    \item Data labeling with \{Self, Semi, Weakly, Un\}-supervised learning without any human instructions
+    \item Data generation with synthetic, graphics, and artificial images
+    \item Brave new ideas related to above-mentioned topics or create a novel field
+\end{itemize}
+
+\subsection{Broader impact statement}
+% Describe why the workshop is relevant to the community and how relevant the topics or discussion are beyond the CVPR audience.
+
+The construction of foundation models has become an active area of research in recent years, with state-of-the-art records in various task benchmarks being continually updated by foundation models. These models are undeniably powerful, offering broad generalization across a wide range of tasks. However, due to the long-tail nature of data distribution, there remain significant challenges, notably the infamous "last mile" problem, when it comes to adapting foundation models for real-world industrial applications and societal implementation. Bridging this gap between academia and industry requires the creation of fine-grained datasets tailored to each downstream task, which demands deep domain knowledge. We call this collection of fine-grained datasets that bridge academia and industry "foundation data." Through this workshop, we aim to (i) identify important domains where public datasets are still underdeveloped and facilitate the creation of these datasets, (ii) rediscover valuable datasets in certain domains that have not been fully utilized, and (iii) discuss methodologies for data curation to construct high-quality foundation data. Our goal is to form a community where academia and industry collaborate to co-create foundation data.
+
+\subsection{Ethical considerations around the topic}
+% Tell us ethical considerations around the topic (if any)
+
+The construction of new datasets always comes with multiple ethical concerns, including data bias, privacy, and ownership. To ensure that these issues are appropriately governed and that discussions can be deepened, the organizing members of this workshop include experts in the development of ethical and trustworthy AI technologies, as well as specialists in building datasets to address bias and privacy concerns. Furthermore, we believe that by constructing and widely sharing foundation data through this workshop, we can also help address the issue of labor-intensive data annotation.
+
+\subsection{Relationship to previous workshops}
+% Describe how this proposal relates to previous workshops held at CVPR/ICCV/ECCV/etc. in the last three years.
+
+\cYoshi{This section is still TBD. Yoshi will update very soon!}
+
+\begin{itemize}
+    \item SyntML 2022 (CVPR 2022)
+    \begin{itemize}
+    \item We don't limit the topics to synthetic data.
+    \end{itemize}
+    %
+    \item Fair, Data Efficient and Trusted Computer Vision (CVPR 2022) / Workshop on Vision with Biased or Scarce Data (ECCV 2022)
+    \begin{itemize}
+    \item We deal with a learning framework that fundamentally solves dataset-related problems with very limited or synthetic dataset.
+    \end{itemize}
+    %
+    \item Self-supervised Learning: What is Next? (ECCV 2022)
+    \begin{itemize}
+    \item We can accept the papers treated in the workshop. Also, we treat the fundamental topic in order to solve dataset-related issues. Christian Rupprecht and Yuki M. Asano are joining the organizing team, therefore, we will consider and arrange the kind of topics.
+    \end{itemize}
+    %
+    \item L3D-IVU (CVPR 2022, CVPR 2023) / L2ID (ECCV 2022)
+    \begin{itemize}
+    \item We can accept the papers treated in the workshop. Moreover, our workshop will contains limited number of images in addition to limited labelled data. We also deal with an extreme setting (SSL with a single image) and novel framework (FDSL).
+    \end{itemize}
+
+    \item Scene Graphs and Graph Representation Learning (ICCV 2023)
+    \begin{itemize}
+    \item We can accept the representation learning from (scene) graphs if the setting is limited in terms of the number of images and labels.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Workshop track}
+
+\cYoshi{This section is still TBD. Yoshi will update very soon!}
+
+\begin{itemize}
+\item Primary: TBD
+\item Secondary: (i) TBD
+\end{itemize}
+
+\section{Organizers and speakers}
+\subsection{List of organizers}
+%\c{Please make sure that all organizers are listed as authors of the workshop proposal submission in CMT3.}
+%This workshop will be organised by the following members.
+\begin{enumerate}
+    \item {\bf Yoshihiro Fukuhara} \cYoshi{Please write here by yourself.}
+
+    \item {\bf Philipp Wirth} is a senior machine learning engineer at Lightly, specializing in self-supervised learning and data curation in computer vision. He developed an open-source library for self-supervised learning, which has been downloaded over 650,000 times, and has led efforts to create active learning solutions that significantly reduce labeling requirements. Philipp holds a Master’s degree in Computer Science from ETH Zürich and has published research in leading venues, including ACM Multimedia and Nature. e-mail: philipp@lightly.ai
+
+    \item {\bf Hirokatsu Kataoka} is a Chief Senior Researcher at National Institute of Advanced Industrial Science and Technology (AIST) and Adjunct Researcher at LY Corporation. He received his Ph.D. in engineering from Keio University in 2014. He has received ACCV 2020 Best Paper Honorable Mention Award, AIST 2019 Best Paper Award, and ECCV 2016 Workshop Brave New Idea. He served as a leading organizer of the 1st LIMIT Workshop at ICCV 2023. e-mail: hirokatsu.kataoka@aist.go.jp
+
+    \item {\bf Shunsuke Kitada} \cYoshi{Please write here by yourself.}
+
+    \item {\bf Xavier Boix} is a research scientist at the Department of Brain and Cognitive Sciences at MIT, where he heads a group that investigates biologically-inspired machine learning. He earned his PhD in machine learning from ETH Zurich in 2014 and continued his postdoctoral training at MIT as part of the multidisciplinary Center for Brains, Minds, and Machines. Xavier's research focuses on developing a theory of machine learning that informs the design of the next generation of intelligent systems. He integrates insights and techniques from theoretical machine learning, deep neural network engineering, and neuroscience to advance this goal. email: xboix@mit.edu
+
+    \item {\bf Puren Guller} \cYoshi{Please write here by yourself.}
+
+    \item {\bf Shinichi Mae} is a research engineer at Toyota Industries Corporation and the National Institute of Advanced Industrial Science and Technology (AIST). He leads the research and development of automation systems for logistics. His latest innovation, an advanced anomaly detection system for logistics operations, was presented at Logis-Tech Tokyo 2024, the largest logistics exhibition in Asia. e-mail: shinichi.mae@aist.go.jp
+
+    \item {\bf Tatsuya Komatsu} \cYoshi{Please write here by yourself.}
+
+    \item {\bf Nishant Rai} \cYoshi{Please write here by yourself.}
+
+    \item {\bf Ryo Nakamura} is a third-year of the doctoral program at Fukuoka University. He received her B.E., and M.E., degrees from Fukuoka University in 2019 and 2021, respectively. He is the headquarters of cvpaper.challenge which conducts comprehensive survey and collaborative research in the field of computer vision and related academic fields. He is a research assistant to Hirokatsu Kataoka at AIST, where he studies pre-training with data and supervised data generated from mathematical formulas. e-mail:ryo.nakamura@aist.go.jp
+
+    \item {\bf Risa Shinoda} is a second-year of the doctoral program at Kyoto University. She received her B.E., and M.E., degrees from Kyoto University in 2020 and 2022, respectively. Her research interests lie in computer vision for conservation including environment, agriculture, and ecology. e-mail: shinoda.lisa.47z@st.kyoto-u.ac.jp
+
+    \item {\bf Takahiro Itazuri} \cYoshi{Please write here by yourself.}
+
+    \item {\bf Yoshiki Kubotani} \cYoshi{Please write here by yourself.}
+
+    \item {\bf Guarin Flück} \cYoshi{Please write here by yourself.}
+
+    \item {\bf Kazuki Kozuka} \cYoshi{Please write here by yourself.}
+
+% Followings are examples from previous LIMIT workshop proposal.
+% \item
+% {\bf Yuki M. Asano} is an Assistant Professor for Computer Vision and Machine Learning at the University of Amsterdam. He received Ph.D. in Engineering at University of Oxford in September 2021.  Since May 2023 he has been additionally working part-time with Qualcomm AI Research. He was the main organiser for multiple workshops at ECCV'20 / 22, ICCV'23 and served as an Area Chair for CVPR / ECCV / NeurIPS and as a reviewer for CVPR / ICCV / ECCV / NeurIPS / AAAI / IJCAI / ACCV etc. He has given over 25 invited talks including at Google / AWS / DeepMind / MIT / Cambridge / Inria / Edinburgh. e-mail: y.m.asano@uva.nl
+
+% \item
+% {\bf Christian Rupprecht} is an Associate Professor in computer vision at VGG in Oxford. He is interested in unsupervised scene understanding in \{2,3,4\}D from images and videos. He was a PostDoc with Andrea Vedaldi and an intern with Chris Pal at the Montreal Institute For Learning Algorithms. He obtained his PhD from the Technical University of Munich, Germany supervised by Nassir Navab and Gregory D. Hager. e-mail: christian.rupprecht@eng.ox.ac.uk
+
+% \item
+% {\bf Rio Yokota} is a Professor at the Global Scientific Information and Computing Center, Tokyo Institute of Technology. His research interests lie at the intersection of high performance computing, linear algebra, and machine learning. He has been collaborating with other organizers of this workshop to pre-train vision transformers on synthetic images at scale. e-mail: rioyokota@gsic.titech.ac.jp
+
+% \item
+% {\bf Nakamasa Inoue} is an Associate Professor at Tokyo Institute of Technology, Japan. He received his B.E., M.E., and Ph.D. degrees from Tokyo Institute of Technology in 2009, 2011, and 2014, respectively. His research interests lie in multimedia processing including speech recognition and image recognition. He served as a leading organizer of the 1st MDALC Workshop at ICCV 2019. e-mail: inoue@.c.titech.ac.jp
+
+% \item
+% {\bf Dan Hendrycks} is the director of the Center for AI Safety. He received his PhD from UC Berkeley, where he was advised by Jacob Steinhardt and Dawn Song. Dan contributed the GELU activation function, the default activation in nearly all state-of-the-art deep learning models including BERT, Vision Transformers, and GPT-3. Dan also contributed the main baseline for OOD detection and benchmarks for robustness (ImageNet-C) and large language models (MMLU, MATH). e-mail: dan@safe.ai
+
+% \item
+% {\bf Xavier Boix} is a research scientist at the Department of Brain and Cognitive Sciences at MIT, where he heads a group that investigates biologically-inspired machine learning. He earned his PhD in machine learning from ETH Zurich in 2014 and continued his postdoctoral training at MIT as part of the multidisciplinary Center for Brains, Minds, and Machines. Xavier's research focuses on developing a theory of machine learning that informs the design of the next generation of intelligent systems. He integrates insights and techniques from theoretical machine learning, deep neural network engineering, and neuroscience to advance this goal. email: xboix@mit.edu
+
+%\item
+%{\bf Yue Qiu}  is a researcher at National Institute of Advanced Industrial Science and Technology (AIST). She received her Ph.D. from University of Tsukuba. Her research interests lie in vision and language, 3D vision, and visual reasoning. e-mail: qiu.yue@aist.go.jp
+
+% \item
+% {\bf Manel Baradad} is a Ph.D. student at MIT under the supervision of Prof. Antonio Torralba. He currently works in representation learning and 3D scene understanding, but he is also interested in computational photography and graphics. Before coming to MIT, he did his undergrad at CFIS-UPC in the Image Processing Group under the supervision of Prof. Xavier Giró-i-Nieto. email: manelbaradad@gmail.com
+
+% \item
+% {\bf Connor Anderson} is a PhD candidate at Brigham Young University in the computer vision lab, advised by Ryan Farrell. His research focuses on learning visual representations in neural networks using abstract synthetic data. e-mail: connor.anderson@byu
+
+% \item
+% {\bf Ryo Nakamura} is a third-year of the doctoral program at Fukuoka University. He received her B.E., and M.E., degrees from Fukuoka University in 2019 and 2021, respectively. He is the headquarters of cvpaper.challenge which conducts comprehensive survey and collaborative research in the field of computer vision and related academic fields. He is a research assistant to Hirokatsu Kataoka at AIST, where he studies pre-training with data and supervised data generated from mathematical formulas. e-mail:ryo.nakamura@aist.go.jp
+
+% \item
+% {\bf Ryosuke Yamada} is a second-year of the doctoral program at the University of Tsukuba. He received his B.E., and M.E., degrees from Tokyo Denki University in 2020 and 2022, respectively. He is the headquarters of cvpaper.challenge which conducts comprehensive survey and collaborative research in computer vision and related academic fields. His research interests lie broadly at the intersection of deep learning, computer vision, and robotics, focusing on 3D object recognition. e-mail:ryosuke.yamada@aist.go.jp
+
+% \item
+%{\bf Risa Shinoda} is a second-year of the doctoral program at Kyoto University. She received her B.E., and M.E., degrees from Kyoto University in 2020 and 2022, respectively. Her research interests lie in computer vision for conservation including environment, agriculture, and ecology. e-mail: shinoda.lisa.47z@st.kyoto-u.ac.jp
+
+%\item
+%{\bf Ryu Tadokoro} is currently studying at the School of Medicine, Tohoku University, and engaging in an internship at the Computer Vision Research Team, Artificial Intelligence Research Center (AIRC), National Institute of Advanced Industrial Science and Technology (AIST), Japan. His research is focused on the field of computer vision, specifically on medical image analysis, 3D vision, and pre-training. e-mail: ryu.tadokoro.s3@dc.tohoku.ac.jp
+
+\end{enumerate}
+
+\subsection{Primary and secondary organizers}
+% Primary and secondary organizers responsible for liaising with the workshop chairs.
+\begin{itemize}
+    \item Primary organizer: Yoshihiro Fukuhara (f\_yoshi@ruri.waseda.jp)
+    \item Secondary organizer: \cYoshi{TBD}
+\end{itemize}
+
+\subsection{Organizing team's experience and background}
+\begin{itemize}
+    \item In terms of experienced research and industry areas, the workshop organizers cover the following AI tasks and industry fields:
+
+    \begin{itemize}
+        \item Yoshihiro Fukuhara - Robust ML systems, MLOps Pipeline
+        \item Philipp Wirth - Data curation, ML Pipeline
+        \item Hirokatsu Kataoka - VLM for Industry, medical images, surveillance cameras, logistics, self-driving cars
+        \item Shunsuke Kitada - Generative AI, Creative Domain
+        \item Xavier Boix - NeuroScience
+        \item Puren Guller - Telecommunication, Robotics
+        \item Shinichi Mae - Logistics
+        \item Tatsuya Komatsu - Intelligent Speech
+        \item Nishant Rai - Autonomous Driving, VLM
+        \item Ryo Nakamura - Remote Sensing
+        \item Risa Shinoda - Agriculture, Animal, Plant
+        \item Takahiro Itazuri - Cloud Platform
+        \item Yoshiki Kubotani -
+        \item Guarin Flück - Data curation, ML Pipeline
+        \item Kazuki Kozuka - Mobility, Housing
+    \end{itemize}
+
+    \item The organizers have proposed world-renowned technologies in the fields of CV, NLP, and AP. This includes 3D ResNet (Hirokatsu Kataoka; CVPR 2018, Top 0.5\% in 5-year CVPR papers), Home Action Genome (Ehsan Adeli \& Kazuki Kozuka; CVPR 2021), TransUNet (Ehsan Adeli; arXiv 2021), and Formula-driven Supervised Learning (Hirokatsu Kataoka; ACCV 2020 Best Paper Honorable Mention \& BMVC 2023 Best Industry Paper Finalist). Especially, Ehsan Adeli is a listed author in the white paper of foundation models published in August, 2021.
+
+    \item In the background, 1,700+ researchers/engineers joining in the research community are supporting the workshop. xpaper.challenge (x = \{cv, nlp, ap, robot\}) is a joint project aimed at reading papers in the field of computer vision and related fields. The research community conducts comprehensive surveys in the fields of CV. This initiative enables readers to read and summarize a large number of papers (e.g., 1,000+ papers) within a month. Therefore, the research community widely covers the topics in NLP, AP, and Robotics, not limited to CV. We can offer the reviewers to the experienced community members.
+
+    \item A researcher’s curation platformer, ResearchPort is the workshop supporter in terms of website, funding, paper submission, and progress management.
+\end{itemize}
+
+\subsection{List of invited speakers}
+% Please list only speakers that have confirmed or tentatively confirmed their attendance, and who are willing to deliver a virtual talk if necessary. For each speaker, (a) please indicate if confirmation is tentative or final, (b) provide a link to their homepage, and (c) explain their relevance to the workshop.   We recommend finding invited speakers who will not give the same talk at multiple workshops; otherwise, the workshops may be asked to merge.
+
+\begin{itemize}
+    \item {\bf Dan Hendrycks} (tentatively confirmed), Center for AI Safety, United States
+    \begin{itemize}
+        \item Webpage: \href{https://people.eecs.berkeley.edu/~hendrycks}{\texttt{https://people.eecs.berkeley.edu/~hendrycks}}
+        \item Pioneer of robust \& safety AI research
+        \item Experience of director at Center for Safety AI, advisor at xAI (building Grok-1/2)
+        \item He has organized LIMIT workshop in previous venue at ICCV23 and CVPR24 with Hirokatsu Kataoka
+    \end{itemize}
+
+    \item {\bf Cheng Zhang} (tentatively confirmed), GenAI, Meta
+    \begin{itemize}
+        \item Webpage: \href{https://cheng-zhang.org}{\texttt{https://cheng-zhang.org}}
+        \item GenAI Research manager
+    \end{itemize}
+\end{itemize}
+
+\subsection{Diversity}
+The workshop team has a wide-range of diversity as follows:
+\begin{itemize}
+    \item We have considered the personal characteristics such as race, affiliations, and positions. Some Ph.D. students are also organizing the workshop. The Ph.D. students have experience running conferences of 700–900 people.
+
+    \item We also consider topic coverage. They have shared experience to study multimodal  foundation models. In addition, the research areas of them include not only CV but also NLP and AP.
+\end{itemize}
+
+\section{Format and logistics}
+\subsection{Format}
+% CVPR 2025 will be in-person.  We will endeavor to support workshops that are in-person, mixed in-person and virtual attendance. This decision will be made by the CVPR 2025 organizers as needed. Organizers should specify in advance their intended format. In particular, describe how you will support virtual attendance if the workshop is partially virtual.
+In-person workshop (or Hybrid depending on the invited speakers)
+
+\subsection{Expected workshop size}
+% Small (< 100 attendees), Medium (100-300 attendees), Large (>300 attendees)
+Medium (100-300 attendees)
+
+\subsection{Request for full-day workshop (optional)}
+% all workshops will be half-day by default; if a full-day event is necessary, provide a short justification.
+We offer a default half-day workshop.
+
+\subsection{Schedule}
+% Provide a preliminary schedule for your workshop. 
+The workshop will contain 2 invited talks, 1 oral session, and poster session with spotlight talk. We are able to organize the workshop on either date during the CVPR 2025 workshop days. We will flexibly arrange the time schedule due to the paper submissions and invited speakers.
+\begin{itemize}
+    \item 40min: Invited Talk (1)
+    \item 10min: Short Break
+    \item 60min: Oral Session
+    \item 20min: Coffee Break
+    \item 40min: Invited Talk (2)
+    \item 60min: Poster Session
+\end{itemize}
+
+\subsection{Paper submission}
+% If including paper submissions: (a) Tentative program committee, (b), Paper review timeline, (c) Will these papers be published in proceedings? Note that paper submissions must adhere to the CVPR 2025 paper submission style, format, and length restrictions.
+\begin{enumerate}[label=(\alph*)]
+    \item Around 70 program committees as reviewers
+    \item Paper review timeline
+    \begin{itemize}
+        \item CVPR 2025 Notification: February, 26th, 2025
+        \item Submission deadline: March 12th, 2025
+        \item Reviewer assign meeting: March 13th, 2025
+        \item Reviewer assignment: March 14th, 2025
+        \item Review deadline: March 24th, 2025
+        \item Emergency review: March 25th - March 28th, 2025
+        \item Decision meeting: March 29th, 2025
+        \item Notification: March 30th, 2025
+        \item Camera-ready deadline: April 3rd, 2025
+        \item Paper shared with Workshop Chair: April 7th, 2025 (Provided by CVPR 2025 Workshop Chair)
+    \end{itemize}
+    \item The workshop will accept 4-page papers to publish in the CVF proceedings as papers on CVPR 2025 workshop. All submissions will be peer-reviewed in a manner of double-blind, formatted according to the author guidelines in CVPR 2025.
+\end{enumerate}
+
+\subsection{Competition}
+% If the workshop hosts a competition, describe it: (a) Explain which datasets will be used, (b) Whether the datasets are already available or not; in the latter case, provide an estimate when the datasets will be available and describe your contingency plan in case of delays; (c) Ethical considerations for the datasets, (d) How submissions will be evaluated, (e) The timeline for the competition (start, submission deadline, decisions to participants).
+The workshop does not plan to associate a competition.
+
+\subsection{In-person posters}
+% If in-person posters are included, how many are expected?
+We plan to organize a poster session including 20 papers from paper submissions to the workshop.
+
+\subsection{Special space or equipment requests}
+No special requests at the submission.
+
+\end{document}
