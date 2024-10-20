@@ -17,10 +17,11 @@
 \usepackage{enumitem}
 
 \newcommand{\cYoshi}[1]{{\color{cyan}{#1}}} % Comment by Yoshi
+\newcommand{\hk}[1]{{\color{blue}{#1}}} % Comment by HK
 
 \title{Workshop Proposal, CVPR 2025, Nashville}
 \author{FOUND Organizing Team}
-\date{October, 10th, 2024}
+\date{October, 20th, 2024}
 
 % instructions
 \def\c#1{\textcolor{gray}{#1}}
@@ -39,7 +40,13 @@
 % https://docs.google.com/document/u/0/d/1SFDU0yJ3U0qQj3XREmNSNyyNUXphCvLpMwuHPymd0Gc/mobilebasic
 
 % 0. Abstract
-Building a foundation model is an active and critical topic in artificial intelligence and related fields. However, most architectures rely on Transformer models, emphasizing 'data' rather than the 'model' itself. This leads to the concept of foundation data, which is essential for further advancing so-called AI foundation models. From another perspective, we must not forget that AI models only reach their full potential when applied in real-world industries and contribute to human life. To address the issue, we plan to form an organizing team focused on diverse tasks and industrial applications in the organizing workshop at CVPR 2025.
+Building foundation models is an active and critical topic in artificial intelligence and related fields. However, most current architectures rely heavily on Transformer models, placing more emphasis on ``data'' than the ``model'' itself. This has led to the concept of foundation data, which is crucial for advancing AI foundation models. Equally important is the realization that these models only reach their full potential when applied to real-world industries, where they can make a tangible impact on human life. To bridge this gap between theoretical advancements and practical applications, we propose organizing a workshop at CVPR 2025, focused on integrating industrial use cases, underscoring the symbiotic relationship between robust data, advanced models, and real-world impact.
+
+% Original version
+% Building a foundation model is an active and critical topic in artificial intelligence and related fields. However, most architectures rely on Transformer models, emphasizing 'data' rather than the 'model' itself. This leads to the concept of foundation data, which is essential for further advancing so-called AI foundation models. From another perspective, we must not forget that AI models only reach their full potential when applied in real-world industries and contribute to human life. To address the issue, we plan to form an organizing team focused on diverse tasks and industrial applications in the organizing workshop at CVPR 2025.
+
+% Philipp revised version
+% Building foundation models is an active and critical topic in artificial intelligence and related fields. However, most current architectures rely heavily on Transformer models, placing more emphasis on ’data’ than the ’model’ itself. This has led to the concept of foundation data, which is crucial for advancing AI foundation models. Equally important is the realization that these models only reach their full potential when applied to real-world industries, where they can make a tangible impact on human life. To bridge this gap between theoretical advancements and practical applications, we propose organizing a workshop at CVPR 2025, focused on integrating industrial use cases, underscoring the symbiotic relationship between robust data, advanced models, and real-world impact.
 
 \begin{comment}
 \section{Summary}
@@ -85,8 +92,16 @@ Building a foundation model is an active and critical topic in artificial intell
 \section{Topic}
 
 \subsection{Workshop title}
-Foundation Data: How to find a solution bridging the gap between industry and academia
+Foundation Data: Bridging the Gap Between Industry and Academia
+
+% Followings are original ideas
+% Foundation Data: How to find a solution bridging the gap between industry and academia
 % Foundation Data for Industry
+
+% Followings are from Pilipp
+% Foundation Data: Bridging the gap between industry and academia
+% Foundation Data: Towards robust and accountable AI
+% Foundation Data: The key to reliable and ethical AI in real-World applications
 
 \subsection{Workshop acronym}
 FOUND
@@ -106,7 +121,7 @@ FOUND
 \subsection{Broader impact statement}
 % Describe why the workshop is relevant to the community and how relevant the topics or discussion are beyond the CVPR audience.
 
-The construction of foundation models has become an active area of research in recent years, with state-of-the-art records in various task benchmarks being continually updated by foundation models. These models are undeniably powerful, offering broad generalization across a wide range of tasks. However, due to the long-tail nature of data distribution, there remain significant challenges, notably the infamous "last mile" problem, when it comes to adapting foundation models for real-world industrial applications and societal implementation. Bridging this gap between academia and industry requires the creation of fine-grained datasets tailored to each downstream task, which demands deep domain knowledge. We call this collection of fine-grained datasets that bridge academia and industry "foundation data." Through this workshop, we aim to (i) identify important domains where public datasets are still underdeveloped and facilitate the creation of these datasets, (ii) rediscover valuable datasets in certain domains that have not been fully utilized, and (iii) discuss methodologies for data curation to construct high-quality foundation data. Our goal is to form a community where academia and industry collaborate to co-create foundation data.
+The construction of foundation models has become an active area of research in recent years, with state-of-the-art records in various task benchmarks being continually updated by foundation models. These models are undeniably powerful, offering broad generalization across a wide range of tasks. However, due to the long-tail nature of data distribution, there remain significant challenges, notably the infamous ``last mile'' problem, when it comes to adapting foundation models for real-world industrial applications and societal implementation. Bridging this gap between academia and industry requires the creation of fine-grained datasets tailored to each downstream task, which demands deep domain knowledge. We call this collection of fine-grained datasets that bridge academia and industry ``foundation data.'' Through this workshop, we aim to (i) identify important domains where public datasets are still underdeveloped and facilitate the creation of these datasets, (ii) rediscover valuable datasets in certain domains that have not been fully utilized, and (iii) discuss methodologies for data curation to construct high-quality foundation data. Our goal is to form a community where academia and industry collaborate to co-create foundation data.
 
 \subsection{Ethical considerations around the topic}
 % Tell us ethical considerations around the topic (if any)
@@ -116,42 +131,91 @@ The construction of new datasets always comes with multiple ethical concerns, in
 \subsection{Relationship to previous workshops}
 % Describe how this proposal relates to previous workshops held at CVPR/ICCV/ECCV/etc. in the last three years.
 
-\cYoshi{This section is still TBD. Yoshi will update very soon!}
-
 \begin{itemize}
-    \item SyntML 2022 (CVPR 2022)
+    \item
+    \href{https://visualai.princeton.edu/fcvd}{\texttt{FCVD}} (CVPR 2021) / 
+    \href{https://fadetrcv.github.io/2024/}{\texttt{Fair, Data Efficient and Trusted Computer Vision}} (CVPR 2021, CVPR 2022, CVPR 2024) / 
+    \href{https://wvbsd.github.io/2022/index.html}{\texttt{VBSD}} (ECCV 2022) 
     \begin{itemize}
-    \item We don't limit the topics to synthetic data.
-    \end{itemize}
-    %
-    \item Fair, Data Efficient and Trusted Computer Vision (CVPR 2022) / Workshop on Vision with Biased or Scarce Data (ECCV 2022)
-    \begin{itemize}
-    \item We deal with a learning framework that fundamentally solves dataset-related problems with very limited or synthetic dataset.
-    \end{itemize}
-    %
-    \item Self-supervised Learning: What is Next? (ECCV 2022)
-    \begin{itemize}
-    \item We can accept the papers treated in the workshop. Also, we treat the fundamental topic in order to solve dataset-related issues. Christian Rupprecht and Yuki M. Asano are joining the organizing team, therefore, we will consider and arrange the kind of topics.
-    \end{itemize}
-    %
-    \item L3D-IVU (CVPR 2022, CVPR 2023) / L2ID (ECCV 2022)
-    \begin{itemize}
-    \item We can accept the papers treated in the workshop. Moreover, our workshop will contains limited number of images in addition to limited labelled data. We also deal with an extreme setting (SSL with a single image) and novel framework (FDSL).
+        \item These workshops discuss the construction of trustworthy datasets from the perspectives of ethics, bias, and fairness. While we also place importance on these perspectives, our main discussions will focus on solving the last-mile problem when applying computer vision technology in industrial applications.
     \end{itemize}
 
-    \item Scene Graphs and Graph Representation Learning (ICCV 2023)
+    \item
+    \href{https://vision-based-industrial-inspection.github.io/eccv-24}{\texttt{VISION}} (CVPR 2023, ECCV 2024) / 
+    \href{https://sites.google.com/view/fashionai2024}{\texttt{FashionAI}} (ECCV 2024) /
+    \href{https://sites.google.com/view/omnicv2022}{\texttt{OmniCV}} (CVPR 2021, CVPR 2022)
     \begin{itemize}
-    \item We can accept the representation learning from (scene) graphs if the setting is limited in terms of the number of images and labels.
+        \item These workshops focus on the industrial application of computer vision technology within specific domains, but we focus on applying it to a wide range of industries without limiting it to any particular domain.
     \end{itemize}
+
+    \item
+    \href{https://dca-in-mi.github.io/}{\texttt{DCA}} (CVPR 2024)
+    \begin{itemize}
+        \item While we also address data selection, curation, and augmentation, we do not limit its target to the medical imaging domain but instead target the broader industry as a whole.
+    \end{itemize}
+
+    \item
+    \href{https://syntml-cvpr2022-workshop.github.io/}{\texttt{SyntML}} (CVPR 2022) /
+    \href{https://syntheticdata4cv.wordpress.com/}{\texttt{SyntheticData4CV}} (CVPR 2024, ECCV 2024)
+    \begin{itemize}
+        \item While synthetic data for industrial applications is also included as a topic, we do not limit our focus solely to synthetic data.
+    \end{itemize}
+
+    \item
+    \href{https://l2id.github.io/l2id2022/}{\texttt{L2ID}} (CVPR 2021, ECCV 2022) / 
+    \href{https://hirokatsukataoka16.github.io/CVPR-2024-LIMIT}{\texttt{LIMIT}} (ICCV 2023, CVPR 2024) 
+    \begin{itemize}
+        \item While techniques for training models with limited or incomplete data are also important for industrial applications, we do not limit our focus to them.
+    \end{itemize}
+
+    % \item SyntML 2022 (CVPR 2022)
+    % \begin{itemize}
+    % \item We don't limit the topics to synthetic data.
+    % \end{itemize}
+    % %
+    % \item Fair, Data Efficient and Trusted Computer Vision (CVPR 2022) / Workshop on Vision with Biased or Scarce Data (ECCV 2022)
+    % \begin{itemize}
+    % \item We deal with a learning framework that fundamentally solves dataset-related problems with very limited or synthetic dataset.
+    % \end{itemize}
+    % %
+    % \item Self-supervised Learning: What is Next? (ECCV 2022)
+    % \begin{itemize}
+    % \item We can accept the papers treated in the workshop. Also, we treat the fundamental topic in order to solve dataset-related issues. Christian Rupprecht and Yuki M. Asano are joining the organizing team, therefore, we will consider and arrange the kind of topics.
+    % \end{itemize}
+    % %
+    % \item L3D-IVU (CVPR 2022, CVPR 2023) / L2ID (ECCV 2022)
+    % \begin{itemize}
+    % \item We can accept the papers treated in the workshop. Moreover, our workshop will contains limited number of images in addition to limited labelled data. We also deal with an extreme setting (SSL with a single image) and novel framework (FDSL).
+    % \end{itemize}
+
+    % \item Scene Graphs and Graph Representation Learning (ICCV 2023)
+    % \begin{itemize}
+    % \item We can accept the representation learning from (scene) graphs if the setting is limited in terms of the number of images and labels.
+    % \end{itemize}
 \end{itemize}
 
 \subsection{Workshop track}
 
-\cYoshi{This section is still TBD. Yoshi will update very soon!}
-
 \begin{itemize}
-\item Primary: TBD
-\item Secondary: (i) TBD
+    \item Primary: Emerging Topics and Applications
+    \item Secondary:
+    \begin{enumerate}
+        \item Efficient Methods
+        \item Foundation Models
+        \item Responsible and Explainable AI
+        \item Science Applications
+        \item Synthetic Data
+    \end{enumerate}
+
+    % \item Primary: Vision applications and systems
+    % \item Secondary:
+    % \begin{enumerate}
+    %     \item Datasets and evaluation
+    %     \item Efficient and scalable vision
+    %     \item Robotics
+    %     \item Transfer/ low-shot/ continual/ long-tail learning
+    %     \item Transparency, fairness, accountability, privacy
+    % \end{enumerate}
 \end{itemize}
 
 \section{Organizers and speakers}
@@ -159,35 +223,41 @@ The construction of new datasets always comes with multiple ethical concerns, in
 %\c{Please make sure that all organizers are listed as authors of the workshop proposal submission in CMT3.}
 %This workshop will be organised by the following members.
 \begin{enumerate}
-    \item {\bf Yoshihiro Fukuhara} \cYoshi{Please write here by yourself.}
+    \item {\bf Yoshihiro Fukuhara} is a senior ML/MLOps engineer at ExaWizards Inc., leading a group that develops cloud systems and machine learning systems for enterprise applications, while also formulating company-wide technology strategies. He received his Master’s degree in Applied Physics from Waseda Unversity in 2018. His passion lies in swiftly turning research-stage technologies into services and implementing them in society in a way that provides value to many people. In addition to his engineering work, he conducts research on robust ML systems as a visiting researcher at Waseda University and as a member of the research community he operates as a headquarter member. e-mail: f\_yoshi@ruri.waseda.jp
 
     \item {\bf Philipp Wirth} is a senior machine learning engineer at Lightly, specializing in self-supervised learning and data curation in computer vision. He developed an open-source library for self-supervised learning, which has been downloaded over 650,000 times, and has led efforts to create active learning solutions that significantly reduce labeling requirements. Philipp holds a Master’s degree in Computer Science from ETH Zürich and has published research in leading venues, including ACM Multimedia and Nature. e-mail: philipp@lightly.ai
 
-    \item {\bf Hirokatsu Kataoka} is a Chief Senior Researcher at National Institute of Advanced Industrial Science and Technology (AIST) and Adjunct Researcher at LY Corporation. He received his Ph.D. in engineering from Keio University in 2014. He has received ACCV 2020 Best Paper Honorable Mention Award, AIST 2019 Best Paper Award, and ECCV 2016 Workshop Brave New Idea. He served as a leading organizer of the 1st LIMIT Workshop at ICCV 2023. e-mail: hirokatsu.kataoka@aist.go.jp
+    \item
+    {\bf Hirokatsu Kataoka} is a Researcher at SB Intuitions and Academic Visitor at Visual Geometry Group, University of Oxford (Oxford VGG). He received his Ph.D. in engineering from Keio University in 2014. He also leads the cvpaper.challenge which conducts comprehensive survey and collaborative research in the field of computer vision and related academic fields. He has contributed to develop a strong baseline for video recognition in spatiotemporal 3D ResNets, and establish a novel learning strategy in Formula-Driven Supervised Learning (FDSL). His research was featured in MIT Technology Review in 2021. He served as a leading organizer of the LIMIT Workshops at ICCV 2023 and CVPR 2024. e-mail: hirokatsu.kataoka@aist.go.jp
 
-    \item {\bf Shunsuke Kitada} \cYoshi{Please write here by yourself.}
+    \item {\bf Shunsuke Kitada} is a research scientist at the Image and Video AI dept., LY Corporation.
+    He received his Ph.D. in engineering from Hosei University in 2023. His interests are directed towards both fundamental and applied aspects. 
+    From a fundamental perspective, he focuses on large-scale visual and language models. 
+    From an applied perspective, he is interested in building design AI systems that utilize these models. email: s.kitada@lycorp.co.jp
 
     \item {\bf Xavier Boix} is a research scientist at the Department of Brain and Cognitive Sciences at MIT, where he heads a group that investigates biologically-inspired machine learning. He earned his PhD in machine learning from ETH Zurich in 2014 and continued his postdoctoral training at MIT as part of the multidisciplinary Center for Brains, Minds, and Machines. Xavier's research focuses on developing a theory of machine learning that informs the design of the next generation of intelligent systems. He integrates insights and techniques from theoretical machine learning, deep neural network engineering, and neuroscience to advance this goal. email: xboix@mit.edu
 
-    \item {\bf Puren Guller} \cYoshi{Please write here by yourself.}
+    \item {\bf Püren Güller} is a researcher at GFTL ER HDE DPR Device Software Research department, Ericsson, Lund/Sweden. She received her Ph.D. in robotics from Robotics, Perception and Learning Lab at KTH, Stockholm/Sweden in 2017. Her Ph.D. research centered on understanding deformable objects for robotic manipulation, utilizing multi sensory modalities such as visual and tactile sensors, along with deformable object physics simulations. After her Ph.D., she continued her postdoctoral training at Centre for Applied Autonomous Sensor Systems (AASS), Örebro University, Örebro/Sweden. During her postdoctoral studies, she worked on tracking articulate manipulators by integrating various sensory modalities, such as encoders, 3D cameras, RGB cameras, and manipulator kinematics, with semantic segmentation, in collaboration with the mining company Epiroc. At Ericsson, she currently contributes to projects related to spatial and semantic understanding for mobile devices, such as XR headsets, and the development of efficient AI algorithms for resource-constrained devices. email: puren.guler@ericsson.com
 
-    \item {\bf Shinichi Mae} is a research engineer at Toyota Industries Corporation and the National Institute of Advanced Industrial Science and Technology (AIST). He leads the research and development of automation systems for logistics. His latest innovation, an advanced anomaly detection system for logistics operations, was presented at Logis-Tech Tokyo 2024, the largest logistics exhibition in Asia. e-mail: shinichi.mae@aist.go.jp
+    \item {\bf Shinichi Mae} is a research engineer at Toyota Industries Corporation (TICO) and the National Institute of Advanced Industrial Science and Technology (AIST). He leads the research and development of automation systems for logistics. His latest innovation, an advanced anomaly detection system for logistics operations, was presented at Logis-Tech Tokyo 2024, the largest logistics exhibition in Asia. e-mail: shinichi.mae@aist.go.jp
 
-    \item {\bf Tatsuya Komatsu} \cYoshi{Please write here by yourself.}
+    \item {\bf Tatsuya Komatsu} is a research scientist at LY Corporation, specializing in automatic speech recognition and general sound recognition, and expanding his expertise to include video analysis. He also serves as a invited researcher at the Institute of Statistical Mathematics. With experience as the Technical Program Committee Chair for the Workshop on Detection and Classification of Acoustic Scenes and Events (DCASE) 2020 and 2024, he has managed large-scale conferences with hundreds of participants. e-mail: komatsu.tatsuya@lycorp.co.jp
 
-    \item {\bf Nishant Rai} \cYoshi{Please write here by yourself.}
+    \item {\bf Nishant Rai} is an Applied Researcher at OpenAI, formerly at Waymo, where he tackled perception challenges around human understanding and researched multi-modal foundation models. During his time at Stanford University, his research focused on reducing the need for supervision through multi-modal and self-supervised learning, particularly in human action recognition in videos. His work has contributed to state-of-the-art advances in video recognition and multi-view video understanding. He was named a "Rising Star in Self-Driving" by Business Insider in their "35 under 35" list for Self-Driving. e-mail: nishantr018@gmail.com
 
     \item {\bf Ryo Nakamura} is a third-year of the doctoral program at Fukuoka University. He received her B.E., and M.E., degrees from Fukuoka University in 2019 and 2021, respectively. He is the headquarters of cvpaper.challenge which conducts comprehensive survey and collaborative research in the field of computer vision and related academic fields. He is a research assistant to Hirokatsu Kataoka at AIST, where he studies pre-training with data and supervised data generated from mathematical formulas. e-mail:ryo.nakamura@aist.go.jp
 
-    \item {\bf Risa Shinoda} is a second-year of the doctoral program at Kyoto University. She received her B.E., and M.E., degrees from Kyoto University in 2020 and 2022, respectively. Her research interests lie in computer vision for conservation including environment, agriculture, and ecology. e-mail: shinoda.lisa.47z@st.kyoto-u.ac.jp
+    \item {\bf Risa Shinoda} is a third-year of the doctoral program at Kyoto University. She received her B.E., and M.E., degrees from Kyoto University in 2020 and 2022, respectively. Her research interests lie in computer vision for conservation including environment, agriculture, and ecology. e-mail: shinoda.lisa.47z@st.kyoto-u.ac.jp
 
-    \item {\bf Takahiro Itazuri} \cYoshi{Please write here by yourself.}
+    \item {\bf Takahiro Itazuri} is a Software Development Engineer at Amazon Web Services, Inc., specializing in virtualization and security of serverless computing platforms recently also used for industrial AI workloads. He received his Master's degree in Applied Physics from Waseda Unversity. His interests lie in robustness of AI models. e-mail: zulinx86@gmail.com
 
-    \item {\bf Yoshiki Kubotani} \cYoshi{Please write here by yourself.}
+    \item {\bf Yoshiki Kubotani} received a Bachelor's (BSc) and Master's (MSc) degree in Applied Physics from Waseda University. He specialized in reinforcement learning and Vision and Language during academic studies. He is currently focused on developing AI solutions for industrial applications and contributes to research fields in a supporting role.  e-mail: yoshikikubotani.lab@gmail.com
 
-    \item {\bf Guarin Flück} \cYoshi{Please write here by yourself.}
+    \item {\bf Guarin Flück} is a Machine Learning Engineer at Lightly, specializing in self-supervised learning and data curation for computer vision applications. He received his Master's degree in Data Science from EPFL in 2021. Guarin is the maintainer of lightly, a widely used open-source library for self-supervised learning. His work focuses on bridging the gap between academic research and industry practices in self-supervised learning. e-mail: guarin@lightly.ai
 
-    \item {\bf Kazuki Kozuka} \cYoshi{Please write here by yourself.}
+    \item {\bf Wadim Kehl} is currently based in Tokyo and working on production-level ML for safe cars at Woven by Toyota. Formerly, he has worked in the San Francisco Bay Area at the Toyota Research Institute on everything vision-related for cars and robots. Before that, he did his Master's and PhD studies at TUM, funded by Toyota Europe. During his PhD time at CAMP he was supervised by Prof. Nassir Navab, PD Slobodan Ilic and Federico Tombari. Even before that, he did his Bachelor's at the University of Bonn, supervised by PD Volker Steinhage and Jens Behley. e-mail: wadim.kehl@gmail.com
+
+    \item {\bf Kazuki Kozuka} is a Manager at Panasonic Holdings Corporation. He specializes in basic and applied research of computer vision and image recognition. He joined Stanford AI Laboratory as a visiting researcher from Apr. 2016 to Mar. 2019 and conducted his research among world class researchers. Through such experiences, now he focuses on innovation and R\&D beyond organizational boundaries. Recently he leads CAMP workshop in conjunction with ECCV2020. e-mail: kozuka.kazuki@jp.panasonic.com
 
 % Followings are examples from previous LIMIT workshop proposal.
 % \item
@@ -235,7 +305,7 @@ The construction of new datasets always comes with multiple ethical concerns, in
 % Primary and secondary organizers responsible for liaising with the workshop chairs.
 \begin{itemize}
     \item Primary organizer: Yoshihiro Fukuhara (f\_yoshi@ruri.waseda.jp)
-    \item Secondary organizer: \cYoshi{TBD}
+    \item Secondary organizer: Philipp Wirth (philipp@lightly.ai)
 \end{itemize}
 
 \subsection{Organizing team's experience and background}
@@ -243,24 +313,25 @@ The construction of new datasets always comes with multiple ethical concerns, in
     \item In terms of experienced research and industry areas, the workshop organizers cover the following AI tasks and industry fields:
 
     \begin{itemize}
-        \item Yoshihiro Fukuhara - Robust ML systems, MLOps Pipeline
-        \item Philipp Wirth - Data curation, ML Pipeline
-        \item Hirokatsu Kataoka - VLM for Industry, medical images, surveillance cameras, logistics, self-driving cars
-        \item Shunsuke Kitada - Generative AI, Creative Domain
-        \item Xavier Boix - NeuroScience
-        \item Puren Guller - Telecommunication, Robotics
-        \item Shinichi Mae - Logistics
-        \item Tatsuya Komatsu - Intelligent Speech
-        \item Nishant Rai - Autonomous Driving, VLM
-        \item Ryo Nakamura - Remote Sensing
-        \item Risa Shinoda - Agriculture, Animal, Plant
-        \item Takahiro Itazuri - Cloud Platform
-        \item Yoshiki Kubotani -
-        \item Guarin Flück - Data curation, ML Pipeline
-        \item Kazuki Kozuka - Mobility, Housing
+        \item Yoshihiro Fukuhara: Robust ML systems, MLOps Pipeline
+        \item Philipp Wirth: Data curation, Self-supervised learning, ML Pipeline
+        \item Hirokatsu Kataoka: VLM, Medical Images, Surveillance Systems, Logistics
+        \item Shunsuke Kitada: Generative AI, Creative Domain
+        \item Xavier Boix: NeuroScience
+        \item Püren Güller: Telecommunication, Robotics
+        \item Shinichi Mae: Logistics
+        \item Tatsuya Komatsu: Intelligent Speech
+        \item Nishant Rai: Autonomous Driving, VLM
+        \item Ryo Nakamura: Remote Sensing
+        \item Risa Shinoda: Agriculture, Animal, Plant
+        \item Takahiro Itazuri: Cloud Platform
+        \item Yoshiki Kubotani: Reinforcement Learning, Vision and Language
+        \item Guarin Flück: Data curation, Self-supervised learning, ML Pipeline
+        \item Wadim Kehl: Autonomous Driving, Robot Vision
+        \item Kazuki Kozuka: Mobility, Housing
     \end{itemize}
 
-    \item The organizers have proposed world-renowned technologies in the fields of CV, NLP, and AP. This includes 3D ResNet (Hirokatsu Kataoka; CVPR 2018, Top 0.5\% in 5-year CVPR papers), Home Action Genome (Ehsan Adeli \& Kazuki Kozuka; CVPR 2021), TransUNet (Ehsan Adeli; arXiv 2021), and Formula-driven Supervised Learning (Hirokatsu Kataoka; ACCV 2020 Best Paper Honorable Mention \& BMVC 2023 Best Industry Paper Finalist). Especially, Ehsan Adeli is a listed author in the white paper of foundation models published in August, 2021.
+    \item The organizers have proposed world-renowned technologies in the fields of CV, NLP, and AP. This includes 3D ResNet (Hirokatsu Kataoka; CVPR 2018, Top 0.5\% in 5-year CVPR papers), Home Action Genome (Nishant Rai \& Kazuki Kozuka; CVPR 2021), SSD-6D (Wadim Kehl; ICCV 2017), SEEDS/SALICON (Xavier Boix; IJCV2015/ICCV2015), and Formula-driven Supervised Learning (Hirokatsu Kataoka; ACCV 2020 Best Paper Honorable Mention \& BMVC 2023 Best Industry Paper Finalist). Especially, Ehsan Adeli is a listed author in the white paper of foundation models published in August, 2021.
 
     \item In the background, 1,700+ researchers/engineers joining in the research community are supporting the workshop. xpaper.challenge (x = \{cv, nlp, ap, robot\}) is a joint project aimed at reading papers in the field of computer vision and related fields. The research community conducts comprehensive surveys in the fields of CV. This initiative enables readers to read and summarize a large number of papers (e.g., 1,000+ papers) within a month. Therefore, the research community widely covers the topics in NLP, AP, and Robotics, not limited to CV. We can offer the reviewers to the experienced community members.
 
@@ -273,16 +344,19 @@ The construction of new datasets always comes with multiple ethical concerns, in
 \begin{itemize}
     \item {\bf Dan Hendrycks} (tentatively confirmed), Center for AI Safety, United States
     \begin{itemize}
-        \item Webpage: \href{https://people.eecs.berkeley.edu/~hendrycks}{\texttt{https://people.eecs.berkeley.edu/~hendrycks}}
-        \item Pioneer of robust \& safety AI research
-        \item Experience of director at Center for Safety AI, advisor at xAI (building Grok-1/2)
-        \item He has organized LIMIT workshop in previous venue at ICCV23 and CVPR24 with Hirokatsu Kataoka
+        \item Webpage: \href{https://people.eecs.berkeley.edu/~hendrycks}{\url{https://people.eecs.berkeley.edu/~hendrycks}}
+        \item He is a pioneer in AI safety and robustness. He has proposed numerous benchmarks for out-of-distribution and distribution shift detection to evaluate machine learning models.
+        % \item Experience of director at Center for Safety AI, advisor at xAI (building Grok-1/2)
+        \item His talk will cover his extensive experience in the social implementation of robust and safe AI systems as the director at Center for Safety AI and an advisor at xAI (building Grok-1/2).
+        \item He has organized LIMIT workshop in previous venue at ICCV23 and CVPR24 with Hirokatsu Kataoka.
     \end{itemize}
 
     \item {\bf Cheng Zhang} (tentatively confirmed), GenAI, Meta
     \begin{itemize}
-        \item Webpage: \href{https://cheng-zhang.org}{\texttt{https://cheng-zhang.org}}
-        \item GenAI Research manager
+        \item Webpage: \href{https://cheng-zhang.org}{\url{https://cheng-zhang.org}}
+        \item Her research area includes deep generative modeling, causal machine learning, and Bayesian deep learning. She works closely with both product and business teams to align research with their needs and reeal-world applications.
+        \item Her talk will cover her extensive experience in the industrial application of cutting-edge technologies as a GenAI research manager at Meta and a principal researcher at her previous position at Microsoft, as well as technologies that assist decision-making while simultaneously minimizing data requirements.
+        % \item As a GenAI research manager at Meta and a principal researcher at her previous position at Microsoft, she has extensive experience in the industrial application of cutting-edge technologies.
     \end{itemize}
 \end{itemize}
 
@@ -291,13 +365,14 @@ The workshop team has a wide-range of diversity as follows:
 \begin{itemize}
     \item We have considered the personal characteristics such as race, affiliations, and positions. Some Ph.D. students are also organizing the workshop. The Ph.D. students have experience running conferences of 700–900 people.
 
-    \item We also consider topic coverage. They have shared experience to study multimodal  foundation models. In addition, the research areas of them include not only CV but also NLP and AP.
+    \item We also consider the coverage areas both academia and industry. They have shared experience to construct AI models in terms of foundation data proposed in this workshop.
 \end{itemize}
 
 \section{Format and logistics}
 \subsection{Format}
 % CVPR 2025 will be in-person.  We will endeavor to support workshops that are in-person, mixed in-person and virtual attendance. This decision will be made by the CVPR 2025 organizers as needed. Organizers should specify in advance their intended format. In particular, describe how you will support virtual attendance if the workshop is partially virtual.
-In-person workshop (or Hybrid depending on the invited speakers)
+% In-person workshop (or Hybrid depending on the invited speakers)
+Hybrid
 
 \subsection{Expected workshop size}
 % Small (< 100 attendees), Medium (100-300 attendees), Large (>300 attendees)
@@ -311,11 +386,13 @@ We offer a default half-day workshop.
 % Provide a preliminary schedule for your workshop. 
 The workshop will contain 2 invited talks, 1 oral session, and poster session with spotlight talk. We are able to organize the workshop on either date during the CVPR 2025 workshop days. We will flexibly arrange the time schedule due to the paper submissions and invited speakers.
 \begin{itemize}
+    \item 5min: Opening Remarks
     \item 40min: Invited Talk (1)
-    \item 10min: Short Break
+    \item 15min: Short Break
     \item 60min: Oral Session
-    \item 20min: Coffee Break
+    \item 15min: Short Break
     \item 40min: Invited Talk (2)
+    \item 5min: Closing Remarks
     \item 60min: Poster Session
 \end{itemize}
 
