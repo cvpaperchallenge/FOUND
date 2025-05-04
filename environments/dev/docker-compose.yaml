@@ -19,5 +19,6 @@ services:
     volumes:
         - ../../:/home/${USER_NAME_ENV}/${PROJECT_NAME_ENV}-frontend
     ports:
+        - 3000:3000
         - 4173:4173
         - 5173:5173
