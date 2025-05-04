@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import { ExternalLink, FileText, Video, Github } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
@@ -13,7 +12,6 @@ import {
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -34,7 +32,9 @@ function PastEvents() {
       {/* Past Events Overview */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Workshop History</h2>
+          <h2 className="text-3xl font-bold tracking-tighter">
+            Workshop History
+          </h2>
           <p className="text-muted-foreground">
             Our workshop series through the years
           </p>
@@ -51,7 +51,9 @@ function PastEvents() {
                   <span className="text-muted-foreground">Event Photo</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  The 2024 edition focused on generative models and their applications in computer vision, featuring keynotes from leading researchers in the field.
+                  The 2024 edition focused on generative models and their
+                  applications in computer vision, featuring keynotes from
+                  leading researchers in the field.
                 </p>
               </div>
             </CardContent>
@@ -74,7 +76,9 @@ function PastEvents() {
                   <span className="text-muted-foreground">Event Photo</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  The 2023 workshop explored self-supervised learning approaches and their impact on computer vision tasks, with a special focus on few-shot learning.
+                  The 2023 workshop explored self-supervised learning approaches
+                  and their impact on computer vision tasks, with a special
+                  focus on few-shot learning.
                 </p>
               </div>
             </CardContent>
@@ -97,7 +101,9 @@ function PastEvents() {
                   <span className="text-muted-foreground">Event Photo</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  The inaugural workshop in 2022 brought together researchers to discuss foundational machine learning techniques for computer vision applications.
+                  The inaugural workshop in 2022 brought together researchers to
+                  discuss foundational machine learning techniques for computer
+                  vision applications.
                 </p>
               </div>
             </CardContent>
@@ -132,8 +138,12 @@ function PastEvents() {
           <TableBody>
             <TableRow>
               <TableCell>2024</TableCell>
-              <TableCell className="font-medium">Diffusion Models for High-Resolution Image Generation</TableCell>
-              <TableCell className="hidden md:table-cell">A. Smith, B. Johnson, C. Williams</TableCell>
+              <TableCell className="font-medium">
+                Diffusion Models for High-Resolution Image Generation
+              </TableCell>
+              <TableCell className="hidden md:table-cell">
+                A. Smith, B. Johnson, C. Williams
+              </TableCell>
               <TableCell>
                 <div className="flex gap-2">
                   <Button variant="ghost" size="icon" asChild>
@@ -153,8 +163,12 @@ function PastEvents() {
             </TableRow>
             <TableRow>
               <TableCell>2024</TableCell>
-              <TableCell className="font-medium">Transformer Architectures for Multi-Modal Learning</TableCell>
-              <TableCell className="hidden md:table-cell">D. Brown, E. Davis, F. Wilson</TableCell>
+              <TableCell className="font-medium">
+                Transformer Architectures for Multi-Modal Learning
+              </TableCell>
+              <TableCell className="hidden md:table-cell">
+                D. Brown, E. Davis, F. Wilson
+              </TableCell>
               <TableCell>
                 <div className="flex gap-2">
                   <Button variant="ghost" size="icon" asChild>
@@ -174,8 +188,12 @@ function PastEvents() {
             </TableRow>
             <TableRow>
               <TableCell>2023</TableCell>
-              <TableCell className="font-medium">Self-Supervised Learning for Visual Representation</TableCell>
-              <TableCell className="hidden md:table-cell">G. Martinez, H. Lee, I. Kim</TableCell>
+              <TableCell className="font-medium">
+                Self-Supervised Learning for Visual Representation
+              </TableCell>
+              <TableCell className="hidden md:table-cell">
+                G. Martinez, H. Lee, I. Kim
+              </TableCell>
               <TableCell>
                 <div className="flex gap-2">
                   <Button variant="ghost" size="icon" asChild>
@@ -195,8 +213,12 @@ function PastEvents() {
             </TableRow>
             <TableRow>
               <TableCell>2023</TableCell>
-              <TableCell className="font-medium">Few-Shot Learning with Meta-Learning Approaches</TableCell>
-              <TableCell className="hidden md:table-cell">J. Chen, K. Wang, L. Zhang</TableCell>
+              <TableCell className="font-medium">
+                Few-Shot Learning with Meta-Learning Approaches
+              </TableCell>
+              <TableCell className="hidden md:table-cell">
+                J. Chen, K. Wang, L. Zhang
+              </TableCell>
               <TableCell>
                 <div className="flex gap-2">
                   <Button variant="ghost" size="icon" asChild>
@@ -216,8 +238,12 @@ function PastEvents() {
             </TableRow>
             <TableRow>
               <TableCell>2022</TableCell>
-              <TableCell className="font-medium">Efficient Neural Networks for Mobile Devices</TableCell>
-              <TableCell className="hidden md:table-cell">M. Patel, N. Singh, O. Thompson</TableCell>
+              <TableCell className="font-medium">
+                Efficient Neural Networks for Mobile Devices
+              </TableCell>
+              <TableCell className="hidden md:table-cell">
+                M. Patel, N. Singh, O. Thompson
+              </TableCell>
               <TableCell>
                 <div className="flex gap-2">
                   <Button variant="ghost" size="icon" asChild>
@@ -256,10 +282,14 @@ function PastEvents() {
             <CardContent>
               <div className="space-y-4">
                 <div className="aspect-video bg-muted rounded-md flex items-center justify-center">
-                  <span className="text-muted-foreground">Keynote Video Thumbnail</span>
+                  <span className="text-muted-foreground">
+                    Keynote Video Thumbnail
+                  </span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  This keynote explored the latest advances in generative models, focusing on diffusion models and their applications in image and video generation.
+                  This keynote explored the latest advances in generative
+                  models, focusing on diffusion models and their applications in
+                  image and video generation.
                 </p>
               </div>
             </CardContent>
@@ -279,10 +309,14 @@ function PastEvents() {
             <CardContent>
               <div className="space-y-4">
                 <div className="aspect-video bg-muted rounded-md flex items-center justify-center">
-                  <span className="text-muted-foreground">Keynote Video Thumbnail</span>
+                  <span className="text-muted-foreground">
+                    Keynote Video Thumbnail
+                  </span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  This keynote discussed how self-supervised learning approaches have revolutionized computer vision tasks, reducing the need for large labeled datasets.
+                  This keynote discussed how self-supervised learning approaches
+                  have revolutionized computer vision tasks, reducing the need
+                  for large labeled datasets.
                 </p>
               </div>
             </CardContent>
@@ -309,15 +343,23 @@ function PastEvents() {
           <Card>
             <CardHeader>
               <CardTitle>Workshop Datasets</CardTitle>
-              <CardDescription>Benchmark datasets for ML research</CardDescription>
+              <CardDescription>
+                Benchmark datasets for ML research
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                A collection of benchmark datasets used in previous workshop challenges, available for download and research purposes.
+                A collection of benchmark datasets used in previous workshop
+                challenges, available for download and research purposes.
               </p>
             </CardContent>
             <CardFooter>
-              <Button variant="outline" size="sm" className="w-full flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="w-full flex gap-2"
+                asChild
+              >
                 <a href="#" target="_blank" rel="noreferrer">
                   <Github className="h-4 w-4" /> Access Datasets
                 </a>
@@ -327,15 +369,23 @@ function PastEvents() {
           <Card>
             <CardHeader>
               <CardTitle>Code Repositories</CardTitle>
-              <CardDescription>Implementation of workshop papers</CardDescription>
+              <CardDescription>
+                Implementation of workshop papers
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                GitHub repositories containing code implementations of selected papers from previous workshops.
+                GitHub repositories containing code implementations of selected
+                papers from previous workshops.
               </p>
             </CardContent>
             <CardFooter>
-              <Button variant="outline" size="sm" className="w-full flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="w-full flex gap-2"
+                asChild
+              >
                 <a href="#" target="_blank" rel="noreferrer">
                   <Github className="h-4 w-4" /> View Repositories
                 </a>
@@ -349,11 +399,17 @@ function PastEvents() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                A collection of presentation slides from keynote speakers and selected paper presentations at previous workshops.
+                A collection of presentation slides from keynote speakers and
+                selected paper presentations at previous workshops.
               </p>
             </CardContent>
             <CardFooter>
-              <Button variant="outline" size="sm" className="w-full flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="w-full flex gap-2"
+                asChild
+              >
                 <a href="#" target="_blank" rel="noreferrer">
                   <FileText className="h-4 w-4" /> Download Slides
                 </a>

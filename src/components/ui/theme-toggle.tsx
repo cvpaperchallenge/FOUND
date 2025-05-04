@@ -5,7 +5,7 @@ import { Button } from "./button";
 
 export function ThemeToggle() {
   const [theme, setTheme] = React.useState<"light" | "dark">(
-    () => (localStorage.getItem("theme") as "light" | "dark") || "light"
+    () => (localStorage.getItem("theme") as "light" | "dark") || "light",
   );
 
   React.useEffect(() => {

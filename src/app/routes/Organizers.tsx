@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import { Mail, ExternalLink } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
@@ -25,7 +24,9 @@ function Organizers() {
       {/* General Chairs */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">General Chairs</h2>
+          <h2 className="text-3xl font-bold tracking-tighter">
+            General Chairs
+          </h2>
           <p className="text-muted-foreground">
             Workshop organization and coordination
           </p>
@@ -42,17 +43,28 @@ function Organizers() {
                   <span className="text-muted-foreground">Photo</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Professor of Computer Science with research focus on machine learning and computer vision.
+                  Professor of Computer Science with research focus on machine
+                  learning and computer vision.
                 </p>
               </div>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <Button variant="outline" size="sm" className="flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex gap-2"
+                asChild
+              >
                 <a href="mailto:example@stanford.edu">
                   <Mail className="h-4 w-4" /> Email
                 </a>
               </Button>
-              <Button variant="outline" size="sm" className="flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex gap-2"
+                asChild
+              >
                 <a href="#" target="_blank" rel="noreferrer">
                   Website <ExternalLink className="h-4 w-4" />
                 </a>
@@ -70,17 +82,28 @@ function Organizers() {
                   <span className="text-muted-foreground">Photo</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Chief AI Officer with expertise in applied machine learning and industry applications.
+                  Chief AI Officer with expertise in applied machine learning
+                  and industry applications.
                 </p>
               </div>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <Button variant="outline" size="sm" className="flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex gap-2"
+                asChild
+              >
                 <a href="mailto:example@techcorp.com">
                   <Mail className="h-4 w-4" /> Email
                 </a>
               </Button>
-              <Button variant="outline" size="sm" className="flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex gap-2"
+                asChild
+              >
                 <a href="#" target="_blank" rel="noreferrer">
                   Website <ExternalLink className="h-4 w-4" />
                 </a>
@@ -93,7 +116,9 @@ function Organizers() {
       {/* Program Chairs */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Program Chairs</h2>
+          <h2 className="text-3xl font-bold tracking-tighter">
+            Program Chairs
+          </h2>
           <p className="text-muted-foreground">
             Paper review and program organization
           </p>
@@ -110,17 +135,28 @@ function Organizers() {
                   <span className="text-muted-foreground">Photo</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Associate Professor specializing in deep learning and neural networks.
+                  Associate Professor specializing in deep learning and neural
+                  networks.
                 </p>
               </div>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <Button variant="outline" size="sm" className="flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex gap-2"
+                asChild
+              >
                 <a href="mailto:example@mit.edu">
                   <Mail className="h-4 w-4" /> Email
                 </a>
               </Button>
-              <Button variant="outline" size="sm" className="flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex gap-2"
+                asChild
+              >
                 <a href="#" target="_blank" rel="noreferrer">
                   Website <ExternalLink className="h-4 w-4" />
                 </a>
@@ -138,17 +174,28 @@ function Organizers() {
                   <span className="text-muted-foreground">Photo</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Research scientist focusing on computer vision and generative models.
+                  Research scientist focusing on computer vision and generative
+                  models.
                 </p>
               </div>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <Button variant="outline" size="sm" className="flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex gap-2"
+                asChild
+              >
                 <a href="mailto:example@u-tokyo.ac.jp">
                   <Mail className="h-4 w-4" /> Email
                 </a>
               </Button>
-              <Button variant="outline" size="sm" className="flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex gap-2"
+                asChild
+              >
                 <a href="#" target="_blank" rel="noreferrer">
                   Website <ExternalLink className="h-4 w-4" />
                 </a>
@@ -166,17 +213,28 @@ function Organizers() {
                   <span className="text-muted-foreground">Photo</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Professor of Computer Science with expertise in reinforcement learning and robotics.
+                  Professor of Computer Science with expertise in reinforcement
+                  learning and robotics.
                 </p>
               </div>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <Button variant="outline" size="sm" className="flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex gap-2"
+                asChild
+              >
                 <a href="mailto:example@ethz.ch">
                   <Mail className="h-4 w-4" /> Email
                 </a>
               </Button>
-              <Button variant="outline" size="sm" className="flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex gap-2"
+                asChild
+              >
                 <a href="#" target="_blank" rel="noreferrer">
                   Website <ExternalLink className="h-4 w-4" />
                 </a>
@@ -206,17 +264,28 @@ function Organizers() {
                   <span className="text-muted-foreground">Photo</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Web developer and researcher with experience in academic conference websites.
+                  Web developer and researcher with experience in academic
+                  conference websites.
                 </p>
               </div>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <Button variant="outline" size="sm" className="flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex gap-2"
+                asChild
+              >
                 <a href="mailto:example@limitlab.org">
                   <Mail className="h-4 w-4" /> Email
                 </a>
               </Button>
-              <Button variant="outline" size="sm" className="flex gap-2" asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex gap-2"
+                asChild
+              >
                 <a href="#" target="_blank" rel="noreferrer">
                   Website <ExternalLink className="h-4 w-4" />
                 </a>
@@ -229,7 +298,9 @@ function Organizers() {
       {/* Program Committee */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Program Committee</h2>
+          <h2 className="text-3xl font-bold tracking-tighter">
+            Program Committee
+          </h2>
           <p className="text-muted-foreground">
             Paper reviewers and session chairs
           </p>
@@ -249,7 +320,9 @@ function Organizers() {
           </div>
           <div className="p-4 border rounded-lg">
             <p className="font-medium">Prof. Thomas Garcia</p>
-            <p className="text-sm text-muted-foreground">University of Cambridge</p>
+            <p className="text-sm text-muted-foreground">
+              University of Cambridge
+            </p>
           </div>
           <div className="p-4 border rounded-lg">
             <p className="font-medium">Dr. Sophia Kim</p>
@@ -257,7 +330,9 @@ function Organizers() {
           </div>
           <div className="p-4 border rounded-lg">
             <p className="font-medium">Prof. Mark Johnson</p>
-            <p className="text-sm text-muted-foreground">University of Toronto</p>
+            <p className="text-sm text-muted-foreground">
+              University of Toronto
+            </p>
           </div>
           <div className="p-4 border rounded-lg">
             <p className="font-medium">Dr. Rachel Singh</p>
@@ -284,13 +359,19 @@ function Organizers() {
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           <div className="aspect-[3/2] bg-muted rounded-md flex items-center justify-center p-6">
-            <span className="text-xl font-bold text-muted-foreground">ICCV 2025</span>
+            <span className="text-xl font-bold text-muted-foreground">
+              ICCV 2025
+            </span>
           </div>
           <div className="aspect-[3/2] bg-muted rounded-md flex items-center justify-center p-6">
-            <span className="text-xl font-bold text-muted-foreground">LIMIT Lab</span>
+            <span className="text-xl font-bold text-muted-foreground">
+              LIMIT Lab
+            </span>
           </div>
           <div className="aspect-[3/2] bg-muted rounded-md flex items-center justify-center p-6">
-            <span className="text-xl font-bold text-muted-foreground">Tech Corp</span>
+            <span className="text-xl font-bold text-muted-foreground">
+              Tech Corp
+            </span>
           </div>
         </div>
       </section>

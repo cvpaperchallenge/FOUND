@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import { ExternalLink, FileText, Video } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
@@ -19,7 +18,6 @@ import {
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -40,7 +38,9 @@ function Program() {
       {/* Keynote Speakers */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Keynote Speakers</h2>
+          <h2 className="text-3xl font-bold tracking-tighter">
+            Keynote Speakers
+          </h2>
           <p className="text-muted-foreground">
             Distinguished researchers and industry leaders
           </p>
@@ -56,9 +56,14 @@ function Program() {
                 <div className="aspect-video bg-muted rounded-md flex items-center justify-center">
                   <span className="text-muted-foreground">Speaker Photo</span>
                 </div>
-                <h3 className="font-semibold">Advances in Machine Learning for Computer Vision</h3>
+                <h3 className="font-semibold">
+                  Advances in Machine Learning for Computer Vision
+                </h3>
                 <p className="text-sm text-muted-foreground">
-                  This keynote will explore recent breakthroughs in machine learning techniques for computer vision tasks, with a focus on self-supervised learning approaches and their applications in real-world scenarios.
+                  This keynote will explore recent breakthroughs in machine
+                  learning techniques for computer vision tasks, with a focus on
+                  self-supervised learning approaches and their applications in
+                  real-world scenarios.
                 </p>
               </div>
             </CardContent>
@@ -80,9 +85,14 @@ function Program() {
                 <div className="aspect-video bg-muted rounded-md flex items-center justify-center">
                   <span className="text-muted-foreground">Speaker Photo</span>
                 </div>
-                <h3 className="font-semibold">Future Directions in ML Research</h3>
+                <h3 className="font-semibold">
+                  Future Directions in ML Research
+                </h3>
                 <p className="text-sm text-muted-foreground">
-                  This talk will discuss emerging trends and future directions in machine learning research, highlighting key challenges and opportunities for the next generation of ML systems and applications.
+                  This talk will discuss emerging trends and future directions
+                  in machine learning research, highlighting key challenges and
+                  opportunities for the next generation of ML systems and
+                  applications.
                 </p>
               </div>
             </CardContent>
@@ -100,7 +110,9 @@ function Program() {
       {/* Accepted Papers */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Accepted Papers</h2>
+          <h2 className="text-3xl font-bold tracking-tighter">
+            Accepted Papers
+          </h2>
           <p className="text-muted-foreground">
             Research papers accepted for presentation at the workshop
           </p>
@@ -115,14 +127,20 @@ function Program() {
               <TableHeader>
                 <TableRow>
                   <TableHead>Paper Title</TableHead>
-                  <TableHead className="hidden md:table-cell">Authors</TableHead>
+                  <TableHead className="hidden md:table-cell">
+                    Authors
+                  </TableHead>
                   <TableHead className="w-[100px]">Links</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 <TableRow>
-                  <TableCell className="font-medium">Efficient Self-Supervised Learning for Computer Vision Tasks</TableCell>
-                  <TableCell className="hidden md:table-cell">A. Johnson, B. Williams, C. Davis</TableCell>
+                  <TableCell className="font-medium">
+                    Efficient Self-Supervised Learning for Computer Vision Tasks
+                  </TableCell>
+                  <TableCell className="hidden md:table-cell">
+                    A. Johnson, B. Williams, C. Davis
+                  </TableCell>
                   <TableCell>
                     <div className="flex gap-2">
                       <Button variant="ghost" size="icon" asChild>
@@ -141,8 +159,12 @@ function Program() {
                   </TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Neural Rendering for 3D Scene Reconstruction</TableCell>
-                  <TableCell className="hidden md:table-cell">D. Miller, E. Wilson, F. Taylor</TableCell>
+                  <TableCell className="font-medium">
+                    Neural Rendering for 3D Scene Reconstruction
+                  </TableCell>
+                  <TableCell className="hidden md:table-cell">
+                    D. Miller, E. Wilson, F. Taylor
+                  </TableCell>
                   <TableCell>
                     <div className="flex gap-2">
                       <Button variant="ghost" size="icon" asChild>
@@ -161,8 +183,12 @@ function Program() {
                   </TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Generative Models for Medical Image Synthesis</TableCell>
-                  <TableCell className="hidden md:table-cell">G. Brown, H. Martinez, I. Lee</TableCell>
+                  <TableCell className="font-medium">
+                    Generative Models for Medical Image Synthesis
+                  </TableCell>
+                  <TableCell className="hidden md:table-cell">
+                    G. Brown, H. Martinez, I. Lee
+                  </TableCell>
                   <TableCell>
                     <div className="flex gap-2">
                       <Button variant="ghost" size="icon" asChild>
@@ -188,14 +214,20 @@ function Program() {
               <TableHeader>
                 <TableRow>
                   <TableHead>Paper Title</TableHead>
-                  <TableHead className="hidden md:table-cell">Authors</TableHead>
+                  <TableHead className="hidden md:table-cell">
+                    Authors
+                  </TableHead>
                   <TableHead className="w-[100px]">Links</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 <TableRow>
-                  <TableCell className="font-medium">Few-Shot Learning for Object Detection</TableCell>
-                  <TableCell className="hidden md:table-cell">J. Smith, K. Johnson, L. Garcia</TableCell>
+                  <TableCell className="font-medium">
+                    Few-Shot Learning for Object Detection
+                  </TableCell>
+                  <TableCell className="hidden md:table-cell">
+                    J. Smith, K. Johnson, L. Garcia
+                  </TableCell>
                   <TableCell>
                     <div className="flex gap-2">
                       <Button variant="ghost" size="icon" asChild>
@@ -208,8 +240,12 @@ function Program() {
                   </TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Transformer-Based Architectures for Video Understanding</TableCell>
-                  <TableCell className="hidden md:table-cell">M. Chen, N. Patel, O. Kim</TableCell>
+                  <TableCell className="font-medium">
+                    Transformer-Based Architectures for Video Understanding
+                  </TableCell>
+                  <TableCell className="hidden md:table-cell">
+                    M. Chen, N. Patel, O. Kim
+                  </TableCell>
                   <TableCell>
                     <div className="flex gap-2">
                       <Button variant="ghost" size="icon" asChild>
@@ -222,8 +258,12 @@ function Program() {
                   </TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Efficient Neural Networks for Edge Devices</TableCell>
-                  <TableCell className="hidden md:table-cell">P. Wang, Q. Zhang, R. Singh</TableCell>
+                  <TableCell className="font-medium">
+                    Efficient Neural Networks for Edge Devices
+                  </TableCell>
+                  <TableCell className="hidden md:table-cell">
+                    P. Wang, Q. Zhang, R. Singh
+                  </TableCell>
                   <TableCell>
                     <div className="flex gap-2">
                       <Button variant="ghost" size="icon" asChild>
@@ -236,8 +276,12 @@ function Program() {
                   </TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Reinforcement Learning for Robotic Control</TableCell>
-                  <TableCell className="hidden md:table-cell">S. Thompson, T. Anderson, U. Gupta</TableCell>
+                  <TableCell className="font-medium">
+                    Reinforcement Learning for Robotic Control
+                  </TableCell>
+                  <TableCell className="hidden md:table-cell">
+                    S. Thompson, T. Anderson, U. Gupta
+                  </TableCell>
                   <TableCell>
                     <div className="flex gap-2">
                       <Button variant="ghost" size="icon" asChild>
@@ -258,20 +302,28 @@ function Program() {
       {/* Panel Discussion */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Panel Discussion</h2>
+          <h2 className="text-3xl font-bold tracking-tighter">
+            Panel Discussion
+          </h2>
           <p className="text-muted-foreground">
             Challenges and Opportunities in ML
           </p>
         </div>
         <Card>
           <CardHeader>
-            <CardTitle>Panel: Challenges and Opportunities in Machine Learning</CardTitle>
+            <CardTitle>
+              Panel: Challenges and Opportunities in Machine Learning
+            </CardTitle>
             <CardDescription>October 16, 2025, 13:15 - 14:45</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
               <p>
-                This panel brings together experts from academia and industry to discuss current challenges and future opportunities in machine learning research and applications. Topics will include ethical considerations, computational efficiency, and emerging application domains.
+                This panel brings together experts from academia and industry to
+                discuss current challenges and future opportunities in machine
+                learning research and applications. Topics will include ethical
+                considerations, computational efficiency, and emerging
+                application domains.
               </p>
               <h3 className="font-semibold">Panelists</h3>
               <ul className="list-disc pl-5 space-y-2">
@@ -290,7 +342,9 @@ function Program() {
       {/* Session Structure */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Session Structure</h2>
+          <h2 className="text-3xl font-bold tracking-tighter">
+            Session Structure
+          </h2>
           <p className="text-muted-foreground">
             Organization of paper presentations by topic
           </p>
@@ -303,10 +357,13 @@ function Program() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground mb-4">
-                This session focuses on novel deep learning architectures and optimization techniques.
+                This session focuses on novel deep learning architectures and
+                optimization techniques.
               </p>
               <ul className="list-disc pl-5 space-y-1 text-sm">
-                <li>Efficient Self-Supervised Learning for Computer Vision Tasks</li>
+                <li>
+                  Efficient Self-Supervised Learning for Computer Vision Tasks
+                </li>
                 <li>Transformer-Based Architectures for Video Understanding</li>
                 <li>Attention Mechanisms for Multi-Modal Learning</li>
               </ul>
@@ -319,7 +376,8 @@ function Program() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground mb-4">
-                This session covers recent advances in generative modeling techniques.
+                This session covers recent advances in generative modeling
+                techniques.
               </p>
               <ul className="list-disc pl-5 space-y-1 text-sm">
                 <li>Neural Rendering for 3D Scene Reconstruction</li>
@@ -335,7 +393,8 @@ function Program() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground mb-4">
-                This session explores practical applications of ML in computer vision.
+                This session explores practical applications of ML in computer
+                vision.
               </p>
               <ul className="list-disc pl-5 space-y-1 text-sm">
                 <li>Few-Shot Learning for Object Detection</li>
@@ -351,7 +410,8 @@ function Program() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground mb-4">
-                This session highlights emerging techniques and novel applications.
+                This session highlights emerging techniques and novel
+                applications.
               </p>
               <ul className="list-disc pl-5 space-y-1 text-sm">
                 <li>Efficient Neural Networks for Edge Devices</li>

@@ -48,7 +48,11 @@ function Home() {
           <div className="space-y-4">
             <h3 className="text-xl font-semibold">Our Mission</h3>
             <p>
-              This workshop aims to bring together researchers and practitioners in the field of machine learning to discuss the latest advances and challenges in computer vision applications. We focus on innovative approaches, emerging techniques, and real-world implementations.
+              This workshop aims to bring together researchers and practitioners
+              in the field of machine learning to discuss the latest advances
+              and challenges in computer vision applications. We focus on
+              innovative approaches, emerging techniques, and real-world
+              implementations.
             </p>
           </div>
           <div className="space-y-4">
@@ -58,7 +62,9 @@ function Home() {
               <li>Generative models and diffusion techniques</li>
               <li>Self-supervised and unsupervised learning</li>
               <li>Efficient and scalable ML systems</li>
-              <li>Applications in healthcare, robotics, and autonomous systems</li>
+              <li>
+                Applications in healthcare, robotics, and autonomous systems
+              </li>
             </ul>
           </div>
         </div>
@@ -67,7 +73,9 @@ function Home() {
       {/* Important Dates Section */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Important Dates</h2>
+          <h2 className="text-3xl font-bold tracking-tighter">
+            Important Dates
+          </h2>
           <p className="text-muted-foreground">
             Key deadlines for your calendar
           </p>
@@ -103,9 +111,7 @@ function Home() {
       <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-3xl font-bold tracking-tighter">Latest News</h2>
-          <p className="text-muted-foreground">
-            Updates and announcements
-          </p>
+          <p className="text-muted-foreground">Updates and announcements</p>
         </div>
         <div className="space-y-4">
           <div className="rounded-lg border bg-card p-6">
@@ -116,7 +122,9 @@ function Home() {
               </div>
             </div>
             <p className="mt-2">
-              We are excited to announce that the call for papers for our workshop is now open. We invite submissions on a wide range of topics related to machine learning and computer vision.
+              We are excited to announce that the call for papers for our
+              workshop is now open. We invite submissions on a wide range of
+              topics related to machine learning and computer vision.
             </p>
           </div>
           <div className="rounded-lg border bg-card p-6">
@@ -127,7 +135,9 @@ function Home() {
               </div>
             </div>
             <p className="mt-2">
-              We are pleased to announce our keynote speakers for the workshop. Join us to hear from leading experts in the field of machine learning and computer vision.
+              We are pleased to announce our keynote speakers for the workshop.
+              Join us to hear from leading experts in the field of machine
+              learning and computer vision.
             </p>
           </div>
         </div>

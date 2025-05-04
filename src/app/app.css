@@ -122,8 +122,9 @@
   }
 }
 
-
-:root, .light, .light-theme {
+:root,
+.light,
+.light-theme {
   --blue-1: #fdfdfe;
   --blue-2: #f7f9ff;
   --blue-3: #edf2fe;
@@ -156,7 +157,8 @@
   --blue-track: #3d63dd;
 }
 
-.dark, .dark-theme {
+.dark,
+.dark-theme {
   --blue-1: #0c111c;
   --blue-2: #111725;
   --blue-3: #172448;

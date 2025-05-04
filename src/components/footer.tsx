@@ -1,8 +1,7 @@
-import * as React from "react";
 import { Link } from "react-router";
-import { Github, Twitter, Youtube, Slack } from "lucide-react";
+import { X } from "lucide-react";
+import { siGithub, siSlack, siYoutube } from "react-icons/si";
 
-import { cn } from "../lib/utils";
 import { Button } from "./ui/button";
 
 export function Footer() {
@@ -32,13 +31,13 @@ export function Footer() {
           <div className="flex gap-2">
             <Button variant="ghost" size="icon" asChild>
               <a href="#" target="_blank" rel="noreferrer">
-                <Twitter className="h-4 w-4" />
-                <span className="sr-only">Twitter</span>
+                <X className="h-4 w-4" />
+                <span className="sr-only">X</span>
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a href="#" target="_blank" rel="noreferrer">
-                <Github className="h-4 w-4" />
+                <siGithub className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
               </a>
             </Button>
@@ -60,13 +59,22 @@ export function Footer() {
         {/* Links */}
         <div className="flex flex-col gap-2">
           <h3 className="font-medium">Links</h3>
-          <Link to="/iccv2025" className="text-sm text-muted-foreground hover:text-foreground">
+          <Link
+            to="/iccv2025"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
             Home
           </Link>
-          <Link to="/iccv2025/call-for-papers" className="text-sm text-muted-foreground hover:text-foreground">
+          <Link
+            to="/iccv2025/call-for-papers"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
             Call for Papers
           </Link>
-          <Link to="/iccv2025/contact" className="text-sm text-muted-foreground hover:text-foreground">
+          <Link
+            to="/iccv2025/contact"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
             Contact
           </Link>
         </div>

@@ -1,25 +1,16 @@
-import * as React from "react";
 import { Link } from "react-router";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 
-import { cn } from "../lib/utils";
 import { Button } from "./ui/button";
 import { ThemeToggle } from "./ui/theme-toggle";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetClose,
-} from "./ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./ui/sheet";
 
 const navItems = [
   { name: "Home", path: "/iccv2025" },
@@ -48,7 +39,9 @@ export function Header() {
               {navItems.map((item) => (
                 <NavigationMenuItem key={item.path}>
                   <Link to={item.path}>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
                       {item.name}
                     </NavigationMenuLink>
                   </Link>

@@ -1,12 +1,9 @@
-import { Link } from "react-router";
-import { Mail, MapPin, Send, Twitter, Slack } from "lucide-react";
+import { Mail, MapPin, Send, X, Slack } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "../../components/ui/card";
@@ -28,10 +25,10 @@ function Contact() {
       {/* Contact Information */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Contact Information</h2>
-          <p className="text-muted-foreground">
-            Ways to reach out to us
-          </p>
+          <h2 className="text-3xl font-bold tracking-tighter">
+            Contact Information
+          </h2>
+          <p className="text-muted-foreground">Ways to reach out to us</p>
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Card>
@@ -45,7 +42,10 @@ function Contact() {
                 For general inquiries, please contact us at:
               </p>
               <p className="font-medium mt-2">
-                <a href="mailto:contact@mlworkshop.org" className="hover:text-primary">
+                <a
+                  href="mailto:contact@mlworkshop.org"
+                  className="hover:text-primary"
+                >
                   contact@mlworkshop.org
                 </a>
               </p>
@@ -62,7 +62,8 @@ function Contact() {
                 The workshop will be held at:
               </p>
               <p className="font-medium mt-2">
-                Singapore Convention Center<br />
+                Singapore Convention Center
+                <br />
                 ICCV 2025, October 15-16, 2025
               </p>
             </CardContent>
@@ -78,12 +79,22 @@ function Contact() {
                 Join our community channels:
               </p>
               <div className="flex gap-4 mt-2">
-                <Button variant="outline" size="sm" className="flex gap-2" asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="flex gap-2"
+                  asChild
+                >
                   <a href="#" target="_blank" rel="noreferrer">
-                    <Twitter className="h-4 w-4" /> Twitter
+                    <X className="h-4 w-4" /> X
                   </a>
                 </Button>
-                <Button variant="outline" size="sm" className="flex gap-2" asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="flex gap-2"
+                  asChild
+                >
                   <a href="#" target="_blank" rel="noreferrer">
                     <Slack className="h-4 w-4" /> Slack
                   </a>
@@ -98,9 +109,7 @@ function Contact() {
       <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-3xl font-bold tracking-tighter">Contact Form</h2>
-          <p className="text-muted-foreground">
-            Send us a message directly
-          </p>
+          <p className="text-muted-foreground">Send us a message directly</p>
         </div>
         <Card>
           <CardContent className="pt-6">
@@ -112,7 +121,11 @@ function Contact() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="Your email address" />
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="Your email address"
+                  />
                 </div>
               </div>
               <div className="space-y-2">
@@ -138,7 +151,9 @@ function Contact() {
       {/* FAQ */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold tracking-tighter">
+            Frequently Asked Questions
+          </h2>
           <p className="text-muted-foreground">
             Common questions about contacting us
           </p>
@@ -150,27 +165,38 @@ function Contact() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                We aim to respond to all inquiries within 2-3 business days. For urgent matters related to paper submissions or registration, please indicate this in your subject line.
+                We aim to respond to all inquiries within 2-3 business days. For
+                urgent matters related to paper submissions or registration,
+                please indicate this in your subject line.
               </p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Who should I contact for specific questions?</CardTitle>
+              <CardTitle>
+                Who should I contact for specific questions?
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                For paper submission questions, contact program-chairs@mlworkshop.org. For registration or logistics, contact registration@mlworkshop.org. For general inquiries, use our main contact email.
+                For paper submission questions, contact
+                program-chairs@mlworkshop.org. For registration or logistics,
+                contact registration@mlworkshop.org. For general inquiries, use
+                our main contact email.
               </p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Can I request a meeting with the organizers?</CardTitle>
+              <CardTitle>
+                Can I request a meeting with the organizers?
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                Yes, you can request a meeting with the workshop organizers by sending an email with your availability and the purpose of the meeting. We'll do our best to accommodate your request.
+                Yes, you can request a meeting with the workshop organizers by
+                sending an email with your availability and the purpose of the
+                meeting. We&apos;ll do our best to accommodate your request.
               </p>
             </CardContent>
           </Card>
@@ -180,7 +206,9 @@ function Contact() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                You can join our Slack channel for discussions with other participants and organizers. The invitation link will be sent to registered participants, or you can request access via email.
+                You can join our Slack channel for discussions with other
+                participants and organizers. The invitation link will be sent to
+                registered participants, or you can request access via email.
               </p>
             </CardContent>
           </Card>
