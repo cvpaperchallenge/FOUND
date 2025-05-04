@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-function App() {
+function CallForPapers() {
   return (
     <div className="flex flex-col items-center justify-center min-h-svh">
       <Button className="bg-blue-500">Click me</Button>
@@ -8,4 +8,4 @@ function App() {
   );
 }
 
-export default App;
+export default CallForPapers;
