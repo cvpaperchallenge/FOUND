@@ -6,6 +6,7 @@ interface OrbProps {
   hoverIntensity?: number;
   rotateOnHover?: boolean;
   forceHoverState?: boolean;
+  isDarkMode?: boolean;
 }
 
 export default function Orb({
@@ -13,6 +14,7 @@ export default function Orb({
   hoverIntensity = 0.2,
   rotateOnHover = true,
   forceHoverState = false,
+  isDarkMode = true,
 }: OrbProps) {
   const ctnDom = useRef<HTMLDivElement>(null);
 
@@ -36,6 +38,7 @@ export default function Orb({
     uniform float hover;
     uniform float rot;
     uniform float hoverIntensity;
+    uniform bool isDarkMode;
     varying vec2 vUv;
 
     vec3 rgb2yiq(vec3 c) {
@@ -107,7 +110,10 @@ export default function Orb({
 
     const vec3 baseColor1 = vec3(0.611765, 0.262745, 0.996078);
     const vec3 baseColor2 = vec3(0.298039, 0.760784, 0.913725);
-    const vec3 baseColor3 = vec3(0.062745, 0.078431, 0.600000);
+    // Dark mode shadow color (original)
+    const vec3 baseColor3Dark = vec3(0.062745, 0.078431, 0.600000);
+    // Light mode shadow color (softer, more transparent)
+    const vec3 baseColor3Light = vec3(0.012, 0.02, 0.271);
     const float innerRadius = 0.6;
     const float noiseScale = 0.65;
 
@@ -122,6 +128,8 @@ export default function Orb({
     vec4 draw(vec2 uv) {
       vec3 color1 = adjustHue(baseColor1, hue);
       vec3 color2 = adjustHue(baseColor2, hue);
+      // Select shadow color based on mode
+      vec3 baseColor3 = isDarkMode ? baseColor3Dark : baseColor3Light;
       vec3 color3 = adjustHue(baseColor3, hue);
 
       float ang = atan(uv.y, uv.x);
@@ -202,6 +210,7 @@ export default function Orb({
         hover: { value: 0 },
         rot: { value: 0 },
         hoverIntensity: { value: hoverIntensity },
+        isDarkMode: { value: isDarkMode },
       },
     });
 
@@ -263,6 +272,7 @@ export default function Orb({
       program.uniforms.iTime.value = t * 0.001;
       program.uniforms.hue.value = hue;
       program.uniforms.hoverIntensity.value = hoverIntensity;
+      program.uniforms.isDarkMode.value = isDarkMode;
 
       const effectiveHover = forceHoverState ? 1 : targetHover;
       program.uniforms.hover.value += (effectiveHover - program.uniforms.hover.value) * 0.1;
@@ -284,7 +294,7 @@ export default function Orb({
       container.removeChild(gl.canvas);
       gl.getExtension("WEBGL_lose_context")?.loseContext();
     };
-  }, [hue, hoverIntensity, rotateOnHover, forceHoverState]);
+  }, [hue, hoverIntensity, rotateOnHover, forceHoverState, isDarkMode]);
 
   return <div ref={ctnDom} className="w-full h-full" />;
 }
