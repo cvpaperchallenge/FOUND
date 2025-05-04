@@ -4,7 +4,7 @@ export default {
   // Config options...
   appDirectory: "src/app",
   // Server-side render by default, to enable SPA mode set this to `false`
-  ssr: true,
+  ssr: false,
   // async prerender() {
   //   return ["/popular"];
   // },
