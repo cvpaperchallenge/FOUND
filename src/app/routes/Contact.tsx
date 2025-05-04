@@ -1,4 +1,5 @@
-import { Mail, MapPin, Send, X, Slack } from "lucide-react";
+import { Mail, MapPin, Send, X } from "lucide-react";
+import { SiSlack } from "react-icons/si";
 
 import { Button } from "../../components/ui/button";
 import {
@@ -71,7 +72,7 @@ function Contact() {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Slack className="h-5 w-5" /> Community
+                <SiSlack className="h-5 w-5" /> Community
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -96,7 +97,7 @@ function Contact() {
                   asChild
                 >
                   <a href="#" target="_blank" rel="noreferrer">
-                    <Slack className="h-4 w-4" /> Slack
+                    <SiSlack className="h-4 w-4" /> Slack
                   </a>
                 </Button>
               </div>

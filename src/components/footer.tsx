@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { X } from "lucide-react";
-import { siGithub, siSlack, siYoutube } from "react-icons/si";
+import { SiGithub, SiSlack, SiYoutube } from "react-icons/si";
 
 import { Button } from "./ui/button";
 
@@ -37,19 +37,19 @@ export function Footer() {
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a href="#" target="_blank" rel="noreferrer">
-                <siGithub className="h-4 w-4" />
+                <SiGithub className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a href="#" target="_blank" rel="noreferrer">
-                <Youtube className="h-4 w-4" />
+                <SiYoutube className="h-4 w-4" />
                 <span className="sr-only">YouTube</span>
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a href="#" target="_blank" rel="noreferrer">
-                <Slack className="h-4 w-4" />
+                <SiSlack className="h-4 w-4" />
                 <span className="sr-only">Slack</span>
               </a>
             </Button>

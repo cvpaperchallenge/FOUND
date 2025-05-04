@@ -1,4 +1,5 @@
-import { ExternalLink, FileText, Video, Github } from "lucide-react";
+import { ExternalLink, FileText, Video } from "lucide-react";
+import { SiGithub } from "react-icons/si";
 
 import { Button } from "../../components/ui/button";
 import {
@@ -361,7 +362,7 @@ function PastEvents() {
                 asChild
               >
                 <a href="#" target="_blank" rel="noreferrer">
-                  <Github className="h-4 w-4" /> Access Datasets
+                  <SiGithub className="h-4 w-4" /> Access Datasets
                 </a>
               </Button>
             </CardFooter>
@@ -387,7 +388,7 @@ function PastEvents() {
                 asChild
               >
                 <a href="#" target="_blank" rel="noreferrer">
-                  <Github className="h-4 w-4" /> View Repositories
+                  <SiGithub className="h-4 w-4" /> View Repositories
                 </a>
               </Button>
             </CardFooter>
