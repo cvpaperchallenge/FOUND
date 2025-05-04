@@ -4,16 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
-    "build": "tsc -b && vite build",
+    "dev": "react-router dev --host",
+    "build": "tsc -b && react-router build",
     "lint": "yarn lint:eslint && yarn lint:prettier",
     "lint:eslint": "eslint src --max-warnings 0",
     "lint:prettier": "prettier --check src",
-    "lint:types": "tsc --noEmit",
+    "lint:types": "react-router typegen && tsc --noEmit",
     "format": "yarn format:eslint && yarn format:prettier",
     "format:eslint": "yarn lint:eslint --fix",
     "format:prettier": "yarn lint:prettier --write",
-    "preview": "vite preview --host"
+    "start": "react-router-serve ./build/server/index.js"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.0",
