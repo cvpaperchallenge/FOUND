@@ -15,4 +15,5 @@ services:
     tty: true
     volumes:
         - ../../:/home/${USER_NAME_ENV}/${PROJECT_NAME_ENV}-frontend
+        # exclude
         - /home/${USER_NAME_ENV}/${PROJECT_NAME_ENV}-frontend/node_modules
