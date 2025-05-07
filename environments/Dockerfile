@@ -8,7 +8,7 @@ ARG GROUP_NAME
 ARG UID=1000
 ARG GID=1000
 
-# Deifne service-specific build arguments.
+# Define service-specific build arguments.
 ARG SERVICE_NAME
 ARG APPLICATION_PATH=.
 ARG INNER_APPLICATION_PATH=/home/${USER_NAME}/${PROJECT_NAME}-${SERVICE_NAME}
