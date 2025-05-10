@@ -8,7 +8,6 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./ui/sheet";
 
@@ -24,7 +23,7 @@ const navItems = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-header-background/50 backdrop-blur-md flex justify-center">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link to="/iccv2025" className="flex items-center space-x-2">
@@ -40,7 +39,7 @@ export function Header() {
                 <NavigationMenuItem key={item.path}>
                   <Link to={item.path}>
                     <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
+                      className="bg-transparent hover:bg-header-accent"
                     >
                       {item.name}
                     </NavigationMenuLink>
@@ -61,7 +60,7 @@ export function Header() {
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right">
+            <SheetContent side="right" className="bg-header-background/80 backdrop-blur-md">
               <div className="flex flex-col gap-4 py-4">
                 {navItems.map((item) => (
                   <SheetClose asChild key={item.path}>
