@@ -27,7 +27,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between px-5">
         <div className="flex items-center gap-2">
           <Link to="/iccv2025" className="flex items-center space-x-2">
-            <span className="font-bold text-xl">ML Workshop</span>
+            <span className="font-bold text-xl">FOUND 2025</span>
           </Link>
         </div>
 
