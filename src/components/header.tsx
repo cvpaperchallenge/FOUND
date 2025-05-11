@@ -23,8 +23,8 @@ const navItems = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-header-background/50 backdrop-blur-md flex justify-center">
-      <div className="container flex h-16 items-center justify-between">
+    <header className="top-0 z-50 w-full border-b border-border bg-header-background/70 backdrop-blur-md flex justify-center">
+      <div className="container flex h-16 items-center justify-between px-5">
         <div className="flex items-center gap-2">
           <Link to="/iccv2025" className="flex items-center space-x-2">
             <span className="font-bold text-xl">ML Workshop</span>
@@ -39,7 +39,7 @@ export function Header() {
                 <NavigationMenuItem key={item.path}>
                   <Link to={item.path}>
                     <NavigationMenuLink
-                      className="bg-transparent hover:bg-header-accent"
+                      className="bg-transparent hover:bg-header-accent dark:hover:bg-header-accent/50"
                     >
                       {item.name}
                     </NavigationMenuLink>
