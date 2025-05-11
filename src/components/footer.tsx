@@ -21,8 +21,18 @@ export function Footer() {
         {/* Organizers */}
         <div className="flex flex-col gap-2">
           <h3 className="font-medium">Organizers</h3>
-          <p className="text-sm text-muted-foreground">LIMIT Lab</p>
-          <p className="text-sm text-muted-foreground">ICCV 2025</p>
+          <Link
+            to="https://limitlab.xyz/"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
+            LIMIT Lab
+          </Link>
+          <Link
+            to="https://iccv.thecvf.com/"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
+            ICCV 2025
+          </Link>
         </div>
 
         {/* Social Links */}
