@@ -14,13 +14,14 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../../components/ui/accordion";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 
 function Schedule() {
   return (
-    <main className="container py-8 space-y-12">
+    <main className="container px-6 py-8 space-y-12 xl:w-6xl">
       {/* Header */}
       <section className="space-y-4 text-center">
-        <h1 className="text-4xl font-bold tracking-tighter">Schedule</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">Schedule</h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           Important dates and workshop program
         </p>
@@ -29,7 +30,7 @@ function Schedule() {
       {/* Important Dates Timeline */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Important Dates
           </h2>
           <p className="text-muted-foreground">
@@ -38,7 +39,7 @@ function Schedule() {
         </div>
         <div className="relative border-l border-border pl-6 space-y-8">
           <div className="relative">
-            <div className="absolute -left-[25px] h-4 w-4 rounded-full bg-primary"></div>
+            <div className="absolute -left-[32px] mt-1 h-4 w-4 rounded-full bg-primary"></div>
             <div className="space-y-1">
               <h3 className="font-semibold">Paper Submission Deadline</h3>
               <p className="text-muted-foreground flex items-center gap-2">
@@ -52,7 +53,7 @@ function Schedule() {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute -left-[25px] h-4 w-4 rounded-full bg-primary"></div>
+            <div className="absolute -left-[32px] mt-1 h-4 w-4 rounded-full bg-primary"></div>
             <div className="space-y-1">
               <h3 className="font-semibold">Author Notification</h3>
               <p className="text-muted-foreground flex items-center gap-2">
@@ -65,7 +66,7 @@ function Schedule() {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute -left-[25px] h-4 w-4 rounded-full bg-primary"></div>
+            <div className="absolute -left-[32px] mt-1 h-4 w-4 rounded-full bg-primary"></div>
             <div className="space-y-1">
               <h3 className="font-semibold">Camera-Ready Deadline</h3>
               <p className="text-muted-foreground flex items-center gap-2">
@@ -78,7 +79,7 @@ function Schedule() {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute -left-[25px] h-4 w-4 rounded-full bg-primary"></div>
+            <div className="absolute -left-[32px] mt-1 h-4 w-4 rounded-full bg-primary"></div>
             <div className="space-y-1">
               <h3 className="font-semibold">Workshop Date</h3>
               <p className="text-muted-foreground flex items-center gap-2">
@@ -96,7 +97,7 @@ function Schedule() {
       {/* Workshop Program - Day 1 */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Workshop Program - Day 1
           </h2>
           <p className="text-muted-foreground flex items-center gap-2">
@@ -104,75 +105,78 @@ function Schedule() {
             <MapPin className="h-4 w-4 ml-4" /> Room A3, Convention Center
           </p>
         </div>
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-[150px]">Time</TableHead>
-              <TableHead>Session</TableHead>
-              <TableHead className="hidden md:table-cell">Presenter</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            <TableRow>
-              <TableCell className="font-medium">9:00 - 9:15</TableCell>
-              <TableCell>Opening Remarks</TableCell>
-              <TableCell className="hidden md:table-cell">
-                Workshop Chairs
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">9:15 - 10:15</TableCell>
-              <TableCell>
-                Keynote: Advances in Machine Learning for Computer Vision
-              </TableCell>
-              <TableCell className="hidden md:table-cell">
-                Prof. Jane Smith
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">10:15 - 10:30</TableCell>
-              <TableCell>Coffee Break</TableCell>
-              <TableCell className="hidden md:table-cell"></TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">10:30 - 12:00</TableCell>
-              <TableCell>Oral Session 1: Deep Learning Architectures</TableCell>
-              <TableCell className="hidden md:table-cell">
-                Various Presenters
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">12:00 - 13:30</TableCell>
-              <TableCell>Lunch Break</TableCell>
-              <TableCell className="hidden md:table-cell"></TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">13:30 - 15:00</TableCell>
-              <TableCell>Oral Session 2: Generative Models</TableCell>
-              <TableCell className="hidden md:table-cell">
-                Various Presenters
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">15:00 - 15:30</TableCell>
-              <TableCell>Coffee Break</TableCell>
-              <TableCell className="hidden md:table-cell"></TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">15:30 - 17:00</TableCell>
-              <TableCell>Poster Session</TableCell>
-              <TableCell className="hidden md:table-cell">
-                All Poster Presenters
-              </TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
+        <ScrollArea className="w-80 md:w-full">
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead className="min-w-[150px]">Time</TableHead>
+                <TableHead>Session</TableHead>
+                <TableHead className="hidden md:table-cell">Presenter</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableCell className="font-medium">9:00 - 9:15</TableCell>
+                <TableCell>Opening Remarks</TableCell>
+                <TableCell className="hidden md:table-cell">
+                  Workshop Chairs
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">9:15 - 10:15</TableCell>
+                <TableCell>
+                  Keynote: Advances in Machine Learning for Computer Vision
+                </TableCell>
+                <TableCell className="hidden md:table-cell">
+                  Prof. Jane Smith
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">10:15 - 10:30</TableCell>
+                <TableCell>Coffee Break</TableCell>
+                <TableCell className="hidden md:table-cell"></TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">10:30 - 12:00</TableCell>
+                <TableCell>Oral Session 1: Deep Learning Architectures</TableCell>
+                <TableCell className="hidden md:table-cell">
+                  Various Presenters
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">12:00 - 13:30</TableCell>
+                <TableCell>Lunch Break</TableCell>
+                <TableCell className="hidden md:table-cell"></TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">13:30 - 15:00</TableCell>
+                <TableCell>Oral Session 2: Generative Models</TableCell>
+                <TableCell className="hidden md:table-cell">
+                  Various Presenters
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">15:00 - 15:30</TableCell>
+                <TableCell>Coffee Break</TableCell>
+                <TableCell className="hidden md:table-cell"></TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">15:30 - 17:00</TableCell>
+                <TableCell>Poster Session</TableCell>
+                <TableCell className="hidden md:table-cell">
+                  All Poster Presenters
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+          <ScrollBar orientation="horizontal" />
+        </ScrollArea>
       </section>
 
       {/* Workshop Program - Day 2 */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Workshop Program - Day 2
           </h2>
           <p className="text-muted-foreground flex items-center gap-2">
@@ -180,77 +184,80 @@ function Schedule() {
             <MapPin className="h-4 w-4 ml-4" /> Room A3, Convention Center
           </p>
         </div>
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-[150px]">Time</TableHead>
-              <TableHead>Session</TableHead>
-              <TableHead className="hidden md:table-cell">Presenter</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            <TableRow>
-              <TableCell className="font-medium">9:00 - 10:00</TableCell>
-              <TableCell>Keynote: Future Directions in ML Research</TableCell>
-              <TableCell className="hidden md:table-cell">
-                Dr. John Doe
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">10:00 - 10:15</TableCell>
-              <TableCell>Coffee Break</TableCell>
-              <TableCell className="hidden md:table-cell"></TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">10:15 - 11:45</TableCell>
-              <TableCell>
-                Oral Session 3: Applications in Computer Vision
-              </TableCell>
-              <TableCell className="hidden md:table-cell">
-                Various Presenters
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">11:45 - 13:15</TableCell>
-              <TableCell>Lunch Break</TableCell>
-              <TableCell className="hidden md:table-cell"></TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">13:15 - 14:45</TableCell>
-              <TableCell>
-                Panel Discussion: Challenges and Opportunities in ML
-              </TableCell>
-              <TableCell className="hidden md:table-cell">
-                Industry and Academic Experts
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">14:45 - 15:15</TableCell>
-              <TableCell>Coffee Break</TableCell>
-              <TableCell className="hidden md:table-cell"></TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">15:15 - 16:45</TableCell>
-              <TableCell>Oral Session 4: Emerging Techniques</TableCell>
-              <TableCell className="hidden md:table-cell">
-                Various Presenters
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">16:45 - 17:00</TableCell>
-              <TableCell>Best Paper Awards and Closing Remarks</TableCell>
-              <TableCell className="hidden md:table-cell">
-                Workshop Chairs
-              </TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
+        <ScrollArea className="w-80 md:w-full">
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead className="w-[150px]">Time</TableHead>
+                <TableHead>Session</TableHead>
+                <TableHead className="hidden md:table-cell">Presenter</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableCell className="font-medium">9:00 - 10:00</TableCell>
+                <TableCell>Keynote: Future Directions in ML Research</TableCell>
+                <TableCell className="hidden md:table-cell">
+                  Dr. John Doe
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">10:00 - 10:15</TableCell>
+                <TableCell>Coffee Break</TableCell>
+                <TableCell className="hidden md:table-cell"></TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">10:15 - 11:45</TableCell>
+                <TableCell>
+                  Oral Session 3: Applications in Computer Vision
+                </TableCell>
+                <TableCell className="hidden md:table-cell">
+                  Various Presenters
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">11:45 - 13:15</TableCell>
+                <TableCell>Lunch Break</TableCell>
+                <TableCell className="hidden md:table-cell"></TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">13:15 - 14:45</TableCell>
+                <TableCell>
+                  Panel Discussion: Challenges and Opportunities in ML
+                </TableCell>
+                <TableCell className="hidden md:table-cell">
+                  Industry and Academic Experts
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">14:45 - 15:15</TableCell>
+                <TableCell>Coffee Break</TableCell>
+                <TableCell className="hidden md:table-cell"></TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">15:15 - 16:45</TableCell>
+                <TableCell>Oral Session 4: Emerging Techniques</TableCell>
+                <TableCell className="hidden md:table-cell">
+                  Various Presenters
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">16:45 - 17:00</TableCell>
+                <TableCell>Best Paper Awards and Closing Remarks</TableCell>
+                <TableCell className="hidden md:table-cell">
+                  Workshop Chairs
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+          <ScrollBar orientation="horizontal" />
+        </ScrollArea>
       </section>
 
       {/* Presenter Guidelines */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Presenter Guidelines
           </h2>
           <p className="text-muted-foreground">
