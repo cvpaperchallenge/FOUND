@@ -11,7 +11,7 @@ import {
 
 function CallForPapers() {
   return (
-    <main className="container py-8 space-y-12">
+    <main className="container px-6 py-8 space-y-12 xl:w-6xl">
       {/* Header */}
       <section className="space-y-4 text-center">
         <h1 className="text-4xl font-bold tracking-tighter">Call for Papers</h1>

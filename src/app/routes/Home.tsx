@@ -5,7 +5,7 @@ import { Button } from "../../components/ui/button";
 
 function Home() {
   return (
-    <main className="container py-8 space-y-16">
+    <main className="container px-6 py-8 space-y-16 xl:w-6xl">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center space-y-6 py-12">
         <div className="space-y-2">
