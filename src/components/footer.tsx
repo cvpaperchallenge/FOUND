@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 
 export function Footer() {
   return (
-    <footer className="w-full border-t bg-background py-6 md:py-10">
+    <footer className="w-full border-t bg-footer-background/70 py-6 md:py-10 px-6 flex-col justify-items-center">
       <div className="container grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {/* Logo and Workshop Name */}
         <div className="flex flex-col gap-2">
@@ -29,25 +29,25 @@ export function Footer() {
         <div className="flex flex-col gap-2">
           <h3 className="font-medium">Connect</h3>
           <div className="flex gap-2">
-            <Button variant="ghost" size="icon" asChild>
+            <Button className="hover:bg-footer-accent dark:hover:bg-footer-accent/50" variant="ghost" size="icon" asChild>
               <a href="#" target="_blank" rel="noreferrer">
                 <X className="h-4 w-4" />
                 <span className="sr-only">X</span>
               </a>
             </Button>
-            <Button variant="ghost" size="icon" asChild>
+            <Button className="hover:bg-footer-accent dark:hover:bg-footer-accent/50" variant="ghost" size="icon" asChild>
               <a href="#" target="_blank" rel="noreferrer">
                 <SiGithub className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
               </a>
             </Button>
-            <Button variant="ghost" size="icon" asChild>
+            <Button className="hover:bg-footer-accent dark:hover:bg-footer-accent/50" variant="ghost" size="icon" asChild>
               <a href="#" target="_blank" rel="noreferrer">
                 <SiYoutube className="h-4 w-4" />
                 <span className="sr-only">YouTube</span>
               </a>
             </Button>
-            <Button variant="ghost" size="icon" asChild>
+            <Button className="hover:bg-footer-accent dark:hover:bg-footer-accent/50" variant="ghost" size="icon" asChild>
               <a href="#" target="_blank" rel="noreferrer">
                 <SiSlack className="h-4 w-4" />
                 <span className="sr-only">Slack</span>
