@@ -80,7 +80,9 @@ function Contact() {
                       >
                         <a href={link.url} target="_blank" rel="noreferrer">
                           {link.icon === "X" && <X className="h-4 w-4" />}
-                          {link.icon === "SiSlack" && <SiSlack className="h-4 w-4" />}
+                          {link.icon === "SiSlack" && (
+                            <SiSlack className="h-4 w-4" />
+                          )}
                           {link.name}
                         </a>
                       </Button>
@@ -106,7 +108,9 @@ function Contact() {
             <form className="space-y-6">
               <div className="grid gap-4 md:grid-cols-2">
                 {contactData.contactForm.fields
-                  .filter(field => field.id === "name" || field.id === "email")
+                  .filter(
+                    (field) => field.id === "name" || field.id === "email",
+                  )
                   .map((field, index) => (
                     <div key={index} className="space-y-2">
                       <Label htmlFor={field.id}>{field.label}</Label>
@@ -119,18 +123,15 @@ function Contact() {
                   ))}
               </div>
               {contactData.contactForm.fields
-                .filter(field => field.id === "subject")
+                .filter((field) => field.id === "subject")
                 .map((field, index) => (
                   <div key={index} className="space-y-2">
                     <Label htmlFor={field.id}>{field.label}</Label>
-                    <Input
-                      id={field.id}
-                      placeholder={field.placeholder}
-                    />
+                    <Input id={field.id} placeholder={field.placeholder} />
                   </div>
                 ))}
               {contactData.contactForm.fields
-                .filter(field => field.id === "message")
+                .filter((field) => field.id === "message")
                 .map((field, index) => (
                   <div key={index} className="space-y-2">
                     <Label htmlFor={field.id}>{field.label}</Label>
@@ -169,9 +170,7 @@ function Contact() {
                 <CardTitle>{item.question}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  {item.answer}
-                </p>
+                <p className="text-sm text-muted-foreground">{item.answer}</p>
               </CardContent>
             </Card>
           ))}

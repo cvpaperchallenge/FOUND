@@ -18,8 +18,8 @@ import {
   TableHeader,
   TableRow,
 } from "../../components/ui/table";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import pastEventsData from "../../data/pastEvents.json";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 function PastEvents() {
   return (
@@ -64,7 +64,8 @@ function PastEvents() {
               <CardFooter>
                 <Button variant="outline" size="sm" className="w-full" asChild>
                   <a href={event.website} target="_blank" rel="noreferrer">
-                    Visit {event.year} Website <ExternalLink className="ml-2 h-3 w-3" />
+                    Visit {event.year} Website{" "}
+                    <ExternalLink className="ml-2 h-3 w-3" />
                   </a>
                 </Button>
               </CardFooter>
@@ -105,7 +106,11 @@ function PastEvents() {
                     <div className="flex gap-2">
                       {paper.links.paper && (
                         <Button variant="ghost" size="icon" asChild>
-                          <a href={paper.links.paper} target="_blank" rel="noreferrer">
+                          <a
+                            href={paper.links.paper}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             <FileText className="h-4 w-4" />
                             <span className="sr-only">Paper</span>
                           </a>
@@ -113,7 +118,11 @@ function PastEvents() {
                       )}
                       {paper.links.video && (
                         <Button variant="ghost" size="icon" asChild>
-                          <a href={paper.links.video} target="_blank" rel="noreferrer">
+                          <a
+                            href={paper.links.video}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
                             <Video className="h-4 w-4" />
                             <span className="sr-only">Video</span>
                           </a>
@@ -186,8 +195,10 @@ function PastEvents() {
               <CardHeader>
                 <CardTitle>{resource.title}</CardTitle>
                 <CardDescription>
-                  {resource.type === "datasets" && "Benchmark datasets for ML research"}
-                  {resource.type === "code" && "Implementation of workshop papers"}
+                  {resource.type === "datasets" &&
+                    "Benchmark datasets for ML research"}
+                  {resource.type === "code" &&
+                    "Implementation of workshop papers"}
                   {resource.type === "slides" && "Slides from past workshops"}
                 </CardDescription>
               </CardHeader>
@@ -204,9 +215,15 @@ function PastEvents() {
                   asChild
                 >
                   <a href={resource.link} target="_blank" rel="noreferrer">
-                    {resource.type === "datasets" && <SiGithub className="h-4 w-4" />}
-                    {resource.type === "code" && <SiGithub className="h-4 w-4" />}
-                    {resource.type === "slides" && <FileText className="h-4 w-4" />}
+                    {resource.type === "datasets" && (
+                      <SiGithub className="h-4 w-4" />
+                    )}
+                    {resource.type === "code" && (
+                      <SiGithub className="h-4 w-4" />
+                    )}
+                    {resource.type === "slides" && (
+                      <FileText className="h-4 w-4" />
+                    )}
                     {resource.type === "datasets" && " Access Datasets"}
                     {resource.type === "code" && " View Repositories"}
                     {resource.type === "slides" && " Download Slides"}

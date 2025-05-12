@@ -14,8 +14,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../../components/ui/accordion";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import scheduleData from "../../data/schedule.json";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 function Schedule() {
   return (
@@ -50,9 +50,7 @@ function Schedule() {
                   <Calendar className="h-4 w-4" />
                   {date.date}
                 </p>
-                <p className="text-sm">
-                  {date.description}
-                </p>
+                <p className="text-sm">{date.description}</p>
               </div>
             </div>
           ))}
@@ -66,8 +64,10 @@ function Schedule() {
             Workshop Program - Day 1
           </h2>
           <p className="text-muted-foreground flex items-center gap-2">
-            <Calendar className="h-4 w-4" /> {scheduleData.workshopProgram.day1.date}
-            <MapPin className="h-4 w-4 ml-4" /> {scheduleData.workshopProgram.day1.location}
+            <Calendar className="h-4 w-4" />{" "}
+            {scheduleData.workshopProgram.day1.date}
+            <MapPin className="h-4 w-4 ml-4" />{" "}
+            {scheduleData.workshopProgram.day1.location}
           </p>
         </div>
         <ScrollArea className="w-[80dvw] md:w-full">
@@ -104,8 +104,10 @@ function Schedule() {
             Workshop Program - Day 2
           </h2>
           <p className="text-muted-foreground flex items-center gap-2">
-            <Calendar className="h-4 w-4" /> {scheduleData.workshopProgram.day2.date}
-            <MapPin className="h-4 w-4 ml-4" /> {scheduleData.workshopProgram.day2.location}
+            <Calendar className="h-4 w-4" />{" "}
+            {scheduleData.workshopProgram.day2.date}
+            <MapPin className="h-4 w-4 ml-4" />{" "}
+            {scheduleData.workshopProgram.day2.location}
           </p>
         </div>
         <ScrollArea className="w-[80dvw] md:w-full">
@@ -147,42 +149,65 @@ function Schedule() {
         </div>
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
-            <AccordionTrigger>{scheduleData.presenterGuidelines.oralPresentation.title}</AccordionTrigger>
+            <AccordionTrigger>
+              {scheduleData.presenterGuidelines.oralPresentation.title}
+            </AccordionTrigger>
             <AccordionContent>
               <div className="space-y-4">
-                <p>{scheduleData.presenterGuidelines.oralPresentation.content}</p>
+                <p>
+                  {scheduleData.presenterGuidelines.oralPresentation.content}
+                </p>
                 <ul className="list-disc pl-5 space-y-1">
-                  {scheduleData.presenterGuidelines.oralPresentation.guidelines.map((guideline, index) => (
-                    <li key={index}>{guideline}</li>
-                  ))}
+                  {scheduleData.presenterGuidelines.oralPresentation.guidelines.map(
+                    (guideline, index) => (
+                      <li key={index}>{guideline}</li>
+                    ),
+                  )}
                 </ul>
               </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger>{scheduleData.presenterGuidelines.posterPresentation.title}</AccordionTrigger>
+            <AccordionTrigger>
+              {scheduleData.presenterGuidelines.posterPresentation.title}
+            </AccordionTrigger>
             <AccordionContent>
               <div className="space-y-4">
-                <p>{scheduleData.presenterGuidelines.posterPresentation.content}</p>
+                <p>
+                  {scheduleData.presenterGuidelines.posterPresentation.content}
+                </p>
                 <ul className="list-disc pl-5 space-y-1">
-                  {scheduleData.presenterGuidelines.posterPresentation.guidelines.map((guideline, index) => (
-                    <li key={index}>{guideline}</li>
-                  ))}
+                  {scheduleData.presenterGuidelines.posterPresentation.guidelines.map(
+                    (guideline, index) => (
+                      <li key={index}>{guideline}</li>
+                    ),
+                  )}
                 </ul>
               </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger>{scheduleData.presenterGuidelines.technicalRequirements.title}</AccordionTrigger>
+            <AccordionTrigger>
+              {scheduleData.presenterGuidelines.technicalRequirements.title}
+            </AccordionTrigger>
             <AccordionContent>
               <div className="space-y-4">
-                <p>{scheduleData.presenterGuidelines.technicalRequirements.content}</p>
+                <p>
+                  {
+                    scheduleData.presenterGuidelines.technicalRequirements
+                      .content
+                  }
+                </p>
                 <ul className="list-disc pl-5 space-y-1">
-                  {scheduleData.presenterGuidelines.technicalRequirements.requirements.map((requirement, index) => (
-                    <li key={index}>{requirement}</li>
-                  ))}
+                  {scheduleData.presenterGuidelines.technicalRequirements.requirements.map(
+                    (requirement, index) => (
+                      <li key={index}>{requirement}</li>
+                    ),
+                  )}
                 </ul>
-                <p>{scheduleData.presenterGuidelines.technicalRequirements.note}</p>
+                <p>
+                  {scheduleData.presenterGuidelines.technicalRequirements.note}
+                </p>
               </div>
             </AccordionContent>
           </AccordionItem>

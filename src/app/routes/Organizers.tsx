@@ -46,9 +46,7 @@ function Organizers() {
                   <div className="aspect-square bg-muted rounded-md flex items-center justify-center">
                     <span className="text-muted-foreground">Photo</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    {chair.bio}
-                  </p>
+                  <p className="text-sm text-muted-foreground">{chair.bio}</p>
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between">
@@ -100,9 +98,7 @@ function Organizers() {
                   <div className="aspect-square bg-muted rounded-md flex items-center justify-center">
                     <span className="text-muted-foreground">Photo</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    {chair.bio}
-                  </p>
+                  <p className="text-sm text-muted-foreground">{chair.bio}</p>
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between">
@@ -154,9 +150,7 @@ function Organizers() {
                   <div className="aspect-square bg-muted rounded-md flex items-center justify-center">
                     <span className="text-muted-foreground">Photo</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    {chair.bio}
-                  </p>
+                  <p className="text-sm text-muted-foreground">{chair.bio}</p>
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between">
@@ -200,7 +194,9 @@ function Organizers() {
           {organizersData.programCommittee.map((member, index) => (
             <div key={index} className="p-4 border rounded-lg">
               <p className="font-medium">{member.name}</p>
-              <p className="text-sm text-muted-foreground">{member.affiliation}</p>
+              <p className="text-sm text-muted-foreground">
+                {member.affiliation}
+              </p>
             </div>
           ))}
         </div>
@@ -218,7 +214,10 @@ function Organizers() {
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {organizersData.sponsors.map((sponsor, index) => (
-            <div key={index} className="aspect-[3/2] bg-muted rounded-md flex items-center justify-center p-6">
+            <div
+              key={index}
+              className="aspect-[3/2] bg-muted rounded-md flex items-center justify-center p-6"
+            >
               <span className="text-xl font-bold text-muted-foreground">
                 {sponsor.name}
               </span>

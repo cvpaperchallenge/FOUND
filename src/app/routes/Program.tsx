@@ -106,7 +106,9 @@ function Program() {
                 <TableBody>
                   {programData.acceptedPapers.oral.map((paper, index) => (
                     <TableRow key={index}>
-                      <TableCell className="font-medium">{paper.title}</TableCell>
+                      <TableCell className="font-medium">
+                        {paper.title}
+                      </TableCell>
                       <TableCell className="hidden md:table-cell">
                         {paper.authors}
                       </TableCell>
@@ -114,7 +116,11 @@ function Program() {
                         <div className="flex gap-2">
                           {paper.links.paper && (
                             <Button variant="ghost" size="icon" asChild>
-                              <a href={paper.links.paper} target="_blank" rel="noreferrer">
+                              <a
+                                href={paper.links.paper}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
                                 <FileText className="h-4 w-4" />
                                 <span className="sr-only">Paper</span>
                               </a>
@@ -122,7 +128,11 @@ function Program() {
                           )}
                           {paper.links.video && (
                             <Button variant="ghost" size="icon" asChild>
-                              <a href={paper.links.video} target="_blank" rel="noreferrer">
+                              <a
+                                href={paper.links.video}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
                                 <Video className="h-4 w-4" />
                                 <span className="sr-only">Video</span>
                               </a>
@@ -149,7 +159,9 @@ function Program() {
                 <TableBody>
                   {programData.acceptedPapers.poster.map((paper, index) => (
                     <TableRow key={index}>
-                      <TableCell className="font-medium">{paper.title}</TableCell>
+                      <TableCell className="font-medium">
+                        {paper.title}
+                      </TableCell>
                       <TableCell className="hidden md:table-cell">
                         {paper.authors}
                       </TableCell>
@@ -157,7 +169,11 @@ function Program() {
                         <div className="flex gap-2">
                           {paper.links.paper && (
                             <Button variant="ghost" size="icon" asChild>
-                              <a href={paper.links.paper} target="_blank" rel="noreferrer">
+                              <a
+                                href={paper.links.paper}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
                                 <FileText className="h-4 w-4" />
                                 <span className="sr-only">Paper</span>
                               </a>
@@ -187,16 +203,20 @@ function Program() {
         <Card>
           <CardHeader>
             <CardTitle>{programData.panelDiscussion.title}</CardTitle>
-            <CardDescription>{programData.panelDiscussion.time}</CardDescription>
+            <CardDescription>
+              {programData.panelDiscussion.time}
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
               <p>{programData.panelDiscussion.description}</p>
               <h3 className="font-semibold">Panelists</h3>
               <ul className="list-disc pl-5 space-y-2">
-                {programData.panelDiscussion.panelists.map((panelist, index) => (
-                  <li key={index}>{panelist}</li>
-                ))}
+                {programData.panelDiscussion.panelists.map(
+                  (panelist, index) => (
+                    <li key={index}>{panelist}</li>
+                  ),
+                )}
               </ul>
               <h3 className="font-semibold">Moderator</h3>
               <p>{programData.panelDiscussion.moderator}</p>

@@ -13,9 +13,7 @@ function Home() {
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
             {homeData.title}
           </h1>
-          <p className="text-xl text-muted-foreground">
-            {homeData.subtitle}
-          </p>
+          <p className="text-xl text-muted-foreground">{homeData.subtitle}</p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
           <div className="flex items-center gap-2">

@@ -47,9 +47,11 @@ function CallForPapers() {
           <div className="space-y-2">
             <h3 className="text-lg sm:text-xl font-semibold">Applications</h3>
             <ul className="list-disc pl-5 space-y-1">
-              {callForPapersData.topics.applications.map((application, index) => (
-                <li key={index}>{application}</li>
-              ))}
+              {callForPapersData.topics.applications.map(
+                (application, index) => (
+                  <li key={index}>{application}</li>
+                ),
+              )}
             </ul>
           </div>
         </div>
@@ -71,9 +73,11 @@ function CallForPapers() {
               Submission Guidelines
             </h3>
             <ul className="list-disc pl-5 space-y-2">
-              {callForPapersData.paperFormat.submissionGuidelines.map((guideline, index) => (
-                <li key={index}>{guideline}</li>
-              ))}
+              {callForPapersData.paperFormat.submissionGuidelines.map(
+                (guideline, index) => (
+                  <li key={index}>{guideline}</li>
+                ),
+              )}
             </ul>
             <div className="flex gap-4 pt-2">
               <Button variant="outline" className="flex gap-2" asChild>
@@ -145,12 +149,8 @@ function CallForPapers() {
         <Accordion type="single" collapsible className="w-full">
           {callForPapersData.faq.map((item, index) => (
             <AccordionItem key={index} value={`item-${index + 1}`}>
-              <AccordionTrigger>
-                {item.question}
-              </AccordionTrigger>
-              <AccordionContent>
-                {item.answer}
-              </AccordionContent>
+              <AccordionTrigger>{item.question}</AccordionTrigger>
+              <AccordionContent>{item.answer}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
