@@ -14,10 +14,10 @@ import { Textarea } from "../../components/ui/textarea";
 
 function Contact() {
   return (
-    <main className="container py-8 space-y-12">
+    <main className="container px-6 py-8 space-y-12 xl:w-6xl">
       {/* Header */}
       <section className="space-y-4 text-center">
-        <h1 className="text-4xl font-bold tracking-tighter">Contact Us</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">Contact Us</h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           Get in touch with the Machine Learning Workshop team
         </p>
@@ -26,7 +26,7 @@ function Contact() {
       {/* Contact Information */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Contact Information
           </h2>
           <p className="text-muted-foreground">Ways to reach out to us</p>
@@ -109,7 +109,7 @@ function Contact() {
       {/* Contact Form */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Contact Form</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">Contact Form</h2>
           <p className="text-muted-foreground">Send us a message directly</p>
         </div>
         <Card>
@@ -152,7 +152,7 @@ function Contact() {
       {/* FAQ */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Frequently Asked Questions
           </h2>
           <p className="text-muted-foreground">
