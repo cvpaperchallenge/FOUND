@@ -105,11 +105,11 @@ function Schedule() {
             <MapPin className="h-4 w-4 ml-4" /> Room A3, Convention Center
           </p>
         </div>
-        <ScrollArea className="w-80 md:w-full">
+        <ScrollArea className="w-[80dvw] md:w-full">
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead className="min-w-[150px]">Time</TableHead>
+                <TableHead className="w-[150px]">Time</TableHead>
                 <TableHead>Session</TableHead>
                 <TableHead className="hidden md:table-cell">Presenter</TableHead>
               </TableRow>
@@ -184,7 +184,7 @@ function Schedule() {
             <MapPin className="h-4 w-4 ml-4" /> Room A3, Convention Center
           </p>
         </div>
-        <ScrollArea className="w-80 md:w-full">
+        <ScrollArea className="w-[80dvw] md:w-full">
           <Table>
             <TableHeader>
               <TableRow>

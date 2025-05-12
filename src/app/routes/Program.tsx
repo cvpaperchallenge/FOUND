@@ -23,7 +23,6 @@ import {
   TableHeader,
   TableRow,
 } from "../../components/ui/table";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 
 function Program() {
   return (
@@ -119,101 +118,98 @@ function Program() {
           </p>
         </div>
         <div className="flex-col justify-items-center w-full">
-          <Tabs defaultValue="oral" className="w-80 sm:w-full">
+          <Tabs defaultValue="oral" className="w-[90dvw] sm:w-full">
             <TabsList className="grid w-full grid-cols-2">
               <TabsTrigger value="oral">Oral Presentations</TabsTrigger>
               <TabsTrigger value="poster">Poster Presentations</TabsTrigger>
             </TabsList>
             <TabsContent value="oral" className="space-y-4 pt-4">
-              <ScrollArea className="w-full">
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead>Paper Title</TableHead>
-                      <TableHead className="hidden md:table-cell">
-                        Authors
-                      </TableHead>
-                      <TableHead className="w-[100px]">Links</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    <TableRow>
-                      <TableCell className="font-medium">
-                        Efficient Self-Supervised Learning for Computer Vision Tasks
-                      </TableCell>
-                      <TableCell className="hidden md:table-cell">
-                        A. Johnson, B. Williams, C. Davis
-                      </TableCell>
-                      <TableCell>
-                        <div className="flex gap-2">
-                          <Button variant="ghost" size="icon" asChild>
-                            <a href="#" target="_blank" rel="noreferrer">
-                              <FileText className="h-4 w-4" />
-                              <span className="sr-only">Paper</span>
-                            </a>
-                          </Button>
-                          <Button variant="ghost" size="icon" asChild>
-                            <a href="#" target="_blank" rel="noreferrer">
-                              <Video className="h-4 w-4" />
-                              <span className="sr-only">Video</span>
-                            </a>
-                          </Button>
-                        </div>
-                      </TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="font-medium">
-                        Neural Rendering for 3D Scene Reconstruction
-                      </TableCell>
-                      <TableCell className="hidden md:table-cell">
-                        D. Miller, E. Wilson, F. Taylor
-                      </TableCell>
-                      <TableCell>
-                        <div className="flex gap-2">
-                          <Button variant="ghost" size="icon" asChild>
-                            <a href="#" target="_blank" rel="noreferrer">
-                              <FileText className="h-4 w-4" />
-                              <span className="sr-only">Paper</span>
-                            </a>
-                          </Button>
-                          <Button variant="ghost" size="icon" asChild>
-                            <a href="#" target="_blank" rel="noreferrer">
-                              <Video className="h-4 w-4" />
-                              <span className="sr-only">Video</span>
-                            </a>
-                          </Button>
-                        </div>
-                      </TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="font-medium">
-                        Generative Models for Medical Image Synthesis
-                      </TableCell>
-                      <TableCell className="hidden md:table-cell">
-                        G. Brown, H. Martinez, I. Lee
-                      </TableCell>
-                      <TableCell>
-                        <div className="flex gap-2">
-                          <Button variant="ghost" size="icon" asChild>
-                            <a href="#" target="_blank" rel="noreferrer">
-                              <FileText className="h-4 w-4" />
-                              <span className="sr-only">Paper</span>
-                            </a>
-                          </Button>
-                          <Button variant="ghost" size="icon" asChild>
-                            <a href="#" target="_blank" rel="noreferrer">
-                              <Video className="h-4 w-4" />
-                              <span className="sr-only">Video</span>
-                            </a>
-                          </Button>
-                        </div>
-                      </TableCell>
-                    </TableRow>
-                  </TableBody>
-                </Table>
-                <ScrollBar orientation="horizontal" />
-              </ScrollArea>
-          </TabsContent>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Paper Title</TableHead>
+                    <TableHead className="hidden md:table-cell">
+                      Authors
+                    </TableHead>
+                    <TableHead className="w-[100px]">Links</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  <TableRow>
+                    <TableCell className="font-medium">
+                      Efficient Self-Supervised Learning for Computer Vision Tasks
+                    </TableCell>
+                    <TableCell className="hidden md:table-cell">
+                      A. Johnson, B. Williams, C. Davis
+                    </TableCell>
+                    <TableCell>
+                      <div className="flex gap-2">
+                        <Button variant="ghost" size="icon" asChild>
+                          <a href="#" target="_blank" rel="noreferrer">
+                            <FileText className="h-4 w-4" />
+                            <span className="sr-only">Paper</span>
+                          </a>
+                        </Button>
+                        <Button variant="ghost" size="icon" asChild>
+                          <a href="#" target="_blank" rel="noreferrer">
+                            <Video className="h-4 w-4" />
+                            <span className="sr-only">Video</span>
+                          </a>
+                        </Button>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-medium">
+                      Neural Rendering for 3D Scene Reconstruction
+                    </TableCell>
+                    <TableCell className="hidden md:table-cell">
+                      D. Miller, E. Wilson, F. Taylor
+                    </TableCell>
+                    <TableCell>
+                      <div className="flex gap-2">
+                        <Button variant="ghost" size="icon" asChild>
+                          <a href="#" target="_blank" rel="noreferrer">
+                            <FileText className="h-4 w-4" />
+                            <span className="sr-only">Paper</span>
+                          </a>
+                        </Button>
+                        <Button variant="ghost" size="icon" asChild>
+                          <a href="#" target="_blank" rel="noreferrer">
+                            <Video className="h-4 w-4" />
+                            <span className="sr-only">Video</span>
+                          </a>
+                        </Button>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-medium">
+                      Generative Models for Medical Image Synthesis
+                    </TableCell>
+                    <TableCell className="hidden md:table-cell">
+                      G. Brown, H. Martinez, I. Lee
+                    </TableCell>
+                    <TableCell>
+                      <div className="flex gap-2">
+                        <Button variant="ghost" size="icon" asChild>
+                          <a href="#" target="_blank" rel="noreferrer">
+                            <FileText className="h-4 w-4" />
+                            <span className="sr-only">Paper</span>
+                          </a>
+                        </Button>
+                        <Button variant="ghost" size="icon" asChild>
+                          <a href="#" target="_blank" rel="noreferrer">
+                            <Video className="h-4 w-4" />
+                            <span className="sr-only">Video</span>
+                          </a>
+                        </Button>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TabsContent>
             <TabsContent value="poster" className="space-y-4 pt-4">
               <Table>
                 <TableHeader>
