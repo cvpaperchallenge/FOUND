@@ -18,13 +18,14 @@ import {
   TableHeader,
   TableRow,
 } from "../../components/ui/table";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 
 function PastEvents() {
   return (
-    <main className="container py-8 space-y-12">
+    <main className="container px-6 py-8 space-y-12 xl:w-6xl">
       {/* Header */}
       <section className="space-y-4 text-center">
-        <h1 className="text-4xl font-bold tracking-tighter">Past Events</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">Past Events</h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           Previous editions of the Machine Learning Workshop
         </p>
@@ -33,7 +34,7 @@ function PastEvents() {
       {/* Past Events Overview */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Workshop History
           </h2>
           <p className="text-muted-foreground">
@@ -122,154 +123,157 @@ function PastEvents() {
       {/* Past Papers */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Past Papers</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">Past Papers</h2>
           <p className="text-muted-foreground">
             Selected papers from previous workshops
           </p>
         </div>
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead>Year</TableHead>
-              <TableHead>Paper Title</TableHead>
-              <TableHead className="hidden md:table-cell">Authors</TableHead>
-              <TableHead className="w-[100px]">Links</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            <TableRow>
-              <TableCell>2024</TableCell>
-              <TableCell className="font-medium">
-                Diffusion Models for High-Resolution Image Generation
-              </TableCell>
-              <TableCell className="hidden md:table-cell">
-                A. Smith, B. Johnson, C. Williams
-              </TableCell>
-              <TableCell>
-                <div className="flex gap-2">
-                  <Button variant="ghost" size="icon" asChild>
-                    <a href="#" target="_blank" rel="noreferrer">
-                      <FileText className="h-4 w-4" />
-                      <span className="sr-only">Paper</span>
-                    </a>
-                  </Button>
-                  <Button variant="ghost" size="icon" asChild>
-                    <a href="#" target="_blank" rel="noreferrer">
-                      <Video className="h-4 w-4" />
-                      <span className="sr-only">Video</span>
-                    </a>
-                  </Button>
-                </div>
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>2024</TableCell>
-              <TableCell className="font-medium">
-                Transformer Architectures for Multi-Modal Learning
-              </TableCell>
-              <TableCell className="hidden md:table-cell">
-                D. Brown, E. Davis, F. Wilson
-              </TableCell>
-              <TableCell>
-                <div className="flex gap-2">
-                  <Button variant="ghost" size="icon" asChild>
-                    <a href="#" target="_blank" rel="noreferrer">
-                      <FileText className="h-4 w-4" />
-                      <span className="sr-only">Paper</span>
-                    </a>
-                  </Button>
-                  <Button variant="ghost" size="icon" asChild>
-                    <a href="#" target="_blank" rel="noreferrer">
-                      <Video className="h-4 w-4" />
-                      <span className="sr-only">Video</span>
-                    </a>
-                  </Button>
-                </div>
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>2023</TableCell>
-              <TableCell className="font-medium">
-                Self-Supervised Learning for Visual Representation
-              </TableCell>
-              <TableCell className="hidden md:table-cell">
-                G. Martinez, H. Lee, I. Kim
-              </TableCell>
-              <TableCell>
-                <div className="flex gap-2">
-                  <Button variant="ghost" size="icon" asChild>
-                    <a href="#" target="_blank" rel="noreferrer">
-                      <FileText className="h-4 w-4" />
-                      <span className="sr-only">Paper</span>
-                    </a>
-                  </Button>
-                  <Button variant="ghost" size="icon" asChild>
-                    <a href="#" target="_blank" rel="noreferrer">
-                      <Video className="h-4 w-4" />
-                      <span className="sr-only">Video</span>
-                    </a>
-                  </Button>
-                </div>
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>2023</TableCell>
-              <TableCell className="font-medium">
-                Few-Shot Learning with Meta-Learning Approaches
-              </TableCell>
-              <TableCell className="hidden md:table-cell">
-                J. Chen, K. Wang, L. Zhang
-              </TableCell>
-              <TableCell>
-                <div className="flex gap-2">
-                  <Button variant="ghost" size="icon" asChild>
-                    <a href="#" target="_blank" rel="noreferrer">
-                      <FileText className="h-4 w-4" />
-                      <span className="sr-only">Paper</span>
-                    </a>
-                  </Button>
-                  <Button variant="ghost" size="icon" asChild>
-                    <a href="#" target="_blank" rel="noreferrer">
-                      <Video className="h-4 w-4" />
-                      <span className="sr-only">Video</span>
-                    </a>
-                  </Button>
-                </div>
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>2022</TableCell>
-              <TableCell className="font-medium">
-                Efficient Neural Networks for Mobile Devices
-              </TableCell>
-              <TableCell className="hidden md:table-cell">
-                M. Patel, N. Singh, O. Thompson
-              </TableCell>
-              <TableCell>
-                <div className="flex gap-2">
-                  <Button variant="ghost" size="icon" asChild>
-                    <a href="#" target="_blank" rel="noreferrer">
-                      <FileText className="h-4 w-4" />
-                      <span className="sr-only">Paper</span>
-                    </a>
-                  </Button>
-                  <Button variant="ghost" size="icon" asChild>
-                    <a href="#" target="_blank" rel="noreferrer">
-                      <Video className="h-4 w-4" />
-                      <span className="sr-only">Video</span>
-                    </a>
-                  </Button>
-                </div>
-              </TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
+        <ScrollArea className="w-[80dvw] md:w-full">
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>Year</TableHead>
+                <TableHead>Paper Title</TableHead>
+                <TableHead className="hidden md:table-cell">Authors</TableHead>
+                <TableHead className="w-[100px]">Links</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableCell>2024</TableCell>
+                <TableCell className="font-medium">
+                  Diffusion Models for High-Resolution Image Generation
+                </TableCell>
+                <TableCell className="hidden md:table-cell">
+                  A. Smith, B. Johnson, C. Williams
+                </TableCell>
+                <TableCell>
+                  <div className="flex gap-2">
+                    <Button variant="ghost" size="icon" asChild>
+                      <a href="#" target="_blank" rel="noreferrer">
+                        <FileText className="h-4 w-4" />
+                        <span className="sr-only">Paper</span>
+                      </a>
+                    </Button>
+                    <Button variant="ghost" size="icon" asChild>
+                      <a href="#" target="_blank" rel="noreferrer">
+                        <Video className="h-4 w-4" />
+                        <span className="sr-only">Video</span>
+                      </a>
+                    </Button>
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>2024</TableCell>
+                <TableCell className="font-medium">
+                  Transformer Architectures for Multi-Modal Learning
+                </TableCell>
+                <TableCell className="hidden md:table-cell">
+                  D. Brown, E. Davis, F. Wilson
+                </TableCell>
+                <TableCell>
+                  <div className="flex gap-2">
+                    <Button variant="ghost" size="icon" asChild>
+                      <a href="#" target="_blank" rel="noreferrer">
+                        <FileText className="h-4 w-4" />
+                        <span className="sr-only">Paper</span>
+                      </a>
+                    </Button>
+                    <Button variant="ghost" size="icon" asChild>
+                      <a href="#" target="_blank" rel="noreferrer">
+                        <Video className="h-4 w-4" />
+                        <span className="sr-only">Video</span>
+                      </a>
+                    </Button>
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>2023</TableCell>
+                <TableCell className="font-medium">
+                  Self-Supervised Learning for Visual Representation
+                </TableCell>
+                <TableCell className="hidden md:table-cell">
+                  G. Martinez, H. Lee, I. Kim
+                </TableCell>
+                <TableCell>
+                  <div className="flex gap-2">
+                    <Button variant="ghost" size="icon" asChild>
+                      <a href="#" target="_blank" rel="noreferrer">
+                        <FileText className="h-4 w-4" />
+                        <span className="sr-only">Paper</span>
+                      </a>
+                    </Button>
+                    <Button variant="ghost" size="icon" asChild>
+                      <a href="#" target="_blank" rel="noreferrer">
+                        <Video className="h-4 w-4" />
+                        <span className="sr-only">Video</span>
+                      </a>
+                    </Button>
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>2023</TableCell>
+                <TableCell className="font-medium">
+                  Few-Shot Learning with Meta-Learning Approaches
+                </TableCell>
+                <TableCell className="hidden md:table-cell">
+                  J. Chen, K. Wang, L. Zhang
+                </TableCell>
+                <TableCell>
+                  <div className="flex gap-2">
+                    <Button variant="ghost" size="icon" asChild>
+                      <a href="#" target="_blank" rel="noreferrer">
+                        <FileText className="h-4 w-4" />
+                        <span className="sr-only">Paper</span>
+                      </a>
+                    </Button>
+                    <Button variant="ghost" size="icon" asChild>
+                      <a href="#" target="_blank" rel="noreferrer">
+                        <Video className="h-4 w-4" />
+                        <span className="sr-only">Video</span>
+                      </a>
+                    </Button>
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>2022</TableCell>
+                <TableCell className="font-medium">
+                  Efficient Neural Networks for Mobile Devices
+                </TableCell>
+                <TableCell className="hidden md:table-cell">
+                  M. Patel, N. Singh, O. Thompson
+                </TableCell>
+                <TableCell>
+                  <div className="flex gap-2">
+                    <Button variant="ghost" size="icon" asChild>
+                      <a href="#" target="_blank" rel="noreferrer">
+                        <FileText className="h-4 w-4" />
+                        <span className="sr-only">Paper</span>
+                      </a>
+                    </Button>
+                    <Button variant="ghost" size="icon" asChild>
+                      <a href="#" target="_blank" rel="noreferrer">
+                        <Video className="h-4 w-4" />
+                        <span className="sr-only">Video</span>
+                      </a>
+                    </Button>
+                  </div>
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+          <ScrollBar orientation="horizontal" />
+        </ScrollArea>
       </section>
 
       {/* Past Keynotes */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Past Keynotes</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">Past Keynotes</h2>
           <p className="text-muted-foreground">
             Keynote presentations from previous workshops
           </p>
@@ -335,7 +339,7 @@ function PastEvents() {
       {/* Resources */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Resources</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">Resources</h2>
           <p className="text-muted-foreground">
             Code repositories and datasets from past workshops
           </p>
