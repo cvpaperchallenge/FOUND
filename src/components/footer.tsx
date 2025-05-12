@@ -39,25 +39,45 @@ export function Footer() {
         <div className="flex flex-col gap-2">
           <h3 className="font-medium">Connect</h3>
           <div className="flex gap-2">
-            <Button className="hover:bg-footer-accent dark:hover:bg-footer-accent/50" variant="ghost" size="icon" asChild>
+            <Button
+              className="hover:bg-footer-accent dark:hover:bg-footer-accent/50"
+              variant="ghost"
+              size="icon"
+              asChild
+            >
               <a href="#" target="_blank" rel="noreferrer">
                 <X className="h-4 w-4" />
                 <span className="sr-only">X</span>
               </a>
             </Button>
-            <Button className="hover:bg-footer-accent dark:hover:bg-footer-accent/50" variant="ghost" size="icon" asChild>
+            <Button
+              className="hover:bg-footer-accent dark:hover:bg-footer-accent/50"
+              variant="ghost"
+              size="icon"
+              asChild
+            >
               <a href="#" target="_blank" rel="noreferrer">
                 <SiGithub className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
               </a>
             </Button>
-            <Button className="hover:bg-footer-accent dark:hover:bg-footer-accent/50" variant="ghost" size="icon" asChild>
+            <Button
+              className="hover:bg-footer-accent dark:hover:bg-footer-accent/50"
+              variant="ghost"
+              size="icon"
+              asChild
+            >
               <a href="#" target="_blank" rel="noreferrer">
                 <SiYoutube className="h-4 w-4" />
                 <span className="sr-only">YouTube</span>
               </a>
             </Button>
-            <Button className="hover:bg-footer-accent dark:hover:bg-footer-accent/50" variant="ghost" size="icon" asChild>
+            <Button
+              className="hover:bg-footer-accent dark:hover:bg-footer-accent/50"
+              variant="ghost"
+              size="icon"
+              asChild
+            >
               <a href="#" target="_blank" rel="noreferrer">
                 <SiSlack className="h-4 w-4" />
                 <span className="sr-only">Slack</span>

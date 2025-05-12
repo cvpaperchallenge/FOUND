@@ -18,14 +18,16 @@ import {
   TableHeader,
   TableRow,
 } from "../../components/ui/table";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 function PastEvents() {
   return (
     <main className="container px-6 py-8 space-y-12 xl:w-6xl">
       {/* Header */}
       <section className="space-y-4 text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">Past Events</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">
+          Past Events
+        </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           Previous editions of the Machine Learning Workshop
         </p>
@@ -123,7 +125,9 @@ function PastEvents() {
       {/* Past Papers */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">Past Papers</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
+            Past Papers
+          </h2>
           <p className="text-muted-foreground">
             Selected papers from previous workshops
           </p>
@@ -273,7 +277,9 @@ function PastEvents() {
       {/* Past Keynotes */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">Past Keynotes</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
+            Past Keynotes
+          </h2>
           <p className="text-muted-foreground">
             Keynote presentations from previous workshops
           </p>
@@ -339,7 +345,9 @@ function PastEvents() {
       {/* Resources */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">Resources</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
+            Resources
+          </h2>
           <p className="text-muted-foreground">
             Code repositories and datasets from past workshops
           </p>

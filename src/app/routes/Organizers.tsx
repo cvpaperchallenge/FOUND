@@ -15,7 +15,9 @@ function Organizers() {
     <main className="container px-6 py-8 space-y-12 xl:w-6xl">
       {/* Header */}
       <section className="space-y-4 text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">Organizers</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">
+          Organizers
+        </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           Meet the team behind the Machine Learning Workshop
         </p>
@@ -247,7 +249,9 @@ function Organizers() {
       {/* Web Chair */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">Web Chair</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
+            Web Chair
+          </h2>
           <p className="text-muted-foreground">
             Website development and maintenance
           </p>
@@ -352,7 +356,9 @@ function Organizers() {
       {/* Sponsors */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">Sponsors</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
+            Sponsors
+          </h2>
           <p className="text-muted-foreground">
             Organizations supporting the workshop
           </p>

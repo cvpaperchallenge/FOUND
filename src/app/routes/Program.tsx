@@ -29,7 +29,9 @@ function Program() {
     <main className="container px-6 py-8 space-y-12 xl:w-6xl">
       {/* Header */}
       <section className="space-y-4 text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">Program</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">
+          Program
+        </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           Accepted papers, keynote speakers, and panel discussions
         </p>
@@ -137,7 +139,8 @@ function Program() {
                 <TableBody>
                   <TableRow>
                     <TableCell className="font-medium">
-                      Efficient Self-Supervised Learning for Computer Vision Tasks
+                      Efficient Self-Supervised Learning for Computer Vision
+                      Tasks
                     </TableCell>
                     <TableCell className="hidden md:table-cell">
                       A. Johnson, B. Williams, C. Davis

@@ -14,7 +14,9 @@ function CallForPapers() {
     <main className="container px-6 py-8 space-y-12 xl:w-6xl">
       {/* Header */}
       <section className="space-y-4 text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">Call for Papers</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">
+          Call for Papers
+        </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           Submit your research to the Machine Learning Workshop at ICCV 2025
         </p>
@@ -32,7 +34,9 @@ function CallForPapers() {
         </div>
         <div className="grid gap-4 md:grid-cols-2">
           <div className="space-y-2">
-            <h3 className="text-lg sm:text-xl font-semibold">Core ML Techniques</h3>
+            <h3 className="text-lg sm:text-xl font-semibold">
+              Core ML Techniques
+            </h3>
             <ul className="list-disc pl-5 space-y-1">
               <li>Deep learning architectures</li>
               <li>Generative models</li>
@@ -59,14 +63,18 @@ function CallForPapers() {
       {/* Paper Format Section */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">Paper Format</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
+            Paper Format
+          </h2>
           <p className="text-muted-foreground">
             Guidelines for preparing and submitting your paper
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
           <div className="space-y-4">
-            <h3 className="text-lg sm:text-xl font-semibold">Submission Guidelines</h3>
+            <h3 className="text-lg sm:text-xl font-semibold">
+              Submission Guidelines
+            </h3>
             <ul className="list-disc pl-5 space-y-2">
               <li>Papers must be submitted in PDF format</li>
               <li>Maximum 8 pages (excluding references and appendices)</li>
@@ -104,7 +112,9 @@ function CallForPapers() {
       {/* Submission Section */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">How to Submit</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
+            How to Submit
+          </h2>
           <p className="text-muted-foreground">
             Submit your paper through our OpenReview portal
           </p>
@@ -200,7 +210,9 @@ function CallForPapers() {
       {/* Contact Section */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">Questions?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
+            Questions?
+          </h2>
           <p className="text-muted-foreground">
             If you have any questions about the submission process, please
             contact us

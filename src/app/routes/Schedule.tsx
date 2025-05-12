@@ -14,14 +14,16 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../../components/ui/accordion";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 function Schedule() {
   return (
     <main className="container px-6 py-8 space-y-12 xl:w-6xl">
       {/* Header */}
       <section className="space-y-4 text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">Schedule</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">
+          Schedule
+        </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           Important dates and workshop program
         </p>
@@ -111,7 +113,9 @@ function Schedule() {
               <TableRow>
                 <TableHead className="w-[150px]">Time</TableHead>
                 <TableHead>Session</TableHead>
-                <TableHead className="hidden md:table-cell">Presenter</TableHead>
+                <TableHead className="hidden md:table-cell">
+                  Presenter
+                </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -138,7 +142,9 @@ function Schedule() {
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">10:30 - 12:00</TableCell>
-                <TableCell>Oral Session 1: Deep Learning Architectures</TableCell>
+                <TableCell>
+                  Oral Session 1: Deep Learning Architectures
+                </TableCell>
                 <TableCell className="hidden md:table-cell">
                   Various Presenters
                 </TableCell>
@@ -190,7 +196,9 @@ function Schedule() {
               <TableRow>
                 <TableHead className="w-[150px]">Time</TableHead>
                 <TableHead>Session</TableHead>
-                <TableHead className="hidden md:table-cell">Presenter</TableHead>
+                <TableHead className="hidden md:table-cell">
+                  Presenter
+                </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
