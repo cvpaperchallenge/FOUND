@@ -104,8 +104,8 @@ function Program() {
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  {programData.acceptedPapers.oral.map((paper, index) => (
-                    <TableRow key={index}>
+                  {programData.acceptedPapers.oral.map((paper) => (
+                    <TableRow key={paper.id}>
                       <TableCell className="font-medium">
                         {paper.title}
                       </TableCell>
