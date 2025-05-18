@@ -3,18 +3,130 @@
   "subtitle": "Meet the team behind the Machine Learning Workshop",
   "generalChairs": [
     {
-      "name": "Prof. Robert Wilson",
-      "affiliation": "Stanford University",
-      "bio": "Professor of Computer Science with research focus on machine learning and computer vision.",
-      "email": "example@stanford.edu",
-      "website": "#"
+      "name": "Yoshihiro Fukuhara",
+      "affiliation": "ExaWizards Inc.",
+      "bio": "",
+      "email": "",
+      "website": ""
     },
     {
-      "name": "Dr. Sarah Johnson",
-      "affiliation": "Tech Corp",
-      "bio": "Chief AI Officer with expertise in applied machine learning and industry applications.",
-      "email": "example@techcorp.com",
-      "website": "#"
+      "name": "Hirokatsu Kataoka",
+      "affiliation": "SB Intuitions",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Püren Güler",
+      "affiliation": "Ericsson",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Shunsuke Kitada",
+      "affiliation": "LY Corporation",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Xavier Boix",
+      "affiliation": "Fujitsu Research",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Philipp Wirth",
+      "affiliation": "Google",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Dan Hendrycks",
+      "affiliation": "Center for AI Safety",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Keisuke Tateno",
+      "affiliation": "Google",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Shinichi Mae",
+      "affiliation": "Toyota Industries Corporation",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Tatsuya Komatsu",
+      "affiliation": "LY Corporation",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Nishant Rai",
+      "affiliation": "OpenAI",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Ryo Nakamura",
+      "affiliation": "Tenchijin Inc.",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Risa Shinoda",
+      "affiliation": "Kyoto University",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Takahiro Itazuri",
+      "affiliation": "Amazon Web Services",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Yoshiki Kubotani",
+      "affiliation": "SONY Corporation",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Guarin Flück",
+      "affiliation": "Lightly",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Wadim Kehl",
+      "affiliation": "Woven by Toyota",
+      "bio": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Kazuki Kozuka",
+      "affiliation": "Panasonic Holdings Corporation",
+      "bio": "",
+      "email": "",
+      "website": ""
     }
   ],
   "programChairs": [
