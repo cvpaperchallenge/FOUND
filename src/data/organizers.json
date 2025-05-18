@@ -7,196 +7,134 @@
       "affiliation": "ExaWizards Inc.",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://gatheluck.net"
     },
     {
       "name": "Hirokatsu Kataoka",
       "affiliation": "SB Intuitions",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://hirokatsukataoka.net"
     },
     {
       "name": "Püren Güler",
       "affiliation": "Ericsson",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://scholar.google.se/citations?user=Oqn6cosAAAAJ"
     },
     {
       "name": "Shunsuke Kitada",
       "affiliation": "LY Corporation",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://shunk031.me"
     },
     {
       "name": "Xavier Boix",
       "affiliation": "Fujitsu Research",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://web.mit.edu/xboix/www/index.html"
     },
     {
       "name": "Philipp Wirth",
       "affiliation": "Google",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://www.linkedin.com/in/philipp-wirth-1965801a0"
     },
     {
       "name": "Dan Hendrycks",
       "affiliation": "Center for AI Safety",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://danhendrycks.com"
     },
     {
       "name": "Keisuke Tateno",
       "affiliation": "Google",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://scholar.google.com/citations?user=ml3laqEAAAAJ"
     },
     {
       "name": "Shinichi Mae",
       "affiliation": "Toyota Industries Corporation",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://scholar.google.co.jp/citations?user=XOH2sZMAAAAJ"
     },
     {
       "name": "Tatsuya Komatsu",
       "affiliation": "LY Corporation",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://scholar.google.co.jp/citations?user=o2lMlxMAAAAJ"
     },
     {
       "name": "Nishant Rai",
       "affiliation": "OpenAI",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://scholar.google.co.jp/citations?user=akErVwcAAAAJ"
     },
     {
       "name": "Ryo Nakamura",
       "affiliation": "Tenchijin Inc.",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://ryoo-portfolio.netlify.app"
     },
     {
       "name": "Risa Shinoda",
-      "affiliation": "Kyoto University",
+      "affiliation": "Osaka University",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://sites.google.com/view/risashinoda"
     },
     {
       "name": "Takahiro Itazuri",
       "affiliation": "Amazon Web Services",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://zulinx86.com"
     },
     {
       "name": "Yoshiki Kubotani",
       "affiliation": "SONY Corporation",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://www.linkedin.com/in/yoshiki-kubotani-377381231"
     },
     {
       "name": "Guarin Flück",
       "affiliation": "Lightly",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://www.linkedin.com/in/guarin-fl%C3%BCck-09483016b"
     },
     {
       "name": "Wadim Kehl",
       "affiliation": "Woven by Toyota",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://wadimkehl.github.io"
     },
     {
       "name": "Kazuki Kozuka",
       "affiliation": "Panasonic Holdings Corporation",
       "bio": "",
       "email": "",
-      "website": ""
+      "website": "https://www.linkedin.com/in/kazuki-kozuka-126319a0"
     }
   ],
-  "programChairs": [
-    {
-      "name": "Prof. Michael Chen",
-      "affiliation": "MIT",
-      "bio": "Associate Professor specializing in deep learning and neural networks.",
-      "email": "example@mit.edu",
-      "website": "#"
-    },
-    {
-      "name": "Dr. Emily Taylor",
-      "affiliation": "University of Tokyo",
-      "bio": "Research scientist focusing on computer vision and generative models.",
-      "email": "example@u-tokyo.ac.jp",
-      "website": "#"
-    },
-    {
-      "name": "Prof. David Lee",
-      "affiliation": "ETH Zurich",
-      "bio": "Professor of Computer Science with expertise in reinforcement learning and robotics.",
-      "email": "example@ethz.ch",
-      "website": "#"
-    }
-  ],
-  "webChair": [
-    {
-      "name": "Alex Martinez",
-      "affiliation": "LIMIT Lab",
-      "bio": "Web developer and researcher with experience in academic conference websites.",
-      "email": "example@limitlab.org",
-      "website": "#"
-    }
-  ],
+  "programChairs": [],
+  "webChair": [],
   "programCommittee": [
     {
       "name": "Dr. Amanda Brown",
       "affiliation": "Google Research"
-    },
-    {
-      "name": "Prof. James Wilson",
-      "affiliation": "UC Berkeley"
-    },
-    {
-      "name": "Dr. Lisa Chen",
-      "affiliation": "Microsoft Research"
-    },
-    {
-      "name": "Prof. Thomas Garcia",
-      "affiliation": "University of Cambridge"
-    },
-    {
-      "name": "Dr. Sophia Kim",
-      "affiliation": "Samsung AI"
-    },
-    {
-      "name": "Prof. Mark Johnson",
-      "affiliation": "University of Toronto"
-    },
-    {
-      "name": "Dr. Rachel Singh",
-      "affiliation": "NVIDIA Research"
-    },
-    {
-      "name": "Prof. Daniel Wang",
-      "affiliation": "Tsinghua University"
-    },
-    {
-      "name": "Dr. Olivia Martinez",
-      "affiliation": "Apple AI"
     }
   ],
   "sponsors": [
