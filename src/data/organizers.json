@@ -1,131 +1,124 @@
 {
-  "title": "Organizers",
+  "title": "Organizing Team & Supporters",
   "subtitle": "Meet the team behind the Machine Learning Workshop",
-  "generalChairs": [
+  "organizers": [
     {
       "name": "Yoshihiro Fukuhara",
       "affiliation": "ExaWizards Inc.",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/yoshihiro.fukuhara.png",
       "website": "https://gatheluck.net"
     },
     {
       "name": "Hirokatsu Kataoka",
       "affiliation": "SB Intuitions",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/hirokatsu.kataoka.png",
       "website": "https://hirokatsukataoka.net"
     },
     {
       "name": "Püren Güler",
       "affiliation": "Ericsson",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/puren.guler.png",
       "website": "https://scholar.google.se/citations?user=Oqn6cosAAAAJ"
     },
     {
       "name": "Shunsuke Kitada",
       "affiliation": "LY Corporation",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/shunsuke.kitada.png",
       "website": "https://shunk031.me"
     },
     {
       "name": "Xavier Boix",
       "affiliation": "Fujitsu Research",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/xavier.boix.png",
       "website": "https://web.mit.edu/xboix/www/index.html"
-    },
-    {
-      "name": "Philipp Wirth",
-      "affiliation": "Google",
-      "bio": "",
-      "email": "",
-      "website": "https://www.linkedin.com/in/philipp-wirth-1965801a0"
     },
     {
       "name": "Dan Hendrycks",
       "affiliation": "Center for AI Safety",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/dan.hendrycks.png",
       "website": "https://danhendrycks.com"
     },
     {
       "name": "Keisuke Tateno",
       "affiliation": "Google",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/keisuke.tateno.png",
       "website": "https://scholar.google.com/citations?user=ml3laqEAAAAJ"
     },
     {
       "name": "Shinichi Mae",
       "affiliation": "Toyota Industries Corporation",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/shinichi.mae.png",
       "website": "https://scholar.google.co.jp/citations?user=XOH2sZMAAAAJ"
     },
     {
       "name": "Tatsuya Komatsu",
       "affiliation": "LY Corporation",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/tatsuya.komatsu.png",
       "website": "https://scholar.google.co.jp/citations?user=o2lMlxMAAAAJ"
     },
     {
       "name": "Nishant Rai",
       "affiliation": "OpenAI",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/nishant.rai.png",
       "website": "https://scholar.google.co.jp/citations?user=akErVwcAAAAJ"
     },
     {
       "name": "Ryo Nakamura",
       "affiliation": "Tenchijin Inc.",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/ryo.nakamura.png",
       "website": "https://ryoo-portfolio.netlify.app"
     },
     {
       "name": "Risa Shinoda",
       "affiliation": "Osaka University",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/risa.shinoda.png",
       "website": "https://sites.google.com/view/risashinoda"
     },
     {
       "name": "Takahiro Itazuri",
       "affiliation": "Amazon Web Services",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/takahiro.itazuri.png",
       "website": "https://zulinx86.com"
     },
     {
       "name": "Yoshiki Kubotani",
       "affiliation": "SONY Corporation",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/yoshiki.kubotani.png",
       "website": "https://www.linkedin.com/in/yoshiki-kubotani-377381231"
     },
     {
       "name": "Guarin Flück",
       "affiliation": "Lightly",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/guarin.fluck.png",
       "website": "https://www.linkedin.com/in/guarin-fl%C3%BCck-09483016b"
     },
     {
       "name": "Wadim Kehl",
       "affiliation": "Woven by Toyota",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/wadim.kehl.png",
       "website": "https://wadimkehl.github.io"
     },
     {
       "name": "Kazuki Kozuka",
       "affiliation": "Panasonic Holdings Corporation",
       "bio": "",
-      "email": "",
+      "photo": "/organizers/kazuki.kozuka.png",
       "website": "https://www.linkedin.com/in/kazuki-kozuka-126319a0"
     }
   ],

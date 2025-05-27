@@ -1,4 +1,4 @@
-import { Mail, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
 import {
@@ -19,38 +19,43 @@ function Organizers() {
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">
           {organizersData.title}
         </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        {/* <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           {organizersData.subtitle}
-        </p>
+        </p> */}
       </section>
 
-      {/* General Chairs */}
+      {/* Organizers */}
       <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
-            General Chairs
+            Organizers
           </h2>
-          <p className="text-muted-foreground">
+          {/* <p className="text-muted-foreground">
             Workshop organization and coordination
-          </p>
+          </p> */}
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {organizersData.generalChairs.map((chair, index) => (
+          {organizersData.organizers.map((organizer, index) => (
             <Card key={index}>
               <CardHeader>
-                <CardTitle>{chair.name}</CardTitle>
-                <CardDescription>{chair.affiliation}</CardDescription>
+                <CardTitle>{organizer.name}</CardTitle>
+                <CardDescription>{organizer.affiliation}</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <div className="aspect-square bg-muted rounded-md flex items-center justify-center">
-                    <span className="text-muted-foreground">Photo</span>
+                    <img
+                      src={organizer.photo}
+                      alt={`Photo of ${organizer.name}`}
+                      className="object-cover w-full h-full"
+                      loading="lazy"
+                    />
                   </div>
-                  <p className="text-sm text-muted-foreground">{chair.bio}</p>
+                  {/* <p className="text-sm text-muted-foreground">{chair.bio}</p> */}
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between">
-                <Button
+                {/* <Button
                   variant="outline"
                   size="sm"
                   className="flex gap-2"
@@ -59,118 +64,14 @@ function Organizers() {
                   <a href={`mailto:${chair.email}`}>
                     <Mail className="h-4 w-4" /> Email
                   </a>
-                </Button>
+                </Button> */}
                 <Button
                   variant="outline"
                   size="sm"
                   className="flex gap-2"
                   asChild
                 >
-                  <a href={chair.website} target="_blank" rel="noreferrer">
-                    Website <ExternalLink className="h-4 w-4" />
-                  </a>
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
-      </section>
-
-      {/* Program Chairs */}
-      <section className="space-y-6">
-        <div className="space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
-            Program Chairs
-          </h2>
-          <p className="text-muted-foreground">
-            Paper review and program organization
-          </p>
-        </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {organizersData.programChairs.map((chair, index) => (
-            <Card key={index}>
-              <CardHeader>
-                <CardTitle>{chair.name}</CardTitle>
-                <CardDescription>{chair.affiliation}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div className="aspect-square bg-muted rounded-md flex items-center justify-center">
-                    <span className="text-muted-foreground">Photo</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">{chair.bio}</p>
-                </div>
-              </CardContent>
-              <CardFooter className="flex justify-between">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="flex gap-2"
-                  asChild
-                >
-                  <a href={`mailto:${chair.email}`}>
-                    <Mail className="h-4 w-4" /> Email
-                  </a>
-                </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="flex gap-2"
-                  asChild
-                >
-                  <a href={chair.website} target="_blank" rel="noreferrer">
-                    Website <ExternalLink className="h-4 w-4" />
-                  </a>
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
-      </section>
-
-      {/* Web Chair */}
-      <section className="space-y-6">
-        <div className="space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
-            Web Chair
-          </h2>
-          <p className="text-muted-foreground">
-            Website development and maintenance
-          </p>
-        </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {organizersData.webChair.map((chair, index) => (
-            <Card key={index}>
-              <CardHeader>
-                <CardTitle>{chair.name}</CardTitle>
-                <CardDescription>{chair.affiliation}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div className="aspect-square bg-muted rounded-md flex items-center justify-center">
-                    <span className="text-muted-foreground">Photo</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">{chair.bio}</p>
-                </div>
-              </CardContent>
-              <CardFooter className="flex justify-between">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="flex gap-2"
-                  asChild
-                >
-                  <a href={`mailto:${chair.email}`}>
-                    <Mail className="h-4 w-4" /> Email
-                  </a>
-                </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="flex gap-2"
-                  asChild
-                >
-                  <a href={chair.website} target="_blank" rel="noreferrer">
+                  <a href={organizer.website} target="_blank" rel="noreferrer">
                     Website <ExternalLink className="h-4 w-4" />
                   </a>
                 </Button>
@@ -181,7 +82,7 @@ function Organizers() {
       </section>
 
       {/* Program Committee */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Program Committee
@@ -200,19 +101,17 @@ function Organizers() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Sponsors */}
       <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
-            Sponsors
+            Supporters
           </h2>
-          <p className="text-muted-foreground">
-            Organizations supporting the workshop
-          </p>
+          <p className="text-muted-foreground">TBD</p>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
+        {/* <div className="grid gap-6 md:grid-cols-3">
           {organizersData.sponsors.map((sponsor, index) => (
             <div
               key={index}
@@ -223,7 +122,7 @@ function Organizers() {
               </span>
             </div>
           ))}
-        </div>
+        </div> */}
       </section>
     </main>
   );
