@@ -2,21 +2,20 @@
   "title": "Call for Papers",
   "subtitle": "Submit your research to the Machine Learning Workshop at ICCV 2025",
   "topics": {
-    "coreMLTechniques": [
-      "Deep learning architectures",
-      "Generative models",
-      "Self-supervised learning",
-      "Few-shot and zero-shot learning",
-      "Reinforcement learning",
-      "Neural rendering"
+    "dataCentricApproach": [
+      "Data collection from real-world/non-Internet domain",
+      "Data curation from rough data in the wild into sophisticated and labeled datasets",
+      "Data crawling, annotation, and cleansing for training of AI models",
+      "Data labeling with {Self, Semi, Weakly, Un}-supervised learning without any human instructions",
+      "Data generation with synthetic, graphics, and artificial images",
+      "Data and a new evaluation setup for assessing powerful foundation models"
     ],
-    "applications": [
-      "Computer vision",
-      "Medical imaging",
-      "Robotics and autonomous systems",
-      "AR/VR applications",
-      "Video understanding",
-      "3D reconstruction"
+    "techTransferApproach": [
+      "Adaptation techniques from large-/middle-scale AI models",
+      "Evaluation techniques to assess the optimal AI models for complex downstream tasks",
+      "{Few-shot, Zero-shot} learning techniques",
+      "{Out-of, Long-tail} distribution scenarios",
+      "Security, privacy, ethics, and accountability toward real-world applications"
     ]
   },
   "paperFormat": {

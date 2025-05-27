@@ -4,23 +4,23 @@
   "importantDates": [
     {
       "title": "Paper Submission Deadline",
-      "date": "July 15, 2025",
-      "description": "All submissions must be received by 11:59 PM Pacific Time (UTC-7)"
+      "date": "TBD",
+      "description": "All submissions must be received by 11:59 PM Hawaii Standard Time (HST)"
     },
     {
       "title": "Author Notification",
-      "date": "August 15, 2025",
+      "date": "TBD",
       "description": "Authors will be notified of acceptance decisions"
     },
     {
       "title": "Camera-Ready Deadline",
-      "date": "September 1, 2025",
+      "date": "TBD",
       "description": "Final versions of accepted papers must be submitted"
     },
     {
       "title": "Workshop Date",
-      "date": "October 15-16, 2025",
-      "description": "Workshop sessions at ICCV 2025 in Singapore"
+      "date": "October, 2025",
+      "description": "Workshop sessions at ICCV 2025"
     }
   ],
   "workshopProgram": {

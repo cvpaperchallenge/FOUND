@@ -1,16 +1,16 @@
-import { Mail, MapPin, Send, X } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { SiSlack } from "react-icons/si";
 
-import { Button } from "../../components/ui/button";
+// import { Button } from "../../components/ui/button";
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
 } from "../../components/ui/card";
-import { Input } from "../../components/ui/input";
-import { Label } from "../../components/ui/label";
-import { Textarea } from "../../components/ui/textarea";
+// import { Input } from "../../components/ui/input";
+// import { Label } from "../../components/ui/label";
+// import { Textarea } from "../../components/ui/textarea";
 import contactData from "../../data/contact.json";
 
 function Contact() {
@@ -21,9 +21,9 @@ function Contact() {
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tighter">
           {contactData.title}
         </h1>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        {/* <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           {contactData.subtitle}
-        </p>
+        </p> */}
       </section>
 
       {/* Contact Information */}
@@ -32,7 +32,7 @@ function Contact() {
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Contact Information
           </h2>
-          <p className="text-muted-foreground">Ways to reach out to us</p>
+          {/* <p className="text-muted-foreground">Ways to reach out to us</p> */}
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {contactData.contactInfo.map((info, index) => (
@@ -68,7 +68,7 @@ function Contact() {
                     )}
                   </p>
                 )}
-                {info.socialLinks && (
+                {/* {info.socialLinks && (
                   <div className="flex gap-4 mt-2">
                     {info.socialLinks.map((link, linkIndex) => (
                       <Button
@@ -88,7 +88,7 @@ function Contact() {
                       </Button>
                     ))}
                   </div>
-                )}
+                )} */}
               </CardContent>
             </Card>
           ))}
@@ -96,7 +96,7 @@ function Contact() {
       </section>
 
       {/* Contact Form */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Contact Form
@@ -151,10 +151,10 @@ function Contact() {
             </form>
           </CardContent>
         </Card>
-      </section>
+      </section> */}
 
       {/* FAQ */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Frequently Asked Questions
@@ -175,7 +175,7 @@ function Contact() {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
