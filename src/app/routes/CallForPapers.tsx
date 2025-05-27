@@ -65,7 +65,7 @@ function CallForPapers() {
           <div className="space-y-2">
             <ol className="alpha-paren pl-5 space-y-1">
               {/* Data-centric approach */}
-              <li key="" className="font-bold">
+              <li key="data-centric-approach" className="font-bold">
                 Data-centric approach
               </li>
               <ul className="list-disc pl-5 space-y-1">
@@ -76,7 +76,7 @@ function CallForPapers() {
                 )}
               </ul>
               {/* Tech transfer approach */}
-              <li key="" className="font-bold">
+              <li key="tech-transfer-approach" className="font-bold">
                 Tech transfer approach
               </li>
               <ul className="list-disc pl-5 space-y-1">
