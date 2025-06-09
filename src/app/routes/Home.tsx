@@ -28,10 +28,10 @@ function Home() {
         </div>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button asChild size="lg">
-            <Link to="/iccv2025/call-for-papers">Submit Paper</Link>
+            <Link to="/call-for-papers">Submit Paper</Link>
           </Button>
           <Button variant="outline" size="lg" asChild>
-            <Link to="/iccv2025/program">Check Program</Link>
+            <Link to="/program">Check Program</Link>
           </Button>
         </div>
       </section>
@@ -39,12 +39,38 @@ function Home() {
       {/* Overview Section */}
       <section className="space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter">Overview</h2>
-          <p className="text-muted-foreground">
-            About our workshop and its objectives
+          <h2 className="text-3xl font-bold tracking-tighter">
+            About FOUND Workshop
+          </h2>
+          <p>
+            Recently, Transformer-based foundation models have achieved
+            outstanding performance across a broad spectrum of benchmarks
+            spanning recognition and generation tasks, and their versatility has
+            fueled rapid advances in both AI research and industrial deployment.
+            To seamlessly adapt these models to downstream tasks in diverse
+            real-world domains-including medicine, manufacturing, robotics, and
+            the creative industries-and thereby deliver tangible impact on human
+            life, it is indispensable to develop Tech Transfer technologies that
+            encompass domain-specific fine-tuning and robust MLOps pipelines,
+            where the decisive factor is the breadth and quality of data
+            available for those tasks. At the same time, model evaluation is
+            approaching saturation on conventional IID benchmarks, prompting
+            growing calls to redesign evaluation metrics and tasks that dispense
+            with the IID assumption and explicitly capture out-of-distribution
+            (OOD) and long-tail phenomena. Advancing both (i) Tech Transfer to
+            heterogeneous downstream tasks and (ii) the definition of
+            next-generation evaluation criteria therefore hinges on curating and
+            exploiting broader and deeper data resources-Foundation Data, as we
+            term them. Against this backdrop, the ICCV 2025 workshop “FOUND:
+            Foundation Data for Industrial Tech Transfer” will convene
+            researchers from industry and academia to share techniques for
+            realizing Foundation Data and to engage in comprehensive discussions
+            on model adaptation and the design of novel evaluation tasks
+            grounded in such data, with the ultimate aim of opening new horizons
+            for AI research and application.
           </p>
         </div>
-        <div className="grid gap-6 md:grid-cols-2">
+        {/* <div className="grid gap-6 md:grid-cols-2">
           <div className="space-y-4">
             <h3 className="text-xl font-semibold">Our Mission</h3>
             <p>{homeData.overview.mission}</p>
@@ -57,7 +83,7 @@ function Home() {
               ))}
             </ul>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Important Dates Section */}
