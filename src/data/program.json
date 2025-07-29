@@ -1,18 +1,30 @@
 {
   "title": "Program",
   "subtitle": "Accepted papers, keynote speakers, and panel discussions",
-  "keynoteSpeakers": [
+  "invitedSpeakers": [
     {
-      "name": "Prof. Jane Smith",
-      "affiliation": "Stanford University",
-      "title": "Advances in Machine Learning for Computer Vision",
-      "bio": "This keynote will explore recent breakthroughs in machine learning techniques for computer vision tasks, with a focus on self-supervised learning approaches and their applications in real-world scenarios."
+      "name": "Federico Tombari",
+      "affiliation": "Google Zurich",
+      "photo": "/program/federico.tombari-512x512.jpg",
+      "title": "",
+      "bio": "",
+      "website": "https://federicotombari.github.io"
     },
     {
-      "name": "Dr. John Doe",
-      "affiliation": "Research Lead, AI Lab",
-      "title": "Future Directions in ML Research",
-      "bio": "This talk will discuss emerging trends and future directions in machine learning research, highlighting key challenges and opportunities for the next generation of ML systems and applications."
+      "name": "Kiana Ehsani",
+      "affiliation": "Vercept",
+      "photo": "/program/kiana.ehsani-512x512.jpg",
+      "title": "",
+      "bio": "",
+      "website": "https://kianaehsani.com"
+    },
+    {
+      "name": "Cheng Zhang",
+      "affiliation": "Meta GenAI",
+      "photo": "/program/cheng.zhang-512x512.jpg",
+      "title": "",
+      "bio": "",
+      "website": "https://cheng-zhang.org"
     }
   ],
   "acceptedPapers": {
