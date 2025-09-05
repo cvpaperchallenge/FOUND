@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
 import {
@@ -9,21 +10,17 @@ import {
   CardHeader,
   CardTitle,
 } from "../../components/ui/card";
-// import {
-//   Tabs,
-//   TabsContent,
-//   TabsList,
-//   TabsTrigger,
-// } from "../../components/ui/tabs";
-// import {
-//   Table,
-//   TableBody,
-//   TableCell,
-//   TableHead,
-//   TableHeader,
-//   TableRow,
-// } from "../../components/ui/table";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "../../components/ui/table";
 import programData from "../../data/program.json";
+import scheduleData from "../../data/schedule.json";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 function Program() {
   return (
@@ -39,7 +36,7 @@ function Program() {
       </section>
 
       {/* Program is TBD */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="rounded-lg border bg-card p-6">
           <div className="space-y-4">
             <p>
@@ -48,6 +45,46 @@ function Program() {
             </p>
           </div>
         </div>
+      </section> */}
+
+      {/* Workshop Program - Day 1 */}
+      <section className="space-y-6">
+        <div className="space-y-2">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
+            Workshop Program
+          </h2>
+          <p className="text-muted-foreground flex items-center gap-2">
+            <Calendar className="h-4 w-4" />{" "}
+            {scheduleData.workshopProgram.day1.date}
+            <MapPin className="h-4 w-4 ml-4" />{" "}
+            {scheduleData.workshopProgram.day1.location}
+          </p>
+        </div>
+        <ScrollArea className="w-[80dvw] md:w-full">
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead className="w-[150px]">Time</TableHead>
+                <TableHead>Session</TableHead>
+                <TableHead className="hidden md:table-cell">
+                  Presenter
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {scheduleData.workshopProgram.day1.schedule.map((item, index) => (
+                <TableRow key={index}>
+                  <TableCell className="font-medium">{item.time}</TableCell>
+                  <TableCell>{item.session}</TableCell>
+                  <TableCell className="hidden md:table-cell">
+                    {item.presenter}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+          <ScrollBar orientation="horizontal" />
+        </ScrollArea>
       </section>
 
       {/* Keynote Speakers */}
