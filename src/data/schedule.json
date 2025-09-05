@@ -3,70 +3,55 @@
   "subtitle": "Important dates and workshop program",
   "importantDates": [
     {
-      "title": "Paper Submission Deadline",
-      "date": "TBD",
-      "description": "All submissions must be received by 11:59 PM Hawaii Standard Time (HST)"
-    },
-    {
-      "title": "Author Notification",
-      "date": "TBD",
-      "description": "Authors will be notified of acceptance decisions"
-    },
-    {
-      "title": "Camera-Ready Deadline",
-      "date": "TBD",
-      "description": "Final versions of accepted papers must be submitted"
-    },
-    {
       "title": "Workshop Date",
-      "date": "October, 2025",
+      "date": "October 19, 2025, 9:00 AM - 12:30 PM (HST)",
       "description": "Workshop sessions at ICCV 2025"
     }
   ],
   "workshopProgram": {
     "day1": {
-      "date": "October 15, 2025",
+      "date": "October 19, 2025, 9:00 AM - 12:30 PM (HST)",
       "location": "Room A3, Convention Center",
       "schedule": [
         {
-          "time": "9:00 - 9:15",
+          "time": "9:00 - 9:10",
           "session": "Opening Remarks",
-          "presenter": "Workshop Chairs"
+          "presenter": "Yoshihiro Fukuhara"
         },
         {
-          "time": "9:15 - 10:15",
-          "session": "Keynote: Advances in Machine Learning for Computer Vision",
-          "presenter": "Prof. Jane Smith"
+          "time": "9:10 - 9:40",
+          "session": "Invited Talk 1",
+          "presenter": "Federico Tombari"
         },
         {
-          "time": "10:15 - 10:30",
-          "session": "Coffee Break",
+          "time": "9:40 - 10:10",
+          "session": "Invited Talk 2",
+          "presenter": "Kiana Ehsani"
+        },
+        {
+          "time": "10:10 - 10:20",
+          "session": "Short break",
           "presenter": ""
         },
         {
-          "time": "10:30 - 12:00",
-          "session": "Oral Session 1: Deep Learning Architectures",
-          "presenter": "Various Presenters"
+          "time": "10:20 - 10:50",
+          "session": "Invited Talk 3",
+          "presenter": "Cheng Zhang"
         },
         {
-          "time": "12:00 - 13:30",
-          "session": "Lunch Break",
+          "time": "10:50 - 11:20",
+          "session": "Invited Talk 4",
+          "presenter": "Comming Soon"
+        },
+        {
+          "time": "11:20 - 11:30",
+          "session": "Closing Remarks",
+          "presenter": "Puren Guler"
+        },
+        {
+          "time": "11:30 - 12:30",
+          "session": "Poster Session (15 posters)",
           "presenter": ""
-        },
-        {
-          "time": "13:30 - 15:00",
-          "session": "Oral Session 2: Generative Models",
-          "presenter": "Various Presenters"
-        },
-        {
-          "time": "15:00 - 15:30",
-          "session": "Coffee Break",
-          "presenter": ""
-        },
-        {
-          "time": "15:30 - 17:00",
-          "session": "Poster Session",
-          "presenter": "All Poster Presenters"
         }
       ]
     },
