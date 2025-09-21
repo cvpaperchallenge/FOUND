@@ -1,3 +1,4 @@
+import type { MetaFunction } from "react-router";
 import { ExternalLink } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
@@ -10,6 +11,16 @@ import {
   CardTitle,
 } from "../../components/ui/card";
 import organizersData from "../../data/organizers.json";
+
+import { createMeta } from "@/lib/metadata";
+
+export const meta: MetaFunction = () =>
+  createMeta({
+    title: "Organizers",
+    description:
+      "Meet the organizing committee and supporters behind the FOUND Workshop at ICCV 2025.",
+    path: "/organizers",
+  });
 
 function Organizers() {
   return (

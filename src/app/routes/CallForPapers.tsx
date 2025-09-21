@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, type MetaFunction } from "react-router";
 // import { Download, ExternalLink } from "lucide-react";
 import { Calendar } from "lucide-react";
 
@@ -11,6 +11,15 @@ import { Button } from "../../components/ui/button";
 // } from "../../components/ui/accordion";
 import callForPapersData from "../../data/callForPapers.json";
 import scheduleData from "../../data/schedule.json";
+import { createMeta } from "@/lib/metadata";
+
+export const meta: MetaFunction = () =>
+  createMeta({
+    title: "Call for Papers",
+    description:
+      "Review submission dates, topics of interest, and guidelines for contributing research to the FOUND Workshop at ICCV 2025.",
+    path: "/call-for-papers",
+  });
 
 function CallForPapers() {
   return (

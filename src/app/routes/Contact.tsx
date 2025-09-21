@@ -1,3 +1,4 @@
+import type { MetaFunction } from "react-router";
 import { Mail, MapPin } from "lucide-react";
 import { SiSlack } from "react-icons/si";
 
@@ -12,6 +13,16 @@ import {
 // import { Label } from "../../components/ui/label";
 // import { Textarea } from "../../components/ui/textarea";
 import contactData from "../../data/contact.json";
+
+import { createMeta } from "@/lib/metadata";
+
+export const meta: MetaFunction = () =>
+  createMeta({
+    title: "Contact",
+    description:
+      "Find email, location, and community channels to reach the FOUND Workshop organizers at ICCV 2025.",
+    path: "/contact",
+  });
 
 function Contact() {
   return (

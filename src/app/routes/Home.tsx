@@ -1,9 +1,18 @@
-import { Link } from "react-router";
+import { Link, type MetaFunction } from "react-router";
 import { Calendar, MapPin } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
 import homeData from "../../data/home.json";
 import scheduleData from "../../data/schedule.json";
+import { createMeta } from "@/lib/metadata";
+
+export const meta: MetaFunction = () =>
+  createMeta({
+    title: "Foundation Data for Industrial Tech Transfer",
+    description:
+      "Explore the FOUND Workshop at ICCV 2025, where researchers discuss adapting foundation models, next-generation evaluation metrics, and the key dates for participation.",
+    path: "/",
+  });
 
 function Home() {
   return (
