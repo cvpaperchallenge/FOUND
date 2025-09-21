@@ -1,5 +1,5 @@
-import { ExternalLink } from "lucide-react";
-import { Calendar, MapPin } from "lucide-react";
+import type { MetaFunction } from "react-router";
+import { Calendar, ExternalLink, MapPin } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
 import {
@@ -21,6 +21,15 @@ import {
 import programData from "../../data/program.json";
 import scheduleData from "../../data/schedule.json";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { createMeta } from "@/lib/metadata";
+
+export const meta: MetaFunction = () =>
+  createMeta({
+    title: "Program",
+    description:
+      "Preview the FOUND Workshop schedule, featured sessions, and invited speakers taking place at ICCV 2025.",
+    path: "/program",
+  });
 
 function Program() {
   return (
