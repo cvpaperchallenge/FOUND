@@ -13,7 +13,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./ui/sheet";
 
 const navItems = [
   { name: "Home", path: "/" },
-  { name: "Call for Papers", path: "/call-for-papers" },
+  // { name: "Call for Papers", path: "/call-for-papers" },
   // { name: "Schedule", path: "/iccv2025/schedule" },
   { name: "Program", path: "/program" },
   { name: "Organizers", path: "/organizers" },

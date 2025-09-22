@@ -83,12 +83,12 @@ export function Footer() {
           >
             Home
           </Link>
-          <Link
+          {/* <Link
             to="/call-for-papers"
             className="text-sm text-muted-foreground hover:text-foreground"
           >
             Call for Papers
-          </Link>
+          </Link> */}
           <Link
             to="/program"
             className="text-sm text-muted-foreground hover:text-foreground"

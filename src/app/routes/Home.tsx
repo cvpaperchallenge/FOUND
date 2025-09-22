@@ -3,7 +3,7 @@ import { Calendar, MapPin } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
 import homeData from "../../data/home.json";
-import scheduleData from "../../data/schedule.json";
+import callForPapersData from "../../data/callForPapers.json";
 import { createMeta } from "@/lib/metadata";
 
 export const meta: MetaFunction = () =>
@@ -36,11 +36,11 @@ function Home() {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row gap-4">
-          <Button asChild size="lg">
+          {/* <Button asChild size="lg">
             <Link to="/call-for-papers">Submit Paper</Link>
-          </Button>
+          </Button> */}
           <Button variant="outline" size="lg" asChild>
-            <Link to="/program">Check Program</Link>
+            <Link to="/program">Check Workshop Program</Link>
           </Button>
         </div>
       </section>
@@ -96,14 +96,11 @@ function Home() {
       </section>
 
       {/* Important Dates Section */}
-      <section className="space-y-6">
+      {/* <section className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
             Important Dates
           </h2>
-          {/* <p className="text-muted-foreground">
-            Key deadlines for your calendar
-          </p> */}
         </div>
         <div className="relative border-l border-border pl-6 space-y-8">
           {scheduleData.importantDates.map((date, index) => (
@@ -119,6 +116,45 @@ function Home() {
               </div>
             </div>
           ))}
+        </div>
+      </section> */}
+
+      {/* Topics Section */}
+      <section className="space-y-6">
+        <div className="space-y-2">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
+            Topics of Interest
+          </h2>
+          <p>
+            The workshop focus on following topics across the diverse domains
+            covered by our organizers:
+          </p>
+          <div className="space-y-2">
+            <ol className="alpha-paren pl-5 space-y-1">
+              {/* Data-centric approach */}
+              <li key="data-centric-approach" className="font-bold">
+                Data-centric approach
+              </li>
+              <ul className="list-disc pl-5 space-y-1">
+                {callForPapersData.topics.dataCentricApproach.map(
+                  (topic, index) => (
+                    <li key={index}>{topic}</li>
+                  ),
+                )}
+              </ul>
+              {/* Tech transfer approach */}
+              <li key="tech-transfer-approach" className="font-bold">
+                Tech transfer approach
+              </li>
+              <ul className="list-disc pl-5 space-y-1">
+                {callForPapersData.topics.techTransferApproach.map(
+                  (topic, index) => (
+                    <li key={index}>{topic}</li>
+                  ),
+                )}
+              </ul>
+            </ol>
+          </div>
         </div>
       </section>
 
