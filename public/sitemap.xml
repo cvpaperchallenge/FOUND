@@ -16,6 +16,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://iccv2025-found-workshop.limitlab.xyz/sponsorship</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://iccv2025-found-workshop.limitlab.xyz/organizers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
