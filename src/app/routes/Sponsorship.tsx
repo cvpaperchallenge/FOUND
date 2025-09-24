@@ -30,7 +30,10 @@ function Sponsorship() {
           </h2>
           <div className="space-y-4 text-left">
             <p>
-              The ICCV 2025 Workshop on <strong>Foundation Data (FOUND)</strong>
+              The ICCV 2025 Workshop on{" "}
+              <strong>
+                Foundation Data for Industrial Tech Transfer (FOUND)
+              </strong>{" "}
               is now welcoming sponsors. We invite industry partners who wish to
               engage with the international computer vision research community
               and support the workshop&#39;s activities. Sponsors will be
