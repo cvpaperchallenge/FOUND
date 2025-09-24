@@ -96,6 +96,18 @@ export function Footer() {
             Program
           </Link>
           <Link
+            to="/organizers"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
+            Organizers
+          </Link>
+          <Link
+            to="/sponsorship"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
+            Sponsorship Opportunities
+          </Link>
+          <Link
             to="/contact"
             className="text-sm text-muted-foreground hover:text-foreground"
           >
