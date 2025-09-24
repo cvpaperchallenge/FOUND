@@ -12,6 +12,7 @@ export default [
     // route("/schedule", "./routes/Schedule.tsx"),
     route("/program", "./routes/Program.tsx"),
     route("/organizers", "./routes/Organizers.tsx"),
+    route("/sponsorship", "./routes/Sponsorship.tsx"),
     // route("/past-events", "./routes/PastEvents.tsx"),
     route("/contact", "./routes/Contact.tsx"),
   ]),
