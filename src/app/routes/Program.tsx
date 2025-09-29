@@ -145,6 +145,53 @@ function Program() {
         </div>
       </section>
 
+      {/* Posters */}
+      <section className="space-y-6">
+        <div className="space-y-2">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
+            Invited Poster Session (11:30 - 12:30)
+          </h2>
+          <p className="">
+            Posters will be 84&quot; x 42&quot; = 213 cm x 107cm (WxH, aspect
+            ratio 2:1, landscape format). You may use the{" "}
+            <a
+              href="https://drive.google.com/drive/u/0/folders/1hb-kDlEeu61wxAPuuHrwhvq69puqgtPS"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-primary"
+            >
+              ICCV LOGO
+            </a>{" "}
+            on your poster. Refer from:{" "}
+            <a
+              href="https://iccv.thecvf.com/Conferences/2025/PosterPrinting"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-primary"
+            >
+              ICCV official website
+            </a>
+            .
+          </p>
+        </div>
+        <div className="relative border-border space-y-8">
+          {programData.acceptedPapers.poster.map((paper, index) => (
+            <div key={index} className="relative">
+              <div className="space-y-1">
+                <h3 className="font-semibold">
+                  {paper.id}. {paper.title}
+                </h3>
+                {/* <p className="text-muted-foreground flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  {date.date}
+                </p> */}
+                <p className="text-sm">{paper.authors}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Accepted Papers */}
       {/* <section className="space-y-6">
         <div className="space-y-2">
