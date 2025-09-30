@@ -49,10 +49,10 @@
       },
       {
         "id": 2,
-        "title": "Bolt3D: Generating 3D Scenes in Seconds",
-        "authors": "Stanislaw Szymanowicz, Jason Y. Zhang, Pratul Srinivasan, Ruiqi Gao, Arthur Brussee, Aleksander Holynski, Ricardo Martin-Brualla, Jonathan T. Barron, Philipp Henzler",
+        "title": "AgroBench: Vision-Language Model Benchmark in Agriculture",
+        "authors": "Risa Shinoda, Nakamasa Inoue, Hirokatsu Kataoka, Masaki Onishi, Yoshitaka Ushiku",
         "links": {
-          "paper": "https://arxiv.org/abs/2503.14445"
+          "paper": "https://arxiv.org/abs/2507.20519"
         }
       },
       {
@@ -65,78 +65,6 @@
       },
       {
         "id": 4,
-        "title": "PINO: Person-Interaction Noise Optimization for Long-Duration and Customizable Motion Generation of Arbitrary-Sized Groups",
-        "authors": "Sakuya Ota, Qing Yu, Kent Fujiwara, Satoshi Ikehata, Ikuro Sato",
-        "links": {
-          "paper": "https://arxiv.org/abs/2507.19292"
-        }
-      },
-      {
-        "id": 5,
-        "title": "CityNav: A Large-Scale Dataset for Real-World Aerial Navigation",
-        "authors": "Jungdae Lee, Taiki Miyanishi, Shuhei Kurita, Koya Sakamoto, Daichi Azuma, Yutaka Matsuo, Nakamasa Inoue",
-        "links": {
-          "paper": "https://arxiv.org/abs/2406.14240"
-        }
-      },
-      {
-        "id": 6,
-        "title": "UniEgoMotion: A Unified Model for Egocentric Motion Reconstruction, Forecasting, and Generation",
-        "authors": "Chaitanya Patel, Hiroki Nakamura, Yuta Kyuragi, Kazuki Kozuka, Juan Carlos Niebles, Ehsan Adeli",
-        "links": {
-          "paper": "https://arxiv.org/abs/2508.01126"
-        }
-      },
-      {
-        "id": 7,
-        "title": "Reflect-DiT: Inference-Time Scaling for Text-to-Image Diffusion Transformers via In-Context Reflection",
-        "authors": "Shufan Li, Konstantinos Kallidromitis, Akash Gokul, Arsh Koneru, Yusuke Kato, Kazuki Kozuka, Aditya Grover",
-        "links": {
-          "paper": "https://arxiv.org/abs/2503.12271"
-        }
-      },
-      {
-        "id": 8,
-        "title": "VideoSetDiff: Identifying and Reasoning Similarities and Differences in Similar Videos",
-        "authors": "YUE QIU · Yanjun Sun · Takuma Yagi · Shusaku Egami · Natsuki Miyata · Ken Fukuda · Kensho Hara · Ryusuke Sagawa",
-        "links": {
-          "paper": "https://iccv.thecvf.com/virtual/2025/poster/120"
-        }
-      },
-      {
-        "id": 9,
-        "title": "SynCity: Training-Free Generation of 3D Worlds",
-        "authors": "Paul Engstler, Aleksandar Shtedritski, Iro Laina, Christian Rupprecht, Andrea Vedaldi",
-        "links": {
-          "paper": "https://arxiv.org/abs/2503.16420"
-        }
-      },
-      {
-        "id": 10,
-        "title": "AgroBench: Vision-Language Model Benchmark in Agriculture",
-        "authors": "Risa Shinoda, Nakamasa Inoue, Hirokatsu Kataoka, Masaki Onishi, Yoshitaka Ushiku",
-        "links": {
-          "paper": "https://arxiv.org/abs/2507.20519"
-        }
-      },
-      {
-        "id": 11,
-        "title": "MoSiC: Optimal-Transport Motion Trajectory for Dense Self-Supervised Learning",
-        "authors": "Mohammadreza Salehi, Shashanka Venkataramanan, Ioana Simion, Efstratios Gavves, Cees G. M. Snoek, Yuki M Asano",
-        "links": {
-          "paper": "https://arxiv.org/abs/2506.08694"
-        }
-      },
-      {
-        "id": 12,
-        "title": "Understanding Co-speech Gestures in-the-wild",
-        "authors": "Sindhu B Hegde, K R Prajwal, Taein Kwon, Andrew Zisserman",
-        "links": {
-          "paper": "https://arxiv.org/abs/2503.22668"
-        }
-      },
-      {
-        "id": 13,
         "title": "Geo4D: Leveraging Video Generators for Geometric 4D Scene Reconstruction",
         "authors": "Zeren Jiang, Chuanxia Zheng, Iro Laina, Diane Larlus, Andrea Vedaldi",
         "links": {
@@ -144,7 +72,7 @@
         }
       },
       {
-        "id": 14,
+        "id": 5,
         "title": "Poster from Lightly",
         "authors": "Lightly team",
         "links": {
@@ -152,11 +80,83 @@
         }
       },
       {
-        "id": 15,
-        "title": "TBD",
-        "authors": "",
+        "id": 6,
+        "title": "PINO: Person-Interaction Noise Optimization for Long-Duration and Customizable Motion Generation of Arbitrary-Sized Groups",
+        "authors": "Sakuya Ota, Qing Yu, Kent Fujiwara, Satoshi Ikehata, Ikuro Sato",
         "links": {
-          "paper": ""
+          "paper": "https://arxiv.org/abs/2507.19292"
+        }
+      },
+      {
+        "id": 7,
+        "title": "CityNav: A Large-Scale Dataset for Real-World Aerial Navigation",
+        "authors": "Jungdae Lee, Taiki Miyanishi, Shuhei Kurita, Koya Sakamoto, Daichi Azuma, Yutaka Matsuo, Nakamasa Inoue",
+        "links": {
+          "paper": "https://arxiv.org/abs/2406.14240"
+        }
+      },
+      {
+        "id": 8,
+        "title": "Bolt3D: Generating 3D Scenes in Seconds",
+        "authors": "Stanislaw Szymanowicz, Jason Y. Zhang, Pratul Srinivasan, Ruiqi Gao, Arthur Brussee, Aleksander Holynski, Ricardo Martin-Brualla, Jonathan T. Barron, Philipp Henzler",
+        "links": {
+          "paper": "https://arxiv.org/abs/2503.14445"
+        }
+      },
+      {
+        "id": 9,
+        "title": "UniEgoMotion: A Unified Model for Egocentric Motion Reconstruction, Forecasting, and Generation",
+        "authors": "Chaitanya Patel, Hiroki Nakamura, Yuta Kyuragi, Kazuki Kozuka, Juan Carlos Niebles, Ehsan Adeli",
+        "links": {
+          "paper": "https://arxiv.org/abs/2508.01126"
+        }
+      },
+      {
+        "id": 10,
+        "title": "Reflect-DiT: Inference-Time Scaling for Text-to-Image Diffusion Transformers via In-Context Reflection",
+        "authors": "Shufan Li, Konstantinos Kallidromitis, Akash Gokul, Arsh Koneru, Yusuke Kato, Kazuki Kozuka, Aditya Grover",
+        "links": {
+          "paper": "https://arxiv.org/abs/2503.12271"
+        }
+      },
+      {
+        "id": 11,
+        "title": "VideoSetDiff: Identifying and Reasoning Similarities and Differences in Similar Videos",
+        "authors": "YUE QIU \u00b7 Yanjun Sun \u00b7 Takuma Yagi \u00b7 Shusaku Egami \u00b7 Natsuki Miyata \u00b7 Ken Fukuda \u00b7 Kensho Hara \u00b7 Ryusuke Sagawa",
+        "links": {
+          "paper": "https://iccv.thecvf.com/virtual/2025/poster/120"
+        }
+      },
+      {
+        "id": 12,
+        "title": "SynCity: Training-Free Generation of 3D Worlds",
+        "authors": "Paul Engstler, Aleksandar Shtedritski, Iro Laina, Christian Rupprecht, Andrea Vedaldi",
+        "links": {
+          "paper": "https://arxiv.org/abs/2503.16420"
+        }
+      },
+      {
+        "id": 13,
+        "title": "MoSiC: Optimal-Transport Motion Trajectory for Dense Self-Supervised Learning",
+        "authors": "Mohammadreza Salehi, Shashanka Venkataramanan, Ioana Simion, Efstratios Gavves, Cees G. M. Snoek, Yuki M Asano",
+        "links": {
+          "paper": "https://arxiv.org/abs/2506.08694"
+        }
+      },
+      {
+        "id": 14,
+        "title": "Understanding Co-speech Gestures in-the-wild",
+        "authors": "Sindhu B Hegde, K R Prajwal, Taein Kwon, Andrew Zisserman",
+        "links": {
+          "paper": "https://arxiv.org/abs/2503.22668"
+        }
+      },
+      {
+        "id": 15,
+        "title": "SketchSplat: 3D Edge Reconstruction via Differentiable Multi-view Sketch Splatting",
+        "authors": "Haiyang Ying, Matthias Zwicker",
+        "links": {
+          "paper": "https://arxiv.org/abs/2503.14786"
         }
       }
     ]
