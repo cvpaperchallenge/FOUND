@@ -1,0 +1,24 @@
+{
+  "title": "Sponsors",
+  "subtitle": "Meet the team behind the Machine Learning Workshop",
+  "sponsors": [
+    {
+      "name": "Yoshihiro Fukuhara",
+      "affiliation": "ExaWizards Inc.",
+      "photo": "/sponsors/sbint.png",
+      "website": "https://www.sbintuitions.co.jp/en/"
+    },
+    {
+      "name": "Hirokatsu Kataoka",
+      "affiliation": "SB Intuitions",
+      "photo": "/sponsors/sbint.png",
+      "website": "https://www.sbintuitions.co.jp/en/"
+    },
+    {
+      "name": "Püren Güler",
+      "affiliation": "Ericsson",
+      "photo": "/sponsors/sbint.png",
+      "website": "https://www.sbintuitions.co.jp/en/"
+    }
+  ]
+}

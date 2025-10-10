@@ -17,6 +17,7 @@ const navItems = [
   // { name: "Schedule", path: "/iccv2025/schedule" },
   { name: "Program", path: "/program" },
   { name: "Organizers", path: "/organizers" },
+  { name: "Sponsors", path: "/sponsors" },
   { name: "Sponsorship Opportunities", path: "/sponsorship" },
   // { name: "Past Events", path: "/iccv2025/past-events" },
   { name: "Contact", path: "/contact" },
