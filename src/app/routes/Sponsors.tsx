@@ -58,7 +58,7 @@ function Sponsors() {
                     <img
                       src={spnsor.photo}
                       alt={`Photo of ${spnsor.name}`}
-                      className="max-h-24 w-auto object-contain"
+                      className="max-h-40 sm:max-h-64 md:max-h-40 w-auto object-contain"
                       loading="lazy"
                     />
                   </div>
