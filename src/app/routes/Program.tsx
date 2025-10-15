@@ -171,7 +171,8 @@ function Program() {
             >
               ICCV official website
             </a>
-            .
+            . Please display your poster on the assigned poster board number in{" "}
+            <span className="font-semibold">Exhibit Hall II</span>.
           </p>
         </div>
         <div className="relative border-border space-y-8">
