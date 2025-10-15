@@ -49,6 +49,7 @@
     "poster": [
       {
         "id": 1,
+        "posterBoard": "103",
         "title": "AnimalClue: Recognizing Animals by their Traces",
         "authors": "Risa Shinoda, Nakamasa Inoue, Iro Laina, Christian Rupprecht, Hirokatsu Kataoka",
         "links": {
@@ -57,6 +58,7 @@
       },
       {
         "id": 2,
+        "posterBoard": "104",
         "title": "AgroBench: Vision-Language Model Benchmark in Agriculture",
         "authors": "Risa Shinoda, Nakamasa Inoue, Hirokatsu Kataoka, Masaki Onishi, Yoshitaka Ushiku",
         "links": {
@@ -65,6 +67,7 @@
       },
       {
         "id": 3,
+        "posterBoard": "105",
         "title": "Simultaneous Motion And Noise Estimation with Event Cameras",
         "authors": "Shintaro Shiba, Yoshimitsu Aoki, Guillermo Gallego",
         "links": {
@@ -73,6 +76,7 @@
       },
       {
         "id": 4,
+        "posterBoard": "106",
         "title": "Geo4D: Leveraging Video Generators for Geometric 4D Scene Reconstruction",
         "authors": "Zeren Jiang, Chuanxia Zheng, Iro Laina, Diane Larlus, Andrea Vedaldi",
         "links": {
@@ -81,6 +85,7 @@
       },
       {
         "id": 5,
+        "posterBoard": "107",
         "title": "Poster from Lightly",
         "authors": "Lightly team",
         "links": {
@@ -89,6 +94,7 @@
       },
       {
         "id": 6,
+        "posterBoard": "108",
         "title": "PINO: Person-Interaction Noise Optimization for Long-Duration and Customizable Motion Generation of Arbitrary-Sized Groups",
         "authors": "Sakuya Ota, Qing Yu, Kent Fujiwara, Satoshi Ikehata, Ikuro Sato",
         "links": {
@@ -97,6 +103,7 @@
       },
       {
         "id": 7,
+        "posterBoard": "109",
         "title": "CityNav: A Large-Scale Dataset for Real-World Aerial Navigation",
         "authors": "Jungdae Lee, Taiki Miyanishi, Shuhei Kurita, Koya Sakamoto, Daichi Azuma, Yutaka Matsuo, Nakamasa Inoue",
         "links": {
@@ -105,6 +112,7 @@
       },
       {
         "id": 8,
+        "posterBoard": "110",
         "title": "Bolt3D: Generating 3D Scenes in Seconds",
         "authors": "Stanislaw Szymanowicz, Jason Y. Zhang, Pratul Srinivasan, Ruiqi Gao, Arthur Brussee, Aleksander Holynski, Ricardo Martin-Brualla, Jonathan T. Barron, Philipp Henzler",
         "links": {
@@ -113,6 +121,7 @@
       },
       {
         "id": 9,
+        "posterBoard": "111",
         "title": "UniEgoMotion: A Unified Model for Egocentric Motion Reconstruction, Forecasting, and Generation",
         "authors": "Chaitanya Patel, Hiroki Nakamura, Yuta Kyuragi, Kazuki Kozuka, Juan Carlos Niebles, Ehsan Adeli",
         "links": {
@@ -121,6 +130,7 @@
       },
       {
         "id": 10,
+        "posterBoard": "112",
         "title": "Reflect-DiT: Inference-Time Scaling for Text-to-Image Diffusion Transformers via In-Context Reflection",
         "authors": "Shufan Li, Konstantinos Kallidromitis, Akash Gokul, Arsh Koneru, Yusuke Kato, Kazuki Kozuka, Aditya Grover",
         "links": {
@@ -129,6 +139,7 @@
       },
       {
         "id": 11,
+        "posterBoard": "113",
         "title": "VideoSetDiff: Identifying and Reasoning Similarities and Differences in Similar Videos",
         "authors": "YUE QIU \u00b7 Yanjun Sun \u00b7 Takuma Yagi \u00b7 Shusaku Egami \u00b7 Natsuki Miyata \u00b7 Ken Fukuda \u00b7 Kensho Hara \u00b7 Ryusuke Sagawa",
         "links": {
@@ -137,6 +148,7 @@
       },
       {
         "id": 12,
+        "posterBoard": "114",
         "title": "SynCity: Training-Free Generation of 3D Worlds",
         "authors": "Paul Engstler, Aleksandar Shtedritski, Iro Laina, Christian Rupprecht, Andrea Vedaldi",
         "links": {
@@ -145,6 +157,7 @@
       },
       {
         "id": 13,
+        "posterBoard": "115",
         "title": "MoSiC: Optimal-Transport Motion Trajectory for Dense Self-Supervised Learning",
         "authors": "Mohammadreza Salehi, Shashanka Venkataramanan, Ioana Simion, Efstratios Gavves, Cees G. M. Snoek, Yuki M Asano",
         "links": {
@@ -153,6 +166,7 @@
       },
       {
         "id": 14,
+        "posterBoard": "116",
         "title": "Understanding Co-speech Gestures in-the-wild",
         "authors": "Sindhu B Hegde, K R Prajwal, Taein Kwon, Andrew Zisserman",
         "links": {
@@ -161,6 +175,7 @@
       },
       {
         "id": 15,
+        "posterBoard": "117",
         "title": "SketchSplat: 3D Edge Reconstruction via Differentiable Multi-view Sketch Splatting",
         "authors": "Haiyang Ying, Matthias Zwicker",
         "links": {
