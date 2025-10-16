@@ -86,8 +86,8 @@
       {
         "id": 5,
         "posterBoard": "107",
-        "title": "Poster from Lightly",
-        "authors": "Lightly team",
+        "title": "lightly-train: Simplifying Foundation Model Training in Computer Vision",
+        "authors": "LightlyTrain Team",
         "links": {
           "paper": ""
         }
