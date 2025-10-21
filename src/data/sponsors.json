@@ -1,0 +1,24 @@
+{
+  "title": "Sponsors",
+  "subtitle": "Meet the team behind the Machine Learning Workshop",
+  "sponsors": [
+    {
+      "name": "ExaWizards Inc.",
+      "affiliation": "ExaWizards Inc.",
+      "photo": "/sponsors/exawizards.png",
+      "website": "https://exawizards.com/en/"
+    },
+    {
+      "name": "SB Intuitions",
+      "affiliation": "SB Intuitions",
+      "photo": "/sponsors/sbint.png",
+      "website": "https://www.sbintuitions.co.jp/en/"
+    },
+    {
+      "name": "LY Corporation",
+      "affiliation": "LY Corporation",
+      "photo": "/sponsors/ly.png",
+      "website": "https://www.lycorp.co.jp/en"
+    }
+  ]
+}
