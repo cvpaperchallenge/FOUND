@@ -1,5 +1,5 @@
 import type { MetaFunction } from "react-router";
-import { Calendar, ExternalLink, MapPin } from "lucide-react";
+import { Calendar, ExternalLink, MapPin, Video } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
 import {
@@ -78,6 +78,7 @@ function Program() {
                 <TableHead className="hidden md:table-cell">
                   Presenter
                 </TableHead>
+                <TableHead className="hidden md:table-cell w-[140px]"></TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -87,6 +88,18 @@ function Program() {
                   <TableCell>{item.session}</TableCell>
                   <TableCell className="hidden md:table-cell">
                     {item.presenter}
+                  </TableCell>
+                  <TableCell className="hidden md:table-cell">
+                    {item.youtube ? (
+                      <Button variant="ghost" size="sm" asChild>
+                        <a href={item.youtube} target="_blank" rel="noreferrer">
+                          <Video className="mr-2 h-4 w-4" />
+                          YouTube
+                        </a>
+                      </Button>
+                    ) : (
+                      <span className="text-muted-foreground text-sm"></span>
+                    )}
                   </TableCell>
                 </TableRow>
               ))}
