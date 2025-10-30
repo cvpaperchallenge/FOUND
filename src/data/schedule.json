@@ -16,7 +16,8 @@
         {
           "time": "9:00 - 9:10",
           "session": "Opening Remarks",
-          "presenter": "Yoshihiro Fukuhara"
+          "presenter": "Yoshihiro Fukuhara",
+          "slides": "https://cdn.limitlab.xyz/iccv2025/s/iccv2025-found-workshop-opening-remarks-yoshihiro-fukuhara_latest-en.pdf"
         },
         {
           "time": "9:10 - 9:40",
@@ -37,7 +38,8 @@
         {
           "time": "10:20 - 10:50",
           "session": "Invited Talk 3",
-          "presenter": "Shashanka Venkataramanan"
+          "presenter": "Shashanka Venkataramanan",
+          "slides": "https://cdn.limitlab.xyz/iccv2025/s/iccv2025-found-workshop-invited-talk-shashanka-venkataramanan_latest-en.pdf"
         },
         {
           "time": "10:50 - 11:20",

@@ -1,5 +1,5 @@
 import type { MetaFunction } from "react-router";
-import { Calendar, ExternalLink, MapPin, Video } from "lucide-react";
+import { Calendar, ExternalLink, MapPin, Video, FileText } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
 import {
@@ -90,6 +90,16 @@ function Program() {
                     {item.presenter}
                   </TableCell>
                   <TableCell className="hidden md:table-cell">
+                    {item.slides ? (
+                      <Button variant="ghost" size="sm" asChild>
+                        <a href={item.slides} target="_blank" rel="noreferrer">
+                          <FileText className="mr-2 h-4 w-4" />
+                          Slides
+                        </a>
+                      </Button>
+                    ) : (
+                      <span className="text-muted-foreground text-sm"></span>
+                    )}
                     {item.youtube ? (
                       <Button variant="ghost" size="sm" asChild>
                         <a href={item.youtube} target="_blank" rel="noreferrer">
