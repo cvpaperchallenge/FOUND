@@ -23,6 +23,17 @@ export function Footer() {
           </Link>
         </div>
 
+        {/* Next Edition */}
+        <div className="flex flex-col gap-2">
+          <h3 className="font-medium">Next Edition</h3>
+          <Link
+            to="https://eccv2026-found-workshop.limitlab.xyz/"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
+            ECCV 2026 FOUND (2nd)
+          </Link>
+        </div>
+
         {/* Social Links */}
         {/* <div className="flex flex-col gap-2">
           <h3 className="font-medium">Connect</h3>

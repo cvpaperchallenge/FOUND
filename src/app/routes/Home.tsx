@@ -1,5 +1,5 @@
 import { Link, type MetaFunction } from "react-router";
-import { Calendar, MapPin } from "lucide-react";
+import { Calendar, ExternalLink, MapPin } from "lucide-react";
 
 import { Button } from "../../components/ui/button";
 import homeData from "../../data/home.json";
@@ -232,6 +232,17 @@ function Home() {
                 </div>
               </div>
               <p className="mt-2">{news.content}</p>
+              {"link" in news && news.link ? (
+                <a
+                  href={news.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+                >
+                  {"linkLabel" in news ? news.linkLabel : "Learn more"}
+                  <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+              ) : null}
             </div>
           ))}
         </div>
