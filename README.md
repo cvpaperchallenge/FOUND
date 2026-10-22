@@ -41,7 +41,7 @@ environments/   # Deployment configuration
 
 The `.tool-versions` file recommends:
 
-- Node.js 24.1.0
+- Node.js 24.22.1
 - Yarn 1.22.x
 
 ### Installation
