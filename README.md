@@ -107,3 +107,6 @@ gh release create v2.0.0 \
 ## License
 
 A license file has not been provided. Add an appropriate license before redistributing the site content or code.
+
+
+Nodeの最低修正版と移行手順: [2026-11-12セキュリティ更新](environments/SECURITY_2026-11-12.md)。
